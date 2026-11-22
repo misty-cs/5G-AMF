@@ -1,0 +1,16 @@
+run,mode,replies_before_move,replies_after_move,first_reply_after_move_s,ue_mobility_registration,ue_service_request,smf_release_seen,accept_pdu_status_0000,tun_up_after,container_start_times
+traffic_change_p7_r1,amf_change,52,0,,True,False,True,True,True,18:25:40;18:25:40;18:25:39;18:25:37;18:25:52
+traffic_change_p7_r2,amf_change,51,1,0.04,True,False,True,True,True,18:27:17;18:27:17;18:27:16;18:27:14;18:27:29
+traffic_change_p7_r3,amf_change,51,0,,True,False,True,True,True,18:32:06;18:32:06;18:32:05;18:32:03;18:32:18
+traffic_change_p7_r4,amf_change,51,0,,True,False,True,True,True,18:36:51;18:36:52;18:36:51;18:36:48;18:37:03
+traffic_change_p7_r5,amf_change,52,1,0.15,True,False,True,True,True,18:41:39;18:41:40;18:41:39;18:41:36;18:41:52
+traffic_ctlmob_p7_r1,control_mobility_reg,52,0,,True,False,False,False,True,18:23:34;18:23:35;18:23:34;18:23:31;18:23:47
+traffic_ctlmob_p7_r2,control_mobility_reg,51,0,,True,False,False,False,True,18:28:53;18:28:53;18:28:52;18:28:49;18:29:05
+traffic_ctlmob_p7_r3,control_mobility_reg,51,1,0.11,True,False,False,False,True,18:33:40;18:33:41;18:33:40;18:33:37;18:33:53
+traffic_ctlmob_p7_r4,control_mobility_reg,51,1,0.13,True,False,False,False,True,18:38:28;18:38:29;18:38:28;18:38:25;18:38:40
+traffic_ctlmob_p7_r5,control_mobility_reg,51,1,0.11,True,False,False,False,True,18:43:14;18:43:15;18:43:14;18:43:11;18:43:26
+traffic_ctlmob_r1,control_mobility_reg,52,0,,True,False,True,True,True,18:14:00;18:14:00;18:13:59;18:13:57;18:14:12
+traffic_ctlmob_r2,control_mobility_reg,51,0,,True,False,True,True,True,18:30:30;18:30:31;18:30:30;18:30:27;18:30:43
+traffic_ctlmob_r3,control_mobility_reg,51,0,,True,False,True,True,True,18:35:16;18:35:16;18:35:15;18:35:13;18:35:28
+traffic_ctlmob_r4,control_mobility_reg,51,1,0.06,True,False,True,True,True,18:40:04;18:40:04;18:40:03;18:40:01;18:40:16
+traffic_ctlmob_r5,control_mobility_reg,51,1,0.09,True,False,True,True,True,18:44:50;18:44:51;18:44:50;18:44:47;18:45:02

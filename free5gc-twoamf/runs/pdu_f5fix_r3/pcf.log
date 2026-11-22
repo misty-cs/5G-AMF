@@ -1,0 +1,25 @@
+2026-11-08T03:49:47.991731943Z [INFO][PCF][Main] pcf
+2026-11-08T03:49:47.991820896Z [INFO][PCF][Main] PCF version:  
+	Not specify ldflags (which link version) during go build
+	go version: go1.26.2 linux/arm64
+2026-11-08T03:49:47.992266797Z [INFO][PCF][CFG] Read config from [./config/pcfcfg.yaml]
+2026-11-08T03:49:47.992924013Z [INFO][PCF][Main] Log enable is set to [true]
+2026-11-08T03:49:47.992942275Z [INFO][PCF][Main] Log level is set to [info]
+2026-11-08T03:49:47.992949807Z [INFO][PCF][Main] Report Caller is set to [false]
+2026-11-08T03:49:47.992961505Z [INFO][PCF][Util] pcfconfig Info: Version[1.0.2] Description[PCF initial local configuration]
+2026-11-08T03:49:47.993093083Z [INFO][PCF][SBI] Binding addr: [pcf.free5gc.org:8000]
+2026-11-08T03:49:47.993156494Z [INFO][PCF][Init] Server started
+2026-11-08T03:49:47.994431584Z [ERRO][PCF][Consumer] PCF register to NRF Error[Put "http://nrf.free5gc.org:8000/nnrf-nfm/v1/nf-instances/838cff3f-71f2-4450-a99f-50c8b2581f72": dial tcp 10.100.200.3:8000: connect: connection refused]
+2026-11-08T03:49:49.860655902Z [INFO][PCF][Main] OAuth2 setting receive from NRF: false
+2026-11-08T03:49:49.860698173Z [INFO][PCF][SBI] Start SBI server (listen on pcf.free5gc.org:8000)
+2026-11-08T03:50:08.953763544Z [INFO][PCF][AmPol] Handle AM Policy Create Request
+2026-11-08T03:50:08.956564991Z [INFO][PCF][GIN] | 201 |   10.100.200.16 | POST    | /npcf-am-policy-control/v1/policies |  |
+2026-11-08T03:50:09.187081159Z [INFO][PCF][SMpolicy] Handle CreateSmPolicy
+2026-11-08T03:50:09.190120264Z [INFO][PCF][SMpolicy] Matched [0] trafficInfluDatas from UDR
+2026-11-08T03:50:09.191578813Z [INFO][PCF][GIN] | 201 |   10.100.200.20 | POST    | /npcf-smpolicycontrol/v1/sm-policies |  |
+2026-11-08T03:50:33.580732354Z [INFO][PCF][SMpolicy] Handle DeleteSmPolicyContext
+2026-11-08T03:50:33.582034220Z [INFO][PCF][GIN] | 204 |   10.100.200.20 | POST    | /npcf-smpolicycontrol/v1/sm-policies/imsi-208930000000001-1/delete |  |
+2026-11-08T03:50:33.583895917Z [INFO][PCF][AmPol] Handle AM Policy Create Request
+2026-11-08T03:50:33.588139497Z [INFO][PCF][AmPol] Handle AM Policy Association Delete
+2026-11-08T03:50:33.588608987Z [INFO][PCF][GIN] | 204 |   10.100.200.16 | DELETE  | /npcf-am-policy-control/v1/policies/imsi-208930000000001-1 |  |
+2026-11-08T03:50:33.589284781Z [INFO][PCF][GIN] | 201 |   10.100.200.17 | POST    | /npcf-am-policy-control/v1/policies |  |

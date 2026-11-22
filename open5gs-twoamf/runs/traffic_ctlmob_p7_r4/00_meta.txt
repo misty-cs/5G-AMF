@@ -1,0 +1,13 @@
+MODE=ctlmob UE_IMAGE=ch5/ueransim:patched7 O5_AMF1_CFG=amf1_ctlmob.yaml O5_GNB2_CFG=gnb2_ctl.yaml
+2026-11-22T18:37:59Z
+{ "acknowledged" : true, "deletedCount" : 0 }
+{
+	"acknowledged" : true,
+	"insertedId" : ObjectId("6b03369cf359a827317000c5")
+}
+subscribers: 1
+/o5-amf1 2026-11-22T18:38:28.616683475Z
+/o5-amf2 2026-11-22T18:38:29.091536643Z
+/o5-smf 2026-11-22T18:38:28.162426798Z
+/o5-upf 2026-11-22T18:38:25.603871645Z
+/o5-ue 2026-11-22T18:38:40.825589197Z

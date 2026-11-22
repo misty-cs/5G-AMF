@@ -1,0 +1,39 @@
+2026-11-10T16:45:20.772593740Z [INFO][UDM][Main] UDM version:  
+	Not specify ldflags (which link version) during go build
+	go version: go1.26.2 linux/arm64
+2026-11-10T16:45:20.777362345Z [INFO][UDM][CFG] Read config from [./config/udmcfg.yaml]
+2026-11-10T16:45:20.779629599Z [INFO][UDM][Main] Log enable is set to [true]
+2026-11-10T16:45:20.779643779Z [INFO][UDM][Main] Log level is set to [info]
+2026-11-10T16:45:20.779653302Z [INFO][UDM][Main] Report Caller is set to [false]
+2026-11-10T16:45:20.779668783Z [INFO][UDM][Util] udmconfig Info: Version[1.0.3] Description[UDM initial local configuration]
+2026-11-10T16:45:20.781299530Z [INFO][UDM][SBI] Binding addr: [udm.free5gc.org:8000]
+2026-11-10T16:45:20.781566517Z [INFO][UDM][Init] Server started
+2026-11-10T16:45:20.781593409Z [INFO][UDM][SBI] Starting server...
+2026-11-10T16:45:20.787463526Z [ERRO][UDM][Consumer] UDM register to NRF Error[Put "http://nrf.free5gc.org:8000/nnrf-nfm/v1/nf-instances/3b3a8b91-6dd3-4014-9596-47c80714703e": dial tcp 10.100.200.3:8000: connect: connection refused]
+2026-11-10T16:45:22.795755853Z [INFO][UDM][Main] OAuth2 setting receive from NRF: false
+2026-11-10T16:45:22.795858569Z [INFO][UDM][SBI] Start SBI server (listen on udm.free5gc.org:8000)
+2026-11-10T16:45:45.424842779Z [INFO][UDM][UEAU] Handle GenerateAuthDataRequest
+2026-11-10T16:45:45.424970931Z [INFO][UDM][Suci] scheme 0
+2026-11-10T16:45:45.424980724Z [INFO][UDM][Suci] SUPI type is IMSI
+2026-11-10T16:45:45.431277125Z [INFO][UDM][Proc] ModifyAuthenticationSubscriptionRequest:  [{replace /sequenceNumber  { 000000000024 map[] 0 }}]
+2026-11-10T16:45:45.433085465Z [INFO][UDM][GIN] | 200 |    10.100.200.4 | POST    | /nudm-ueau/v1/suci-0-208-93-0000-0-0-0000000001/security-information/generate-auth-data |  |
+2026-11-10T16:45:45.437045145Z [INFO][UDM][UEAU] Handle ConfirmAuthDataRequest
+2026-11-10T16:45:45.443814053Z [INFO][UDM][GIN] | 201 |    10.100.200.4 | POST    | /nudm-ueau/v1/imsi-208930000000001/auth-events |  |
+2026-11-10T16:45:45.447059290Z [INFO][UDM][Consumer] TwoLayerPathHandlerFunc,  imsi-208930000000001 nssai
+2026-11-10T16:45:45.447130637Z [INFO][UDM][SDM] Handle GetNssai
+2026-11-10T16:45:45.448971365Z [INFO][UDM][GIN] | 200 |   10.100.200.16 | GET     | /nudm-sdm/v2/imsi-208930000000001/nssai?plmn-id=%7B%22mcc%22%3A%22208%22%2C%22mnc%22%3A%2293%22%7D |  |
+2026-11-10T16:45:45.452017781Z [INFO][UDM][UECM] Handle RegistrationAmf3gppAccess
+2026-11-10T16:45:45.452031220Z [INFO][UDM][UECM] UEID: imsi-208930000000001
+2026-11-10T16:45:45.457764520Z [INFO][UDM][GIN] | 201 |   10.100.200.16 | PUT     | /nudm-uecm/v1/imsi-208930000000001/registrations/amf-3gpp-access |  |
+2026-11-10T16:45:45.458178950Z [INFO][UDM][Consumer] TwoLayerPathHandlerFunc,  imsi-208930000000001 am-data
+2026-11-10T16:45:45.458229736Z [INFO][UDM][SDM] Handle GetAmData
+2026-11-10T16:45:45.458977880Z [INFO][UDM][GIN] | 200 |   10.100.200.16 | GET     | /nudm-sdm/v2/imsi-208930000000001/am-data?plmn-id=%7B%22mcc%22%3A%22208%22%2C%22mnc%22%3A%2293%22%7D |  |
+2026-11-10T16:45:45.461003822Z [INFO][UDM][Consumer] TwoLayerPathHandlerFunc,  imsi-208930000000001 smf-select-data
+2026-11-10T16:45:45.461037524Z [INFO][UDM][SDM] Handle GetSmfSelectData
+2026-11-10T16:45:45.462555560Z [INFO][UDM][GIN] | 200 |   10.100.200.16 | GET     | /nudm-sdm/v2/imsi-208930000000001/smf-select-data?plmn-id=%7B%22mcc%22%3A%22208%22%2C%22mnc%22%3A%2293%22%7D |  |
+2026-11-10T16:45:45.462827805Z [INFO][UDM][Consumer] TwoLayerPathHandlerFunc,  imsi-208930000000001 ue-context-in-smf-data
+2026-11-10T16:45:45.462866891Z [INFO][UDM][SDM] Handle GetUeContextInSmfData
+2026-11-10T16:45:45.463622963Z [INFO][UDM][GIN] | 200 |   10.100.200.16 | GET     | /nudm-sdm/v2/imsi-208930000000001/ue-context-in-smf-data |  |
+2026-11-10T16:45:45.464084024Z [INFO][UDM][Consumer] TwoLayerPathHandlerFunc,  imsi-208930000000001 sdm-subscriptions
+2026-11-10T16:45:45.465429735Z [INFO][UDM][SDM] Handle Subscribe
+2026-11-10T16:45:45.467189408Z [INFO][UDM][GIN] | 201 |   10.100.200.16 | POST    | /nudm-sdm/v2/imsi-208930000000001/sdm-subscriptions |  |

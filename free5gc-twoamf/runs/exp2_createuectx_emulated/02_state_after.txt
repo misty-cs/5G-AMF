@@ -1,0 +1,4 @@
+== AMF2 OAM for SUPI
+null
+== AMF2 PATCH sub 1
+{"status":404,"cause":"SUBSCRIPTION_NOT_FOUND"} HTTP 404

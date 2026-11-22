@@ -1,0 +1,48 @@
+UERANSIM v3.3.0
+[2026-11-08 06:08:09.240] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2026-11-08 06:08:09.241] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2026-11-08 06:08:09.241] [nas] [info] Selected plmn[208/93]
+[2026-11-08 06:08:09.241] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2026-11-08 06:08:09.241] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2026-11-08 06:08:09.241] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2026-11-08 06:08:09.241] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2026-11-08 06:08:09.241] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-08 06:08:09.241] [nas] [debug] Sending Initial Registration
+[2026-11-08 06:08:09.241] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-08 06:08:09.241] [rrc] [debug] Sending RRC Setup Request
+[2026-11-08 06:08:09.242] [rrc] [info] RRC connection established
+[2026-11-08 06:08:09.242] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-08 06:08:09.242] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-08 06:08:09.254] [nas] [debug] Authentication Request received
+[2026-11-08 06:08:09.254] [nas] [debug] Received SQN [000000000023]
+[2026-11-08 06:08:09.254] [nas] [debug] SQN-MS [000000000000]
+[2026-11-08 06:08:09.261] [nas] [debug] Security Mode Command received
+[2026-11-08 06:08:09.261] [nas] [debug] Selected integrity[2] ciphering[0]
+[2026-11-08 06:08:09.280] [nas] [debug] Registration accept received
+[2026-11-08 06:08:09.280] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2026-11-08 06:08:09.280] [nas] [debug] Sending Registration Complete
+[2026-11-08 06:08:09.280] [nas] [info] Initial Registration is successful
+[2026-11-08 06:08:09.492] [nas] [debug] Configuration Update Command received
+[2026-11-08 06:08:19.470] [nas] [info] ch5: slice sst[1] added to configured NSSAI; requesting registration update
+[2026-11-08 06:08:19.470] [nas] [debug] Mobility registration updating required due to [SLICE-CHANGE]
+[2026-11-08 06:08:19.481] [nas] [debug] Sending Mobility Registration with update cause [SLICE-CHANGE]
+[2026-11-08 06:08:19.481] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-08 06:08:19.489] [nas] [error] Mobility Registration failed [IMPLICITY_DEREGISTERED]
+[2026-11-08 06:08:19.489] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2026-11-08 06:08:19.489] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2026-11-08 06:08:19.489] [nas] [debug] Sending Initial Registration
+[2026-11-08 06:08:19.489] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-08 06:08:19.493] [nas] [error] Initial Registration failed [CONGESTION]
+[2026-11-08 06:08:19.493] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-08 06:08:19.493] [nas] [info] UE switches to state [MM-DEREGISTERED/ATTEMPTING-REGISTRATION]
+[2026-11-08 06:08:19.601] [nas] [warning] Registration Reject ignored since the MM state is not MM_REGISTERED_INITIATED
+[2026-11-08 06:08:19.601] [nas] [warning] Sending MM Status with cause [MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE]
+[2026-11-08 06:08:30.317] [nas] [debug] NAS timer[3511] expired [1]
+[2026-11-08 06:08:30.317] [nas] [debug] Initial registration required due to [T3511-EXPIRY-IN-ATT-REG]
+[2026-11-08 06:08:30.317] [nas] [debug] Sending Initial Registration
+[2026-11-08 06:08:30.317] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-08 06:08:30.341] [nas] [error] Initial Registration failed [CONGESTION]
+[2026-11-08 06:08:30.341] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-08 06:08:30.341] [nas] [info] UE switches to state [MM-DEREGISTERED/ATTEMPTING-REGISTRATION]
+[2026-11-08 06:08:30.452] [nas] [warning] Registration Reject ignored since the MM state is not MM_REGISTERED_INITIATED
+[2026-11-08 06:08:30.452] [nas] [warning] Sending MM Status with cause [MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE]

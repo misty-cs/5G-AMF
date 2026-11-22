@@ -1,0 +1,6 @@
+run,pdu_established_amf1,sessions_in_transfer,amf2_to_smf_calls,accept_pdu_session_status,ue_reregistered
+pdu_o5_r1,1,1,release ,0000,1
+pdu_o5_r2,1,1,release ,0000,1
+pdu_o5_r3,1,1,release ,0000,1
+pdu_o5_r4,1,1,release ,0000,1
+pdu_o5_r5,1,1,release ,0000,1

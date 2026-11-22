@@ -1,0 +1,20 @@
+2026-11-07T23:01:43.017169321Z [INFO][PCF][Main] pcf
+2026-11-07T23:01:43.017231468Z [INFO][PCF][Main] PCF version:  
+	Not specify ldflags (which link version) during go build
+	go version: go1.26.2 linux/arm64
+2026-11-07T23:01:43.017832435Z [INFO][PCF][CFG] Read config from [./config/pcfcfg.yaml]
+2026-11-07T23:01:43.018421084Z [INFO][PCF][Main] Log enable is set to [true]
+2026-11-07T23:01:43.018425134Z [INFO][PCF][Main] Log level is set to [info]
+2026-11-07T23:01:43.018426540Z [INFO][PCF][Main] Report Caller is set to [false]
+2026-11-07T23:01:43.018429524Z [INFO][PCF][Util] pcfconfig Info: Version[1.0.2] Description[PCF initial local configuration]
+2026-11-07T23:01:43.018583868Z [INFO][PCF][SBI] Binding addr: [pcf.free5gc.org:8000]
+2026-11-07T23:01:43.018598489Z [INFO][PCF][Init] Server started
+2026-11-07T23:01:43.021008625Z [ERRO][PCF][Consumer] PCF register to NRF Error[Put "http://nrf.free5gc.org:8000/nnrf-nfm/v1/nf-instances/fe1c9343-c6fe-40e1-b1b2-d9d6c8578a56": dial tcp 10.100.200.3:8000: connect: connection refused]
+2026-11-07T23:01:45.025691186Z [INFO][PCF][Main] OAuth2 setting receive from NRF: false
+2026-11-07T23:01:45.025708318Z [INFO][PCF][SBI] Start SBI server (listen on pcf.free5gc.org:8000)
+2026-11-07T23:02:04.229570626Z [INFO][PCF][AmPol] Handle AM Policy Create Request
+2026-11-07T23:02:04.232644182Z [INFO][PCF][GIN] | 201 |   10.100.200.16 | POST    | /npcf-am-policy-control/v1/policies |  |
+2026-11-07T23:02:28.967189569Z [INFO][PCF][AmPol] Handle AM Policy Association Delete
+2026-11-07T23:02:28.967369058Z [INFO][PCF][GIN] | 204 |   10.100.200.16 | DELETE  | /npcf-am-policy-control/v1/policies/imsi-208930000000001-1 |  |
+2026-11-07T23:02:28.972500682Z [INFO][PCF][AmPol] Handle AM Policy Create Request
+2026-11-07T23:02:28.976123552Z [INFO][PCF][GIN] | 201 |   10.100.200.17 | POST    | /npcf-am-policy-control/v1/policies |  |

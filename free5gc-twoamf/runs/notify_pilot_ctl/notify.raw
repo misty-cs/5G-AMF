@@ -1,0 +1,8 @@
+POST /selftest-from-amf2 HTTP/1.1
+Host: probe.free5gc.org:9000
+User-Agent: Wget
+Connection: close
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 19
+
+{"selftest":"amf2"}---conn-end 1794254486

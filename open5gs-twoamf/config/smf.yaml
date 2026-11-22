@@ -1,0 +1,31 @@
+logger:
+  level: info
+global:
+  max:
+    ue: 64
+smf:
+  sbi:
+    server:
+      - address: 10.110.0.15
+        port: 7777
+    client:
+      nrf:
+        - uri: http://10.110.0.10:7777
+  pfcp:
+    server:
+      - address: 10.110.0.15
+    client:
+      upf:
+        - address: 10.110.0.16
+  gtpc:
+    server:
+      - address: 10.110.0.15
+  gtpu:
+    server:
+      - address: 10.110.0.15
+  session:
+    - subnet: 10.45.0.0/16
+      gateway: 10.45.0.1
+  dns:
+    - 8.8.8.8
+  mtu: 1400

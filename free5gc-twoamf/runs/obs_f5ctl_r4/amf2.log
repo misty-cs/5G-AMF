@@ -1,0 +1,33 @@
+2026-11-09T05:38:13.256289933Z [INFO][AMF][Main] AMF version:  
+	Not specify ldflags (which link version) during go build
+	go version: go1.26.10 linux/arm64
+2026-11-09T05:38:13.256817313Z [INFO][AMF][CFG] Read config from [./config/amfcfg.yaml]
+2026-11-09T05:38:13.257472781Z [INFO][AMF][Main] Log enable is set to [true]
+2026-11-09T05:38:13.257477861Z [INFO][AMF][Main] Log level is set to [debug]
+2026-11-09T05:38:13.257479653Z [INFO][AMF][Main] Report Caller is set to [false]
+2026-11-09T05:38:13.257535994Z [INFO][AMF][SBI] Binding addr: [amf2.free5gc.org:8000]
+2026-11-09T05:38:13.257556097Z [INFO][AMF][Util] amfconfig Info: Version[1.0.9]
+2026-11-09T05:38:13.257558402Z [DEBU][AMF][CFG] Fetching nfInstanceId from env var "AMF_NF_INSTANCE_ID"
+2026-11-09T05:38:13.257559810Z [DEBU][AMF][CFG] No value found for "AMF_NF_INSTANCE_ID" env, fallback on config nfInstanceId : 33dd647a-4d40-4caf-a16f-b9a869406a8f
+2026-11-09T05:38:13.257571377Z [INFO][AMF][Init] Initializing NGAP worker pool with 0 workers (buffer size: 1000)
+2026-11-09T05:38:13.257575987Z [INFO][AMF][Ngap] Initializing UE Scheduler with 4 workers
+2026-11-09T05:38:13.257587383Z [INFO][AMF][Ngap] Global UE Scheduler initialized with 4 workers, buffer size 1000
+2026-11-09T05:38:13.257820085Z [INFO][AMF][Ngap] Worker 0 started
+2026-11-09T05:38:13.257825122Z [INFO][AMF][Ngap] Worker 1 started
+2026-11-09T05:38:13.257827768Z [INFO][AMF][Ngap] Worker 2 started
+2026-11-09T05:38:13.257830201Z [INFO][AMF][Ngap] Worker 3 started
+2026-11-09T05:38:13.257901736Z [DEBU][AMF][Ngap] Resolved address 'amf2.free5gc.org' to 10.100.200.17
+2026-11-09T05:38:13.257909889Z [INFO][AMF][Init] Server started
+2026-11-09T05:38:13.258157914Z [INFO][AMF][Ngap] Listen on 10.100.200.17:38412
+2026-11-09T05:38:13.259727718Z [ERRO][AMF][Consumer] AMF register to NRF Error[Put "http://nrf.free5gc.org:8000/nnrf-nfm/v1/nf-instances/33dd647a-4d40-4caf-a16f-b9a869406a8f": dial tcp 10.100.200.3:8000: connect: connection refused]
+2026-11-09T05:38:15.266278227Z [INFO][AMF][Main] OAuth2 setting receive from NRF: false
+2026-11-09T05:38:15.266321355Z [INFO][AMF][SBI] Start SBI server (listen on amf2.free5gc.org:8000)
+2026-11-09T05:38:15.266347928Z [INFO][AMF][Consumer] NF heartbeat started, interval 10s
+2026-11-09T05:39:06.976598059Z [DEBU][AMF][Util] AMFContext::AuthorizationCheck: OAuth2 not required
+2026-11-09T05:39:06.976618849Z [DEBU][AMF][Util] RouterAuthorizationCheck: Check Authorized
+2026-11-09T05:39:06.976624861Z [INFO][AMF][Producer] [OAM] Handle Registered UE Context
+2026-11-09T05:39:06.976718690Z [INFO][AMF][GIN] | 200 |   10.100.200.50 | GET     | /namf-oam/v1/registered-ue-context |  |
+2026-11-09T05:39:07.012573225Z [DEBU][AMF][Util] AMFContext::AuthorizationCheck: OAuth2 not required
+2026-11-09T05:39:07.012598243Z [DEBU][AMF][Util] RouterAuthorizationCheck: Check Authorized
+2026-11-09T05:39:07.012840392Z [INFO][AMF][Ee] Handle Modify AMF Event Subscription
+2026-11-09T05:39:07.012897654Z [INFO][AMF][GIN] | 404 |   10.100.200.50 | PATCH   | /namf-evts/v1/subscriptions/1 |  |

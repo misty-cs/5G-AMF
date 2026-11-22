@@ -1,0 +1,28 @@
+diff --git a/internal/gmm/sm.go b/internal/gmm/sm.go
+index 0f26073..fc3e3d4 100644
+--- a/internal/gmm/sm.go
++++ b/internal/gmm/sm.go
+@@ -266,7 +266,10 @@ func SecurityMode(state *fsm.State, event fsm.EventType, args fsm.ArgsType) {
+ 		amfUe.UpdateLogFields(accessType)
+ 
+ 		amfUe.GmmLog.Debugln("EntryEvent at GMM State[SecurityMode]")
+-		if amfUe.SecurityContextIsValid() {
++		// ch5 fix: TS 24.501 5.4.2.2 - if the initial NAS message failed the integrity check (e.g. at a new AMF
++		// before UEContextTransfer) or its NAS message container could not be deciphered, run SMC with RINMR
++		// so the UE retransmits the complete REGISTRATION REQUEST, instead of skipping SMC.
++		if amfUe.SecurityContextIsValid() && !amfUe.RetransmissionOfInitialNASMsg {
+ 			amfUe.GmmLog.Debugln("UE has a valid security context - skip security mode control procedure")
+ 			if err := GmmFSM.SendEvent(state, SecurityModeSuccessEvent, fsm.ArgsType{
+ 				ArgAmfUe:      amfUe,
+@@ -276,8 +279,9 @@ func SecurityMode(state *fsm.State, event fsm.EventType, args fsm.ArgsType) {
+ 				logger.GmmLog.Errorln(err)
+ 			}
+ 		} else {
+-			eapSuccess := args[ArgEAPSuccess].(bool)
+-			eapMessage := args[ArgEAPMessage].(string)
++			// ch5 fix: these args are absent when authentication was skipped (valid transferred context)
++			eapSuccess, _ := args[ArgEAPSuccess].(bool)
++			eapMessage, _ := args[ArgEAPMessage].(string)
+ 			// Select enc/int algorithm based on ue security capability & amf's policy,
+ 			amfSelf := context.GetSelf()
+ 			if err := amfUe.SelectSecurityAlg(amfSelf.SecurityAlgorithm.IntegrityOrder,

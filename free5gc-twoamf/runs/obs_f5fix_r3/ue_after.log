@@ -1,0 +1,110 @@
+UERANSIM v3.3.0
+[2026-11-09 05:31:29.948] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2026-11-09 05:31:29.949] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2026-11-09 05:31:29.949] [nas] [info] Selected plmn[208/93]
+[2026-11-09 05:31:29.949] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2026-11-09 05:31:29.949] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2026-11-09 05:31:29.949] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2026-11-09 05:31:29.949] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2026-11-09 05:31:29.949] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-09 05:31:29.949] [nas] [debug] Sending Initial Registration
+[2026-11-09 05:31:29.949] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-09 05:31:29.949] [rrc] [debug] Sending RRC Setup Request
+[2026-11-09 05:31:29.950] [rrc] [info] RRC connection established
+[2026-11-09 05:31:29.950] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-09 05:31:29.950] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-09 05:31:29.973] [nas] [debug] Authentication Request received
+[2026-11-09 05:31:29.973] [nas] [debug] Received SQN [000000000023]
+[2026-11-09 05:31:29.973] [nas] [debug] SQN-MS [000000000000]
+[2026-11-09 05:31:29.979] [nas] [debug] Security Mode Command received
+[2026-11-09 05:31:29.979] [nas] [debug] Selected integrity[2] ciphering[0]
+[2026-11-09 05:31:30.004] [nas] [debug] Registration accept received
+[2026-11-09 05:31:30.004] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2026-11-09 05:31:30.004] [nas] [debug] Sending Registration Complete
+[2026-11-09 05:31:30.004] [nas] [info] Initial Registration is successful
+[2026-11-09 05:31:30.210] [nas] [debug] Configuration Update Command received
+[2026-11-09 05:31:39.034] [rrc] [debug] New signal detected for cell[2], total [2] cells in coverage
+[2026-11-09 05:31:43.967] [rrc] [debug] Signal lost for cell[1], total [1] cells in coverage
+[2026-11-09 05:31:43.968] [nas] [error] Radio link failure detected
+[2026-11-09 05:31:43.968] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-09 05:31:43.968] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+[2026-11-09 05:31:43.968] [nas] [info] UE switches to state [MM-REGISTERED/PLMN-SEARCH]
+[2026-11-09 05:31:44.694] [rrc] [info] Selected cell plmn[208/93] tac[2] category[SUITABLE]
+[2026-11-09 05:31:44.694] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+[2026-11-09 05:31:44.694] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2026-11-09 05:31:44.695] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-09 05:31:44.695] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-09 05:31:44.695] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-09 05:31:44.695] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-09 05:31:44.695] [rrc] [debug] Sending RRC Setup Request
+[2026-11-09 05:31:44.697] [rrc] [info] RRC connection established
+[2026-11-09 05:31:44.697] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-09 05:31:44.697] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-09 05:31:44.699] [nas] [error] Mobility Registration failed [IMPLICITY_DEREGISTERED]
+[2026-11-09 05:31:44.699] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2026-11-09 05:31:44.699] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2026-11-09 05:31:44.699] [nas] [debug] Sending Initial Registration
+[2026-11-09 05:31:44.699] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-09 05:31:44.701] [rrc] [debug] RRC Release received
+[2026-11-09 05:31:44.701] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-09 05:31:44.701] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2026-11-09 05:31:44.701] [nas] [info] UE switches to state [5U2-NOT-UPDATED]
+[2026-11-09 05:31:44.701] [nas] [info] UE switches to state [MM-DEREGISTERED/ATTEMPTING-REGISTRATION]
+[2026-11-09 05:31:54.582] [nas] [debug] NAS timer[3511] expired [1]
+[2026-11-09 05:31:54.582] [nas] [debug] Initial registration required due to [T3511-EXPIRY-IN-ATT-REG]
+[2026-11-09 05:31:54.582] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-09 05:31:54.582] [nas] [debug] Sending Initial Registration
+[2026-11-09 05:31:54.583] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-09 05:31:54.583] [rrc] [debug] Sending RRC Setup Request
+[2026-11-09 05:31:54.584] [rrc] [info] RRC connection established
+[2026-11-09 05:31:54.584] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-09 05:31:54.584] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-09 05:31:54.625] [nas] [debug] Registration accept received
+[2026-11-09 05:31:54.625] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2026-11-09 05:31:54.625] [nas] [info] UE switches to state [5U1-UPDATED]
+[2026-11-09 05:31:54.625] [nas] [debug] Sending Registration Complete
+[2026-11-09 05:31:54.625] [nas] [info] Initial Registration is successful
+[2026-11-09 05:31:54.831] [nas] [debug] Configuration Update Command received
+[2026-11-09 05:32:03.910] [rrc] [debug] RRC Release received
+[2026-11-09 05:32:03.910] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-09 05:32:34.100] [nas] [debug] NAS timer[3512] expired [1]
+[2026-11-09 05:32:34.100] [nas] [debug] Mobility registration updating required due to [T3512-EXPIRY]
+[2026-11-09 05:32:34.100] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-09 05:32:34.100] [nas] [debug] Sending Periodic Registration with update cause [T3512-EXPIRY]
+[2026-11-09 05:32:34.101] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-09 05:32:34.101] [rrc] [debug] Sending RRC Setup Request
+[2026-11-09 05:32:34.102] [rrc] [info] RRC connection established
+[2026-11-09 05:32:34.102] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-09 05:32:34.102] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-09 05:32:34.105] [nas] [error] Periodic Registration failed [IMPLICITY_DEREGISTERED]
+[2026-11-09 05:32:34.105] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2026-11-09 05:32:34.105] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2026-11-09 05:32:34.105] [nas] [debug] Sending Initial Registration
+[2026-11-09 05:32:34.105] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-09 05:32:34.107] [rrc] [debug] RRC Release received
+[2026-11-09 05:32:34.107] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-09 05:32:34.107] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2026-11-09 05:32:34.107] [nas] [info] UE switches to state [5U2-NOT-UPDATED]
+[2026-11-09 05:32:34.107] [nas] [info] UE switches to state [MM-DEREGISTERED/ATTEMPTING-REGISTRATION]
+[2026-11-09 05:32:44.003] [nas] [debug] NAS timer[3511] expired [1]
+[2026-11-09 05:32:44.004] [nas] [debug] Initial registration required due to [T3511-EXPIRY-IN-ATT-REG]
+[2026-11-09 05:32:44.004] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-09 05:32:44.004] [nas] [debug] Sending Initial Registration
+[2026-11-09 05:32:44.004] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-09 05:32:44.004] [rrc] [debug] Sending RRC Setup Request
+[2026-11-09 05:32:44.006] [rrc] [info] RRC connection established
+[2026-11-09 05:32:44.006] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-09 05:32:44.006] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-09 05:32:44.055] [nas] [debug] Authentication Request received
+[2026-11-09 05:32:44.055] [nas] [error] Sending Authentication Failure with cause [NGKSI_ALREADY_IN_USE]
+[2026-11-09 05:32:44.056] [nas] [debug] Authentication Request received
+[2026-11-09 05:32:44.056] [nas] [debug] Received SQN [000000000024]
+[2026-11-09 05:32:44.056] [nas] [debug] SQN-MS [000000000023]
+[2026-11-09 05:32:44.060] [nas] [debug] Security Mode Command received
+[2026-11-09 05:32:44.060] [nas] [debug] Selected integrity[2] ciphering[0]
+[2026-11-09 05:32:44.078] [nas] [debug] Registration accept received
+[2026-11-09 05:32:44.078] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2026-11-09 05:32:44.078] [nas] [info] UE switches to state [5U1-UPDATED]
+[2026-11-09 05:32:44.078] [nas] [debug] Sending Registration Complete
+[2026-11-09 05:32:44.078] [nas] [info] Initial Registration is successful
+[2026-11-09 05:32:44.282] [nas] [debug] Configuration Update Command received

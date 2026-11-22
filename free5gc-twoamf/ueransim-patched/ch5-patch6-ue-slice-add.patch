@@ -1,0 +1,101 @@
+diff --git a/src/lib/app/cli_cmd.cpp b/src/lib/app/cli_cmd.cpp
+index f6caf0ff..a12a185b 100644
+--- a/src/lib/app/cli_cmd.cpp
++++ b/src/lib/app/cli_cmd.cpp
+@@ -167,6 +167,9 @@ static OrderedMap<std::string, CmdEntry> g_ueCmdEntries = {
+     {"ps-release-all", {"Trigger PDU session release procedures for all active sessions", "", DefaultDesc, false}},
+     {"deregister",
+      {"Perform a de-registration by the UE", "<normal|disable-5g|switch-off|remove-sim>", DefaultDesc, true}},
++    {"slice-add",
++     {"(ch5) Add a slice to the configured NSSAI and request it via a registration update (TS 24.501 5.5.1.3.2)",
++      "<sst> <sd-hex>", DefaultDesc, true}},
+ };
+ 
+ static std::unique_ptr<GnbCliCommand> GnbCliParseImpl(const std::string &subCmd, const opt::OptionsResult &options,
+@@ -235,6 +238,21 @@ static std::unique_ptr<UeCliCommand> UeCliParseImpl(const std::string &subCmd, c
+     {
+         return std::make_unique<UeCliCommand>(UeCliCommand::TIMERS);
+     }
++    else if (subCmd == "slice-add")
++    {
++        // ch5 patch 6
++        auto cmd = std::make_unique<UeCliCommand>(UeCliCommand::SLICE_ADD);
++        if (options.positionalCount() != 2)
++            CMD_ERR("Expected <sst> <sd-hex>")
++        int sst = 0;
++        if (!utils::TryParseInt(options.getPositional(0), sst) || sst <= 0 || sst >= 256)
++            CMD_ERR("Invalid SST")
++        SingleSlice slice{};
++        slice.sst = static_cast<uint8_t>(sst);
++        slice.sd = octet3{static_cast<uint32_t>(std::stoul(options.getPositional(1), nullptr, 16))};
++        cmd->sNssai = slice;
++        return cmd;
++    }
+     else if (subCmd == "deregister")
+     {
+         auto cmd = std::make_unique<UeCliCommand>(UeCliCommand::DE_REGISTER);
+diff --git a/src/lib/app/cli_cmd.hpp b/src/lib/app/cli_cmd.hpp
+index 1662a222..a967cd4f 100644
+--- a/src/lib/app/cli_cmd.hpp
++++ b/src/lib/app/cli_cmd.hpp
+@@ -56,6 +56,7 @@ struct UeCliCommand
+         DE_REGISTER,
+         RLS_STATE,
+         COVERAGE,
++        SLICE_ADD, // ch5 patch 6
+     } present;
+ 
+     // DE_REGISTER
+diff --git a/src/ue/app/cmd_handler.cpp b/src/ue/app/cmd_handler.cpp
+index 02413726..84e322f9 100644
+--- a/src/ue/app/cmd_handler.cpp
++++ b/src/ue/app/cmd_handler.cpp
+@@ -164,6 +164,12 @@ void UeCmdHandler::handleCmdImpl(NmUeCliCommand &msg)
+         sendResult(msg.address, ToJson(m_base->nasTask->timers).dumpYaml());
+         break;
+     }
++    case app::UeCliCommand::SLICE_ADD: {
++        // ch5 patch 6
++        m_base->nasTask->mm->ch5RequestSlice(*msg.cmd->sNssai);
++        sendResult(msg.address, "Slice added to configured NSSAI; registration update triggered");
++        break;
++    }
+     case app::UeCliCommand::DE_REGISTER: {
+         m_base->nasTask->mm->deregistrationRequired(msg.cmd->deregCause);
+ 
+diff --git a/src/ue/nas/mm/mm.hpp b/src/ue/nas/mm/mm.hpp
+index 6ee10c5e..a69bf6bd 100644
+--- a/src/ue/nas/mm/mm.hpp
++++ b/src/ue/nas/mm/mm.hpp
+@@ -192,6 +192,9 @@ class NasMm
+   private: /* Timer */
+     void onTimerExpire(UeTimer &timer);
+ 
++  public: /* ch5 patch 6 */
++    void ch5RequestSlice(const SingleSlice &slice);
++
+   private: /* Procedure Control */
+     void initialRegistrationRequired(EInitialRegCause cause);
+     void mobilityUpdatingRequired(ERegUpdateCause cause);
+diff --git a/src/ue/nas/mm/slice.cpp b/src/ue/nas/mm/slice.cpp
+index 9178643c..3eb4a1c7 100644
+--- a/src/ue/nas/mm/slice.cpp
++++ b/src/ue/nas/mm/slice.cpp
+@@ -74,4 +74,15 @@ void NasMm::handleNetworkSlicingSubscriptionChange()
+     // TODO
+ }
+ 
+-} // namespace nr::ue
+\ No newline at end of file
++// ch5 patch 6: TS 24.501 5.5.1.3.2 -- the UE initiates a registration for mobility and periodic
++// registration update "when the UE needs to change the slice(s) it is currently registered to".
++void NasMm::ch5RequestSlice(const SingleSlice &slice)
++{
++    auto configured = m_storage->configuredNssai->get();
++    configured.addIfNotExists(slice);
++    m_storage->configuredNssai->set(configured);
++    m_logger->info("ch5: slice sst[%d] added to configured NSSAI; requesting registration update", (int)slice.sst);
++    mobilityUpdatingRequired(ERegUpdateCause::SLICE_CHANGE);
++}
++
++} // namespace nr::ue

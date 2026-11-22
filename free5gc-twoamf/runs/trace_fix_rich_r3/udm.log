@@ -1,0 +1,60 @@
+2026-11-07T23:12:20.962102588Z [INFO][UDM][Main] UDM version:  
+	Not specify ldflags (which link version) during go build
+	go version: go1.26.2 linux/arm64
+2026-11-07T23:12:20.963364001Z [INFO][UDM][CFG] Read config from [./config/udmcfg.yaml]
+2026-11-07T23:12:20.963744288Z [INFO][UDM][Main] Log enable is set to [true]
+2026-11-07T23:12:20.963751454Z [INFO][UDM][Main] Log level is set to [info]
+2026-11-07T23:12:20.963753140Z [INFO][UDM][Main] Report Caller is set to [false]
+2026-11-07T23:12:20.963756934Z [INFO][UDM][Util] udmconfig Info: Version[1.0.3] Description[UDM initial local configuration]
+2026-11-07T23:12:20.963829897Z [INFO][UDM][SBI] Binding addr: [udm.free5gc.org:8000]
+2026-11-07T23:12:20.963848907Z [INFO][UDM][Init] Server started
+2026-11-07T23:12:20.963852912Z [INFO][UDM][SBI] Starting server...
+2026-11-07T23:12:20.964818425Z [ERRO][UDM][Consumer] UDM register to NRF Error[Put "http://nrf.free5gc.org:8000/nnrf-nfm/v1/nf-instances/15509e38-12b9-46fb-af35-7056bd5daaeb": dial tcp 10.100.200.3:8000: connect: connection refused]
+2026-11-07T23:12:22.785949830Z [INFO][UDM][Main] OAuth2 setting receive from NRF: false
+2026-11-07T23:12:22.785984970Z [INFO][UDM][SBI] Start SBI server (listen on udm.free5gc.org:8000)
+2026-11-07T23:12:41.887578449Z [INFO][UDM][UEAU] Handle GenerateAuthDataRequest
+2026-11-07T23:12:41.887619261Z [INFO][UDM][Suci] scheme 0
+2026-11-07T23:12:41.887622930Z [INFO][UDM][Suci] SUPI type is IMSI
+2026-11-07T23:12:41.890320611Z [INFO][UDM][Proc] ModifyAuthenticationSubscriptionRequest:  [{replace /sequenceNumber  { 000000000024 map[] 0 }}]
+2026-11-07T23:12:41.891207596Z [INFO][UDM][GIN] | 200 |    10.100.200.8 | POST    | /nudm-ueau/v1/suci-0-208-93-0000-0-0-0000000001/security-information/generate-auth-data |  |
+2026-11-07T23:12:41.892708555Z [INFO][UDM][UEAU] Handle ConfirmAuthDataRequest
+2026-11-07T23:12:41.898094955Z [INFO][UDM][GIN] | 201 |    10.100.200.8 | POST    | /nudm-ueau/v1/imsi-208930000000001/auth-events |  |
+2026-11-07T23:12:41.900339618Z [INFO][UDM][Consumer] TwoLayerPathHandlerFunc,  imsi-208930000000001 nssai
+2026-11-07T23:12:41.900366924Z [INFO][UDM][SDM] Handle GetNssai
+2026-11-07T23:12:41.901523877Z [INFO][UDM][GIN] | 200 |   10.100.200.16 | GET     | /nudm-sdm/v2/imsi-208930000000001/nssai?plmn-id=%7B%22mcc%22%3A%22208%22%2C%22mnc%22%3A%2293%22%7D |  |
+2026-11-07T23:12:41.903958885Z [INFO][UDM][UECM] Handle RegistrationAmf3gppAccess
+2026-11-07T23:12:41.903989025Z [INFO][UDM][UECM] UEID: imsi-208930000000001
+2026-11-07T23:12:41.909589116Z [INFO][UDM][GIN] | 201 |   10.100.200.16 | PUT     | /nudm-uecm/v1/imsi-208930000000001/registrations/amf-3gpp-access |  |
+2026-11-07T23:12:41.909830945Z [INFO][UDM][Consumer] TwoLayerPathHandlerFunc,  imsi-208930000000001 am-data
+2026-11-07T23:12:41.909842159Z [INFO][UDM][SDM] Handle GetAmData
+2026-11-07T23:12:41.910200713Z [INFO][UDM][GIN] | 200 |   10.100.200.16 | GET     | /nudm-sdm/v2/imsi-208930000000001/am-data?plmn-id=%7B%22mcc%22%3A%22208%22%2C%22mnc%22%3A%2293%22%7D |  |
+2026-11-07T23:12:41.911390099Z [INFO][UDM][Consumer] TwoLayerPathHandlerFunc,  imsi-208930000000001 smf-select-data
+2026-11-07T23:12:41.911403272Z [INFO][UDM][SDM] Handle GetSmfSelectData
+2026-11-07T23:12:41.912086614Z [INFO][UDM][GIN] | 200 |   10.100.200.16 | GET     | /nudm-sdm/v2/imsi-208930000000001/smf-select-data?plmn-id=%7B%22mcc%22%3A%22208%22%2C%22mnc%22%3A%2293%22%7D |  |
+2026-11-07T23:12:41.912262827Z [INFO][UDM][Consumer] TwoLayerPathHandlerFunc,  imsi-208930000000001 ue-context-in-smf-data
+2026-11-07T23:12:41.912288673Z [INFO][UDM][SDM] Handle GetUeContextInSmfData
+2026-11-07T23:12:41.912816854Z [INFO][UDM][GIN] | 200 |   10.100.200.16 | GET     | /nudm-sdm/v2/imsi-208930000000001/ue-context-in-smf-data |  |
+2026-11-07T23:12:41.913092116Z [INFO][UDM][Consumer] TwoLayerPathHandlerFunc,  imsi-208930000000001 sdm-subscriptions
+2026-11-07T23:12:41.914103580Z [INFO][UDM][SDM] Handle Subscribe
+2026-11-07T23:12:41.915530293Z [INFO][UDM][GIN] | 201 |   10.100.200.16 | POST    | /nudm-sdm/v2/imsi-208930000000001/sdm-subscriptions |  |
+2026-11-07T23:13:06.678387603Z [INFO][UDM][Consumer] TwoLayerPathHandlerFunc,  imsi-208930000000001 nssai
+2026-11-07T23:13:06.678463358Z [INFO][UDM][SDM] Handle GetNssai
+2026-11-07T23:13:06.680918347Z [INFO][UDM][GIN] | 200 |   10.100.200.17 | GET     | /nudm-sdm/v2/imsi-208930000000001/nssai?plmn-id=%7B%22mcc%22%3A%22208%22%2C%22mnc%22%3A%2293%22%7D |  |
+2026-11-07T23:13:06.685599704Z [INFO][UDM][UECM] Handle RegistrationAmf3gppAccess
+2026-11-07T23:13:06.685617721Z [INFO][UDM][UECM] UEID: imsi-208930000000001
+2026-11-07T23:13:06.687282303Z [INFO][UDM][GIN] | 200 |   10.100.200.17 | PUT     | /nudm-uecm/v1/imsi-208930000000001/registrations/amf-3gpp-access |  |
+2026-11-07T23:13:06.687358101Z [INFO][UDM][UECM] Send DeregNotify to old AMF GUAMI=&{0x7818629850e0 cafe00}
+2026-11-07T23:13:06.687602366Z [INFO][UDM][Consumer] TwoLayerPathHandlerFunc,  imsi-208930000000001 am-data
+2026-11-07T23:13:06.687634203Z [INFO][UDM][SDM] Handle GetAmData
+2026-11-07T23:13:06.688486164Z [INFO][UDM][GIN] | 200 |   10.100.200.17 | GET     | /nudm-sdm/v2/imsi-208930000000001/am-data?plmn-id=%7B%22mcc%22%3A%22208%22%2C%22mnc%22%3A%2293%22%7D |  |
+2026-11-07T23:13:06.688876175Z [INFO][UDM][SDM] Handle Unsubscribe
+2026-11-07T23:13:06.688981096Z [INFO][UDM][Consumer] TwoLayerPathHandlerFunc,  imsi-208930000000001 smf-select-data
+2026-11-07T23:13:06.689029974Z [INFO][UDM][SDM] Handle GetSmfSelectData
+2026-11-07T23:13:06.689247024Z [INFO][UDM][GIN] | 204 |   10.100.200.16 | DELETE  | /nudm-sdm/v2/imsi-208930000000001/sdm-subscriptions/1 |  |
+2026-11-07T23:13:06.689560770Z [INFO][UDM][GIN] | 200 |   10.100.200.17 | GET     | /nudm-sdm/v2/imsi-208930000000001/smf-select-data?plmn-id=%7B%22mcc%22%3A%22208%22%2C%22mnc%22%3A%2293%22%7D |  |
+2026-11-07T23:13:06.691393354Z [INFO][UDM][Consumer] TwoLayerPathHandlerFunc,  imsi-208930000000001 ue-context-in-smf-data
+2026-11-07T23:13:06.691417814Z [INFO][UDM][SDM] Handle GetUeContextInSmfData
+2026-11-07T23:13:06.693526330Z [INFO][UDM][GIN] | 200 |   10.100.200.17 | GET     | /nudm-sdm/v2/imsi-208930000000001/ue-context-in-smf-data |  |
+2026-11-07T23:13:06.693953392Z [INFO][UDM][Consumer] TwoLayerPathHandlerFunc,  imsi-208930000000001 sdm-subscriptions
+2026-11-07T23:13:06.693993326Z [INFO][UDM][SDM] Handle Subscribe
+2026-11-07T23:13:06.694359257Z [INFO][UDM][GIN] | 201 |   10.100.200.17 | POST    | /nudm-sdm/v2/imsi-208930000000001/sdm-subscriptions |  |

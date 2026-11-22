@@ -1,0 +1,8 @@
+UE_IMAGE=ch5/ueransim:patched O5_AMF2_CFG=amf2_t3512.yaml POST_WAIT=20
+2026-11-08T00:17:28Z
+{ "acknowledged" : true, "deletedCount" : 0 }
+{
+	"acknowledged" : true,
+	"insertedId" : ObjectId("6aefbfa36e63d8ab16a175c3")
+}
+subscribers: 1

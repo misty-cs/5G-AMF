@@ -1,0 +1,16 @@
+2026-11-07T08:06:48.601481787Z [DEBU][AMF][Util] AMFContext::AuthorizationCheck: OAuth2 not required
+2026-11-07T08:06:48.601553997Z [DEBU][AMF][Util] RouterAuthorizationCheck: Check Authorized
+2026-11-07T08:06:48.601994630Z [INFO][AMF][Comm] Handle Create UE Context Request
+2026-11-07T08:06:48.602060142Z [INFO][AMF][CTX] New AmfUe [supi:imsi-208930000000099][guti:20893cb010000000002]
+2026-11-07T08:06:48.602221372Z [INFO][AMF][GIN] | 201 |   10.100.200.50 | PUT     | /namf-comm/v1/ue-contexts/imsi-208930000000099 |  |
+2026-11-07T08:06:49.156229710Z [DEBU][AMF][Ngap] SCTP read timeout
+2026-11-07T08:06:51.042628546Z [DEBU][AMF][Ngap] SCTP read timeout
+2026-11-07T08:06:53.092154450Z [DEBU][AMF][Ngap] SCTP read timeout
+2026-11-07T08:06:53.610664151Z [DEBU][AMF][Util] AMFContext::AuthorizationCheck: OAuth2 not required
+2026-11-07T08:06:53.610685510Z [DEBU][AMF][Util] RouterAuthorizationCheck: Check Authorized
+2026-11-07T08:06:53.610702189Z [INFO][AMF][Producer] [OAM] Handle Registered UE Context
+2026-11-07T08:06:53.610734567Z [INFO][AMF][GIN] | 200 |   10.100.200.50 | GET     | /namf-oam/v1/registered-ue-context/imsi-208930000000099 |  |
+2026-11-07T08:06:53.656740102Z [DEBU][AMF][Util] AMFContext::AuthorizationCheck: OAuth2 not required
+2026-11-07T08:06:53.656778352Z [DEBU][AMF][Util] RouterAuthorizationCheck: Check Authorized
+2026-11-07T08:06:53.656862724Z [INFO][AMF][Ee] Handle Modify AMF Event Subscription
+2026-11-07T08:06:53.656892464Z [INFO][AMF][GIN] | 404 |   10.100.200.50 | PATCH   | /namf-evts/v1/subscriptions/1 |  |

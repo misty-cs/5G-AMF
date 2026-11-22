@@ -1,0 +1,62 @@
+2026-11-08T03:47:20.756634186Z [INFO][SMF][Main] SMF version:  
+	Not specify ldflags (which link version) during go build
+	go version: go1.26.2 linux/arm64
+2026-11-08T03:47:20.757019291Z [INFO][SMF][CFG] Read config from [./config/smfcfg.yaml]
+2026-11-08T03:47:20.758181693Z [INFO][SMF][CFG] Read config from [./config/uerouting.yaml]
+2026-11-08T03:47:20.758401034Z [INFO][SMF][Main] Log enable is set to [true]
+2026-11-08T03:47:20.758417939Z [INFO][SMF][Main] Log level is set to [info]
+2026-11-08T03:47:20.758423787Z [INFO][SMF][Main] Report Caller is set to [false]
+2026-11-08T03:47:20.758447694Z [INFO][SMF][CTX] smfconfig Info: Version[1.0.7] Description[SMF initial local configuration]
+2026-11-08T03:47:20.758474417Z [INFO][SMF][CTX] Endpoints: [10.100.200.21]
+2026-11-08T03:47:20.758553863Z [INFO][SMF][Init] Server started
+2026-11-08T03:47:20.759706233Z [INFO][SMF][PFCP][addr:10.100.200.20:8805] Listen on 10.100.200.20:8805
+2026-11-08T03:47:20.759870120Z [INFO][SMF][PFCP][addr:10.100.200.20:8805] PFCP server started
+2026-11-08T03:47:20.760168223Z [INFO][SMF][Main] Sending PFCP Association Request to UPF[10.100.200.21]
+2026-11-08T03:47:20.760618686Z [INFO][SMF][Main] Received PFCP Association Setup Accepted Response from UPF[10.100.200.21]
+2026-11-08T03:47:20.760646606Z [INFO][SMF][Main] UPF(10.100.200.21) setup association
+2026-11-08T03:47:20.760980611Z [ERRO][SMF][Consumer] SMF register to NRF Error[Put "http://nrf.free5gc.org:8000/nnrf-nfm/v1/nf-instances/57b2d7ef-ab26-4625-b2d1-bff4b46ddd6a": dial tcp 10.100.200.3:8000: connect: connection refused]
+2026-11-08T03:47:22.764555519Z [INFO][SMF][Main] OAuth2 setting receive from NRF: false
+2026-11-08T03:47:22.764675115Z [INFO][SMF][Init] SMF Registration to NRF {57b2d7ef-ab26-4625-b2d1-bff4b46ddd6a  SMF REGISTERED [] 0 [{208 93}] [] [{1 010203 [] false} {1 112233 [] false}] [] []   [smf.free5gc.org] [] [] [] [] [] [] 0 0 0 <nil> area1 <nil> map[] <nil> map[] <nil> map[] <nil> map[] 0xd67d45a8000 map[] <nil> map[] <nil> map[] <nil> map[] <nil> map[] <nil> <nil> <nil> map[] <nil> map[] map[] map[] map[oauth2:false] <nil> false [{57b2d7ef-ab26-4625-b2d1-bff4b46ddd6ansmf-pdusession nsmf-pdusession [{v1 1.0.7 2026-11-08 03:47:20.758507374 +0000 UTC}] http REGISTERED   [{smf.free5gc.org   8000}] http://smf.free5gc.org:8000 [] [] [] [] [] [] map[] map[] 0 0 0 <nil> <nil>  [] [] []  map[] false <nil>} {57b2d7ef-ab26-4625-b2d1-bff4b46ddd6ansmf-event-exposure nsmf-event-exposure [{v1 1.0.7 2026-11-08 03:47:20.758507374 +0000 UTC}] http REGISTERED   [{smf.free5gc.org   8000}] http://smf.free5gc.org:8000 [] [] [] [] [] [] map[] map[] 0 0 0 <nil> <nil>  [] [] []  map[] false <nil>} {57b2d7ef-ab26-4625-b2d1-bff4b46ddd6ansmf-oam nsmf-oam [{v1 1.0.7 2026-11-08 03:47:20.758507374 +0000 UTC}] http REGISTERED   [{smf.free5gc.org   8000}] http://smf.free5gc.org:8000 [] [] [] [] [] [] map[] map[] 0 0 0 <nil> <nil>  [] [] []  map[] false <nil>} {57b2d7ef-ab26-4625-b2d1-bff4b46ddd6ansmf-callback nsmf-callback [{v1 1.0.7 2026-11-08 03:47:20.758507374 +0000 UTC}] http REGISTERED   [{smf.free5gc.org   8000}] http://smf.free5gc.org:8000 [] [] [] [] [] [] map[] map[] 0 0 0 <nil> <nil>  [] [] []  map[] false <nil>}] map[] false false [] <nil> <nil> [] [] false false map[] map[] [] <nil> <nil>  map[] map[] <nil> <nil> map[] <nil> map[] map[] map[] map[] <nil> <nil> [] <nil> <nil>}
+2026-11-08T03:47:22.764696512Z [INFO][SMF][SBI] Start SBI server (listen on smf.free5gc.org:8000)
+2026-11-08T03:47:42.110186291Z [INFO][SMF][PduSess] Receive Create SM Context Request
+2026-11-08T03:47:42.111408191Z [INFO][SMF][PduSess] In HandlePDUSessionSMContextCreate
+2026-11-08T03:47:42.111505471Z [INFO][SMF][CTX] UrrPeriod: 10s
+2026-11-08T03:47:42.111514002Z [INFO][SMF][CTX] UrrThreshold: 1000
+2026-11-08T03:47:42.113949653Z [INFO][SMF][PduSess][pdu_session_id:1][supi:imsi-208930000000001] Send NF Discovery Serving UDM Successfully
+2026-11-08T03:47:42.117803463Z [INFO][SMF][GSM] In HandlePDUSessionEstablishmentRequest
+2026-11-08T03:47:42.117826849Z [INFO][SMF][GSM] Protocol Configuration Options
+2026-11-08T03:47:42.117840855Z [INFO][SMF][GSM] &{IPv4LinkMTUReq:false DNSV4Req:true DNSV6Req:false P_CSCF_IPv4AddrReq:false UEStatus3GPPPSDataOff:0}
+2026-11-08T03:47:42.119486509Z [INFO][SMF][Consumer] SendNFDiscoveryServingAMF ok
+2026-11-08T03:47:42.119549453Z [INFO][SMF][CTX] Allocated UE IP address: 10.60.0.1
+2026-11-08T03:47:42.119561295Z [INFO][SMF][CTX] Selected UPF: UPF
+2026-11-08T03:47:42.119564648Z [INFO][SMF][PduSess][pdu_session_id:1][supi:imsi-208930000000001] Allocated PDUAdress[10.60.0.1]
+2026-11-08T03:47:42.120143956Z [WARN][SMF][Consumer] BSF selection failed: no BSF instances found
+2026-11-08T03:47:42.120156986Z [WARN][SMF][Consumer] BSF query error (falling back to NRF): no BSF instances found
+2026-11-08T03:47:42.120173539Z [INFO][SMF][Consumer] No PCF binding found in BSF, using NRF discovery for SUPI: imsi-208930000000001, DNN: internet
+2026-11-08T03:47:42.127888246Z [INFO][SMF][PduSess] CHF Selection for SMContext SUPI[imsi-208930000000001] PDUSessionID[1]
+2026-11-08T03:47:42.128754471Z [ERRO][SMF][PduSess] chf selection error: no CHF found in CHFSelection
+2026-11-08T03:47:42.128765337Z [INFO][SMF][PduSess][pdu_session_id:1][supi:imsi-208930000000001] Has no pre-config route. Has no default path
+2026-11-08T03:47:42.129245668Z [INFO][SMF][PduSess] Sending PFCP Session Establishment Request
+2026-11-08T03:47:42.129513824Z [INFO][SMF][PduSess][pdu_session_id:1][supi:imsi-208930000000001] [BuildEstReq] UPF=646638b2-a921-46e1-8808-6cb3b98752c5 urrList=4 unique_urrs=2
+2026-11-08T03:47:42.132458923Z [INFO][SMF][PduSess] Received PFCP Session Establishment Accepted Response
+2026-11-08T03:47:42.133328204Z [INFO][SMF][PduSess] SDM Subscription Successful UE: imsi-208930000000001 SubscriptionId: 2
+2026-11-08T03:47:42.133479090Z [INFO][SMF][GIN] | 201 |   10.100.200.16 | POST    | /nsmf-pdusession/v1/sm-contexts |  |
+2026-11-08T03:47:42.199729137Z [INFO][SMF][PduSess] Receive Update SM Context Request
+2026-11-08T03:47:42.200288837Z [INFO][SMF][PduSess][pdu_session_id:1][supi:imsi-208930000000001] [BuildModReq] UPF=646638b2-a921-46e1-8808-6cb3b98752c5 urrList=0 unique_urrs=0
+2026-11-08T03:47:42.200835718Z [INFO][SMF][PduSess] Received PFCP Session Modification Accepted Response from AN UPF
+2026-11-08T03:47:42.200918738Z [INFO][SMF][GIN] | 200 |   10.100.200.16 | POST    | /nsmf-pdusession/v1/sm-contexts/urn:uuid:5a228f35-b6d9-4ff8-b915-cad0e440c6a6/modify |  |
+2026-11-08T03:47:52.003518151Z [INFO][SMF][Charging] build MultiUnitUsageFromUsageReport
+2026-11-08T03:47:52.003627190Z [INFO][SMF][Charging] No report need to be charged
+2026-11-08T03:48:01.866213924Z [INFO][SMF][Charging] build MultiUnitUsageFromUsageReport
+2026-11-08T03:48:01.866289047Z [INFO][SMF][Charging] No report need to be charged
+2026-11-08T03:48:06.663918530Z [INFO][SMF][PduSess] Receive Release SM Context Request
+2026-11-08T03:48:06.664237543Z [INFO][SMF][PduSess] In HandlePDUSessionSMContextRelease
+2026-11-08T03:48:06.671453483Z [INFO][SMF][PduSess] SDM UnSubscription Successful UE: imsi-208930000000001 SubscriptionId: 2
+2026-11-08T03:48:06.671523092Z [INFO][SMF][PduSess] Sending PFCP Session Deletion Request
+2026-11-08T03:48:06.674973283Z [INFO][SMF][PduSess] Received PFCP Session Deletion Accepted Response
+2026-11-08T03:48:06.675019380Z [INFO][SMF][Charging] build MultiUnitUsageFromUsageReport
+2026-11-08T03:48:06.675036150Z [INFO][SMF][Charging] Handle SendConvergedChargingRequest
+2026-11-08T03:48:06.675064550Z [ERRO][SMF][Charging] Send Charging Data Request[Termination] Failed Problem[&{Type: Title:Data not found Status:404 Detail:no CHF found Instance: Cause: InvalidParams:[] SupportedFeatures: AccessTokenError:<nil> AccessTokenRequest:<nil> NrfId:}]
+2026-11-08T03:48:06.675094340Z [INFO][SMF][GIN] | 204 |   10.100.200.16 | POST    | /nsmf-pdusession/v1/sm-contexts/urn:uuid:5a228f35-b6d9-4ff8-b915-cad0e440c6a6/release |  |
+2026-11-08T03:48:06.675192307Z [INFO][SMF][PduSess] UE[imsi-208930000000001] PDUSessionID[1] Release IP[10.60.0.1]
+2026-11-08T03:48:06.675208108Z [INFO][SMF][PduSess][pdu_session_id:1][supi:imsi-208930000000001] smContext[urn:uuid:5a228f35-b6d9-4ff8-b915-cad0e440c6a6] is deleted from pool

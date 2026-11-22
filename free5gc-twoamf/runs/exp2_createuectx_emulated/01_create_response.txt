@@ -1,0 +1,7 @@
+--ru8ZuQKqJ/'7KW6(EG5_GJA4e-C2DD6qvpP=d=LVV.u?mLX_QIprCZV1S'HGOm9qSA(
+Content-Type: application/json
+
+{"ueContext":{"supi":"imsi-208930000000099"}}
+--ru8ZuQKqJ/'7KW6(EG5_GJA4e-C2DD6qvpP=d=LVV.u?mLX_QIprCZV1S'HGOm9qSA(--
+
+HTTP 201

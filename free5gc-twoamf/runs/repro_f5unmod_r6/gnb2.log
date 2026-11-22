@@ -1,0 +1,16 @@
+UERANSIM v3.3.0
+[2026-11-07 22:29:11.759] [sctp] [info] Trying to establish SCTP connection... (10.100.200.17:38412)
+[2026-11-07 22:29:11.761] [sctp] [info] SCTP connection established (10.100.200.17:38412)
+[2026-11-07 22:29:11.761] [sctp] [debug] SCTP association setup ascId[117]
+[2026-11-07 22:29:11.761] [ngap] [debug] Sending NG Setup Request
+[2026-11-07 22:29:11.761] [ngap] [debug] NG Setup Response received
+[2026-11-07 22:29:11.762] [ngap] [info] NG Setup procedure is successful
+[2026-11-07 22:29:12.302] [rrc] [debug] UE[1] new signal detected
+[2026-11-07 22:29:18.134] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 22:29:18.135] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 22:29:18.135] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 22:29:18.137] [ngap] [debug] UE Context Release Command received
+[2026-11-07 22:29:18.137] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 22:29:28.066] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 22:29:28.067] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 22:29:28.067] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]

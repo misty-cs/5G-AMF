@@ -1,0 +1,21 @@
+run,scenario,realloc_triggered,n1_notify_204,gnb_reassociated,forwarded_security_ctx,forwarded_event_subs,target_reauth,ue_registered_after,ue_reject_causes,transfer_to_amf1,ausf_400,sub_created_amf1,sub_at_amf1_after,sub_at_amf2_after,forwarded_fields
+exp5fresh_r1,fresh registration,True,True,True,False,False,True,True,,,False,,,,pei supi
+exp5fresh_r2,fresh registration,True,True,True,False,False,True,True,,,False,,,,pei supi
+exp5fresh_r3,fresh registration,True,True,True,False,False,True,True,,,False,,,,pei supi
+exp5fresh_r4,fresh registration,True,True,True,False,False,True,True,,,False,,,,pei supi
+exp5fresh_r5,fresh registration,True,True,True,False,False,True,True,,,False,,,,pei supi
+exp5r2fresh_r1,fresh registration,True,True,True,True,False,True,True,,,False,,,,mmContextList pei seafData supi
+exp5r2fresh_r2,fresh registration,True,True,True,True,False,True,True,,,False,,,,mmContextList pei seafData supi
+exp5r2fresh_r3,fresh registration,True,True,True,True,False,True,True,,,False,,,,mmContextList pei seafData supi
+exp5r2fresh_r4,fresh registration,True,True,True,True,False,True,True,,,False,,,,mmContextList pei seafData supi
+exp5r2fresh_r5,fresh registration,True,True,True,True,False,True,True,,,False,,,,mmContextList pei seafData supi
+exp5r2reg_r1,registered UE + slice-add,True,True,True,True,True,False,True,,,False,True,200,404,eventSubscriptionList gpsiList mmContextList pcfAmPolicyUri pcfId pei seafData subRfsp subUeAmbr supi
+exp5r2reg_r2,registered UE + slice-add,True,True,True,True,True,False,True,,,False,True,200,404,eventSubscriptionList gpsiList mmContextList pcfAmPolicyUri pcfId pei seafData subRfsp subUeAmbr supi
+exp5r2reg_r3,registered UE + slice-add,True,True,True,True,True,False,True,,,False,True,200,404,eventSubscriptionList gpsiList mmContextList pcfAmPolicyUri pcfId pei seafData subRfsp subUeAmbr supi
+exp5r2reg_r4,registered UE + slice-add,True,True,True,True,True,False,True,,,False,True,200,404,eventSubscriptionList gpsiList mmContextList pcfAmPolicyUri pcfId pei seafData subRfsp subUeAmbr supi
+exp5r2reg_r5,registered UE + slice-add,True,True,True,True,True,False,True,,,False,True,200,404,eventSubscriptionList gpsiList mmContextList pcfAmPolicyUri pcfId pei seafData subRfsp subUeAmbr supi
+exp5reg_r1,registered UE + slice-add,True,True,True,False,True,False,False,10;22;22,"404,404",True,True,200,404,eventSubscriptionList gpsiList pcfAmPolicyUri pcfId pei subUeAmbr supi
+exp5reg_r2,registered UE + slice-add,True,True,True,False,True,False,False,10;22;22,"404,404",True,True,200,404,eventSubscriptionList gpsiList pcfAmPolicyUri pcfId pei subUeAmbr supi
+exp5reg_r3,registered UE + slice-add,True,True,True,False,True,False,False,10;22;22,"404,404",True,True,200,404,eventSubscriptionList gpsiList pcfAmPolicyUri pcfId pei subUeAmbr supi
+exp5reg_r4,registered UE + slice-add,True,True,True,False,True,False,False,10;22;22,"404,404",True,True,200,404,eventSubscriptionList gpsiList pcfAmPolicyUri pcfId pei subUeAmbr supi
+exp5reg_r5,registered UE + slice-add,True,True,True,False,True,False,False,10;22;22,"404,404",True,True,200,404,eventSubscriptionList gpsiList pcfAmPolicyUri pcfId pei subUeAmbr supi

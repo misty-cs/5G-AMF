@@ -1,0 +1,36 @@
+diff --git a/internal/sbi/processor/callback.go b/internal/sbi/processor/callback.go
+index dcb36f3..c941ab7 100644
+--- a/internal/sbi/processor/callback.go
++++ b/internal/sbi/processor/callback.go
+@@ -1,6 +1,7 @@
+ package processor
+ 
+ import (
++	"encoding/json"
+ 	"fmt"
+ 	"net/http"
+ 	"runtime/debug"
+@@ -362,6 +363,23 @@ func (p *Processor) N1MessageNotifyProcedure(n1MessageNotify models.N1MessageNot
+ 		defer amfUe.Lock.Unlock()
+ 
+ 		amfUe.CopyDataFromUeContextModel(ueContext)
++		// ch5 trace: log the UeContext received via N1MessageNotify, key material redacted
++		{
++			c := *ueContext
++			if c.SeafData != nil {
++				sd := *c.SeafData
++				if sd.KeyAmf != nil {
++					k := *sd.KeyAmf
++					k.KeyVal = "redacted"
++					sd.KeyAmf = &k
++				}
++				sd.Nh = "redacted"
++				c.SeafData = &sd
++			}
++			if b, err := json.Marshal(&c); err == nil {
++				logger.CallbackLog.Infof("ch5trace realloc-received %s", b)
++			}
++		}
+ 
+ 		currentRanUe := ran.RanUeFindByRanUeNgapID(int64(anN2ApId))
+ 		if currentRanUe == nil {

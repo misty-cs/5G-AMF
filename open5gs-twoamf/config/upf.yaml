@@ -1,0 +1,15 @@
+logger:
+  level: info
+global:
+  max:
+    ue: 64
+upf:
+  pfcp:
+    server:
+      - address: 10.110.0.16
+  gtpu:
+    server:
+      - address: 10.110.0.16
+  session:
+    - subnet: 10.45.0.0/16
+      gateway: 10.45.0.1

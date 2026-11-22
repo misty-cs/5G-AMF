@@ -1,0 +1,62 @@
+diff --git a/src/gnb/ngap/context.cpp b/src/gnb/ngap/context.cpp
+index 62c98c4d..16c28897 100644
+--- a/src/gnb/ngap/context.cpp
++++ b/src/gnb/ngap/context.cpp
+@@ -60,6 +60,26 @@ void NgapTask::receiveInitialContextSetup(int amfId, ASN_NGAP_InitialContextSetu
+ {
+     m_logger->debug("Initial Context Setup Request received");
+ 
++    // ch5 patch 5: TS 38.413 8.6.2.2 / 8.3.1.2 -- AMF re-allocation. A message for this UE that
++    // arrives from a different AMF and carries the Old AMF IE means the UE-associated logical
++    // NG-connection was redirected to that AMF; the NG-RAN node shall use the received
++    // AMF UE NGAP ID and RAN UE NGAP ID "even if the RAN UE NGAP ID IE had been allocated in an
++    // INITIAL UE MESSAGE message sent over a different NG interface instance".
++    {
++        auto ch5Ids = ngap_utils::FindNgapIdPair(msg);
++        auto *ch5OldAmf = asn::ngap::GetProtocolIe(msg, ASN_NGAP_ProtocolIE_ID_id_OldAMF);
++        if (ch5OldAmf && ch5Ids.ranUeNgapId.has_value() && ch5Ids.amfUeNgapId.has_value())
++        {
++            auto *ch5Ue = findUeByRanId(ch5Ids.ranUeNgapId.value());
++            if (ch5Ue && ch5Ue->associatedAmfId != amfId)
++            {
++                m_logger->info("ch5: UE[%d] re-allocated from AMF[%d] to AMF[%d] (Old AMF IE)", ch5Ue->ctxId,
++                               ch5Ue->associatedAmfId, amfId);
++                ch5Ue->associatedAmfId = amfId;
++                ch5Ue->amfUeNgapId = ch5Ids.amfUeNgapId.value();
++            }
++        }
++    }
+     auto *ue = findUeByNgapIdPair(amfId, ngap_utils::FindNgapIdPair(msg));
+     if (ue == nullptr)
+         return;
+diff --git a/src/gnb/ngap/nas.cpp b/src/gnb/ngap/nas.cpp
+index bad9c492..31c776c2 100644
+--- a/src/gnb/ngap/nas.cpp
++++ b/src/gnb/ngap/nas.cpp
+@@ -212,6 +212,26 @@ void NgapTask::sendNasNonDeliveryIndication(int ueId, const OctetString &nasPdu,
+ 
+ void NgapTask::receiveDownlinkNasTransport(int amfId, ASN_NGAP_DownlinkNASTransport *msg)
+ {
++    // ch5 patch 5: TS 38.413 8.6.2.2 / 8.3.1.2 -- AMF re-allocation. A message for this UE that
++    // arrives from a different AMF and carries the Old AMF IE means the UE-associated logical
++    // NG-connection was redirected to that AMF; the NG-RAN node shall use the received
++    // AMF UE NGAP ID and RAN UE NGAP ID "even if the RAN UE NGAP ID IE had been allocated in an
++    // INITIAL UE MESSAGE message sent over a different NG interface instance".
++    {
++        auto ch5Ids = ngap_utils::FindNgapIdPair(msg);
++        auto *ch5OldAmf = asn::ngap::GetProtocolIe(msg, ASN_NGAP_ProtocolIE_ID_id_OldAMF);
++        if (ch5OldAmf && ch5Ids.ranUeNgapId.has_value() && ch5Ids.amfUeNgapId.has_value())
++        {
++            auto *ch5Ue = findUeByRanId(ch5Ids.ranUeNgapId.value());
++            if (ch5Ue && ch5Ue->associatedAmfId != amfId)
++            {
++                m_logger->info("ch5: UE[%d] re-allocated from AMF[%d] to AMF[%d] (Old AMF IE)", ch5Ue->ctxId,
++                               ch5Ue->associatedAmfId, amfId);
++                ch5Ue->associatedAmfId = amfId;
++                ch5Ue->amfUeNgapId = ch5Ids.amfUeNgapId.value();
++            }
++        }
++    }
+     auto *ue = findUeByNgapIdPair(amfId, ngap_utils::FindNgapIdPair(msg));
+     if (ue == nullptr)
+         return;

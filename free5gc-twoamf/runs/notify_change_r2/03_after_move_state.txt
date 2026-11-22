@@ -1,0 +1,14 @@
+== amf1 OAM
+null
+== amf1 PATCH sub 1
+{"subscription":{"eventList":[{"type":"LOCATION_REPORT"},{"type":"REACHABILITY_REPORT"}],"eventNotifyUri":"http://probe.free5gc.org:9000/notify","notifyCorrelationId":"ch5-exp2n","nfId":"11111111-2222-3333-4444-555555555555","subsChangeNotifyUri":"http://probe.free5gc.org:9000/subs-change","subsChangeNotifyCorrelationId":"ch5-exp2n-subs-change","supi":"imsi-208930000000001"}} HTTP 200
+== amf1 POST new UE subscription (immediate LOCATION_REPORT)
+{"status":403,"cause":"UE_NOT_SERVED_BY_AMF"} HTTP 403
+== amf2 OAM
+[{"AccessType":"3GPP_ACCESS","Supi":"imsi-208930000000001","Guti":"20893cafe0000000001","Mcc":"208","Mnc":"93","Tac":"000002","PduSessions":null,"CmState":"CONNECTED"}]
+== amf2 PATCH sub 1
+{"status":404,"cause":"SUBSCRIPTION_NOT_FOUND"} HTTP 404
+== amf2 POST new UE subscription (immediate LOCATION_REPORT)
+{"subscription":{"eventList":[{"type":"LOCATION_REPORT","immediateFlag":true}],"eventNotifyUri":"http://probe.free5gc.org:9000/notify-probe","notifyCorrelationId":"ch5-exp2n-probe","nfId":"11111111-2222-3333-4444-555555555555","supi":"imsi-208930000000001"},"subscriptionId":"1","reportList":[{"type":"LOCATION_REPORT","state":{"active":true},"timeStamp":"2026-11-09T20:06:46.704904173Z","supi":"imsi-208930000000001","location":{"nrLocation":{"tai":{"plmnId":{"mcc":"208","mnc":"93"},"tac":"000002"},"ncgi":{"plmnId":{"mcc":"208","mnc":"93"},"nrCellId":"000002010"},"ageOfLocationInformation":-291723703,"ueLocationTimestamp":"2026-11-09T20:06:33.92153075Z"}}}]} HTTP 201
+== notify sink log bytes
+215

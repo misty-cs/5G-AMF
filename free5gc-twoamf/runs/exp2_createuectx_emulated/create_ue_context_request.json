@@ -1,0 +1,23 @@
+{
+  "ueContext": {
+    "supi": "imsi-208930000000099",
+    "supiUnauthInd": false,
+    "pei": "imeisv-4370816125816199",
+    "subUeAmbr": {"uplink": "1 Gbps", "downlink": "2 Gbps"},
+    "restrictedRatList": ["EUTRA"],
+    "forbiddenAreaList": [{"tacs": ["000002"]}],
+    "serviceAreaRestriction": {"restrictionType": "ALLOWED_AREAS", "areas": [{"tacs": ["000001"]}]},
+    "restrictedCoreNwTypeList": ["EPC"],
+    "eventSubscriptionList": [{"eventList": [{"type": "LOCATION_REPORT"}], "eventNotifyUri": "http://probe.free5gc.org:9000/notify", "notifyCorrelationId": "ch5-exp2", "nfId": "11111111-2222-3333-4444-555555555555", "supi": "imsi-208930000000099"}],
+    "traceData": {"traceRef": "20893-000001", "traceDepth": "MAXIMUM", "neTypeList": "01", "eventList": "01", "collectionEntityIpv4Addr": "10.100.200.50"},
+    "pcfId": "11111111-0000-0000-0000-000000000001",
+    "amPolicyReqTriggerList": ["LOCATION_CHANGE"]
+  },
+  "targetId": {
+    "ranNodeId": {"plmnId": {"mcc": "208", "mnc": "93"}, "gNbId": {"bitLength": 32, "gNBValue": "00000201"}},
+    "tai": {"plmnId": {"mcc": "208", "mnc": "93"}, "tac": "000002"}
+  },
+  "sourceToTargetData": {"ngapIeType": "SRC_TO_TAR_CONTAINER", "ngapData": {"contentId": "n2"}},
+  "pduSessionList": [],
+  "n2NotifyUri": "http://probe.free5gc.org:9000/n2notify"
+}

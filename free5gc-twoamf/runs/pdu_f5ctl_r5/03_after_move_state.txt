@@ -1,0 +1,10 @@
+== amf1 OAM
+[{"AccessType":"3GPP_ACCESS","Supi":"imsi-208930000000001","Guti":"20893cafe0000000002","Mcc":"208","Mnc":"93","Tac":"000002","PduSessions":[{"PduSessionId":"1","SmContextRef":"urn:uuid:1dd2daa1-84a5-4e3a-8809-b4ec0495aa18","Sst":"1","Sd":"010203","Dnn":"internet"}],"CmState":"CONNECTED"}]
+== amf1 PATCH sub 1
+{"subscription":{"eventList":[{"type":"LOCATION_REPORT"},{"type":"REACHABILITY_REPORT"}],"eventNotifyUri":"http://probe.free5gc.org:9000/notify","notifyCorrelationId":"ch5-exp1","nfId":"11111111-2222-3333-4444-555555555555","supi":"imsi-208930000000001"}} HTTP 200
+== amf2 OAM
+null
+== amf2 PATCH sub 1
+{"status":404,"cause":"SUBSCRIPTION_NOT_FOUND"} HTTP 404
+== notify sink bytes
+0

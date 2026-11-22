@@ -1,0 +1,60 @@
+2026-11-08T04:31:17.617968217Z [INFO][AMF][Main] AMF version:  
+	Not specify ldflags (which link version) during go build
+	go version: go1.26.10 linux/arm64
+2026-11-08T04:31:17.619800842Z [INFO][AMF][CFG] Read config from [./config/amfcfg.yaml]
+2026-11-08T04:31:17.620548509Z [INFO][AMF][Main] Log enable is set to [true]
+2026-11-08T04:31:17.620555884Z [INFO][AMF][Main] Log level is set to [debug]
+2026-11-08T04:31:17.620558300Z [INFO][AMF][Main] Report Caller is set to [false]
+2026-11-08T04:31:17.621025259Z [INFO][AMF][SBI] Binding addr: [amf1.free5gc.org:8000]
+2026-11-08T04:31:17.621376467Z [INFO][AMF][Util] amfconfig Info: Version[1.0.9]
+2026-11-08T04:31:17.621380550Z [DEBU][AMF][CFG] Fetching nfInstanceId from env var "AMF_NF_INSTANCE_ID"
+2026-11-08T04:31:17.621382300Z [DEBU][AMF][CFG] No value found for "AMF_NF_INSTANCE_ID" env, fallback on config nfInstanceId : aaaaaaaa-0000-4000-8000-000000000001
+2026-11-08T04:31:17.621396759Z [INFO][AMF][Init] Initializing NGAP worker pool with 0 workers (buffer size: 1000)
+2026-11-08T04:31:17.621606092Z [INFO][AMF][Ngap] Initializing UE Scheduler with 4 workers
+2026-11-08T04:31:17.621926009Z [INFO][AMF][Ngap] Global UE Scheduler initialized with 4 workers, buffer size 1000
+2026-11-08T04:31:17.622708217Z [INFO][AMF][Ngap] Worker 2 started
+2026-11-08T04:31:17.622739717Z [INFO][AMF][Ngap] Worker 0 started
+2026-11-08T04:31:17.622808759Z [INFO][AMF][Ngap] Worker 1 started
+2026-11-08T04:31:17.622834092Z [INFO][AMF][Ngap] Worker 3 started
+2026-11-08T04:31:17.622883009Z [DEBU][AMF][Ngap] Resolved address 'amf1.free5gc.org' to 10.100.200.16
+2026-11-08T04:31:17.622908300Z [INFO][AMF][Init] Server started
+2026-11-08T04:31:17.625439550Z [ERRO][AMF][Consumer] AMF register to NRF Error[Put "http://nrf.free5gc.org:8000/nnrf-nfm/v1/nf-instances/aaaaaaaa-0000-4000-8000-000000000001": dial tcp 10.100.200.3:8000: connect: connection refused]
+2026-11-08T04:31:17.633672342Z [INFO][AMF][Ngap] Listen on 10.100.200.16:38412
+2026-11-08T04:31:19.644869222Z [INFO][AMF][Main] OAuth2 setting receive from NRF: false
+2026-11-08T04:31:19.645075135Z [INFO][AMF][Consumer] NF heartbeat started, interval 10s
+2026-11-08T04:31:19.645304175Z [INFO][AMF][SBI] Start SBI server (listen on amf1.free5gc.org:8000)
+2026-11-08T04:31:36.680312830Z [DEBU][AMF][Ngap] Get default sent param[value: &{Stream:0 SSN:0 Flags:0 _:0 PPID:0 Context:0 TTL:0 TSN:0 CumTSN:0 AssocID:0}]
+2026-11-08T04:31:36.680334678Z [DEBU][AMF][Ngap] Set default sent param[value: &{Stream:0 SSN:0 Flags:0 _:0 PPID:1006632960 Context:0 TTL:0 TSN:0 CumTSN:0 AssocID:0}]
+2026-11-08T04:31:36.680338577Z [DEBU][AMF][Ngap] Subscribe SCTP event[DATA_IO, SHUTDOWN_EVENT, ASSOCIATION_CHANGE]
+2026-11-08T04:31:36.680341093Z [DEBU][AMF][Ngap] Set read buffer to 262144 bytes
+2026-11-08T04:31:36.680346083Z [DEBU][AMF][Ngap] Set read timeout: {Sec:2 Usec:0}
+2026-11-08T04:31:36.680352667Z [INFO][AMF][Ngap] [AMF] SCTP Accept from: 10.100.200.31:46009
+2026-11-08T04:31:36.685064452Z [DEBU][AMF][Ngap] Dispatching UE ID 0 to Worker 0 (hash-based routing)
+2026-11-08T04:31:36.685086509Z [DEBU][AMF][Ngap] Worker 0 processing task for UE ID 0 (ensuring per-UE sequentiality)
+2026-11-08T04:31:36.685111879Z [INFO][AMF][Ngap] Create a new NG connection for: 10.100.200.31:46009
+2026-11-08T04:31:36.685156873Z [INFO][AMF][Ngap][ran_addr:10.100.200.31:46009] Send NG-Setup response
+2026-11-08T04:31:36.685189455Z [DEBU][AMF][Ngap][ran_addr:10.100.200.31:46009] Send NGAP message To Ran
+2026-11-08T04:31:36.685212728Z [DEBU][AMF][Ngap][ran_addr:10.100.200.31:46009] Write 54 bytes
+2026-11-08T04:31:38.696414752Z [DEBU][AMF][Ngap] SCTP read timeout
+2026-11-08T04:31:40.748414331Z [DEBU][AMF][Ngap] SCTP read timeout
+2026-11-08T04:31:40.909728849Z [DEBU][AMF][Util] AMFContext::AuthorizationCheck: OAuth2 not required
+2026-11-08T04:31:40.909753529Z [DEBU][AMF][Util] RouterAuthorizationCheck: Check Authorized
+2026-11-08T04:31:40.910685620Z [INFO][AMF][Producer] [AMF] Handle N1 Message Notify
+2026-11-08T04:31:40.910693317Z [DEBU][AMF][Producer] n1MessageNotify: {JsonData:0x549709692840 BinaryDataN1Message:0x549709df0f60}
+2026-11-08T04:31:40.910752090Z [WARN][AMF][Callback] RanUe Context[AnN2ApId:1] not found in RAN[RanId: {PlmnId:0x549709a58e60 N3IwfId: GNbId:0x549709dee450 NgeNbId: WagfId: TngfId: Nid: ENbId: TwifId:}]
+2026-11-08T04:31:40.910856920Z [INFO][AMF][GIN] | 404 |   10.100.200.17 | POST    | /namf-callback/v1/n1-message-notify |  |
+2026-11-08T04:31:42.794194842Z [DEBU][AMF][Ngap] SCTP read timeout
+2026-11-08T04:31:44.844573116Z [DEBU][AMF][Ngap] SCTP read timeout
+2026-11-08T04:31:46.887861682Z [DEBU][AMF][Ngap] SCTP read timeout
+2026-11-08T04:31:48.815495306Z [DEBU][AMF][Ngap] SCTP read timeout
+2026-11-08T04:31:50.868870025Z [DEBU][AMF][Ngap] SCTP read timeout
+2026-11-08T04:31:52.911143030Z [DEBU][AMF][Ngap] SCTP read timeout
+2026-11-08T04:31:54.959241260Z [DEBU][AMF][Ngap] SCTP read timeout
+2026-11-08T04:31:54.959640748Z [DEBU][AMF][Ngap] SCTPRead: interrupted system call
+SCTPRead: failed to receive SCTP message (fd=8, bufsize=262144)
+github.com/free5gc/sctp.(*SCTPConn).SCTPRead
+	/go/pkg/mod/github.com/free5gc/sctp@v1.2.0/sctp_linux.go:182
+github.com/free5gc/amf/internal/ngap/service.handleConnection
+	/src/internal/ngap/service/service.go:215
+runtime.goexit
+	/usr/local/go/src/runtime/asm_arm64.s:1447

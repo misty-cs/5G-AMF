@@ -1,0 +1,3 @@
+UE_IMAGE=free5gc/ueransim:latest AMF_IMAGE=ch5/free5gc-amf:main AMF2_CFG=amf2cfg.yaml AMF1_CFG=amf1cfg.yaml GNB2_CFG=gnb2cfg.yaml SUBSCRIBER=subscriber.json
+2026-11-07T22:06:32Z
+POST subscriber: 201

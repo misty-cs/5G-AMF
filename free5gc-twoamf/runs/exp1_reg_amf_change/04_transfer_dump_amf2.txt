@@ -1,0 +1,12 @@
+--PoM'xDw7ly5-/FmuwT=J:CbtEbQ:41KkSpVTJcH6JUw
+Content-Type: application/json
+
+{"ueContext":{"supi":"imsi-208930000000001","gpsiList":["msisdn-0900000001"],"pei":"imeisv-4370816125816151","subUeAmbr":{"uplink":"1 Gbps","downlink":"2 Gbps"},"pcfId":"ff0c638a-5bde-489a-9124-6f8fe5ab87dd","pcfAmPolicyUri":"http://pcf.free5gc.org:8000/npcf-am-policy-control/v1/policies/imsi-208930000000001-2","eventSubscriptionList":[{"eventList":[{"type":"LOCATION_REPORT"}],"eventNotifyUri":"http://probe.free5gc.org:9000/notify","notifyCorrelationId":"ch5-exp1b","nfId":"11111111-2222-3333-4444-555555555555","supi":"imsi-208930000000001"}]},"ueRadioCapability":{"ngapIeType":"UE_RADIO_CAPABILITY","ngapData":{"contentId":"n2Info"}}}
+--PoM'xDw7ly5-/FmuwT=J:CbtEbQ:41KkSpVTJcH6JUw
+Content-Id: n2Info
+Content-Type: application/vnd.3gpp.ngap
+
+
+--PoM'xDw7ly5-/FmuwT=J:CbtEbQ:41KkSpVTJcH6JUw--
+
+HTTP 200

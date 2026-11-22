@@ -1,0 +1,11 @@
+run,mode,replies_before_move,replies_after_move,first_reply_after_move_s,ue_mobility_registration,ue_service_request,smf_release_seen,accept_pdu_status_0000,tun_up_after,container_start_times
+traffic_change_r1,amf_change,51,0,,True,False,True,True,True,05:05:47;05:05:47;05:05:46;05:05:44;05:05:59
+traffic_control_r1,control,51,175,3.87,False,True,False,False,True,05:07:21;05:07:21;05:07:20;05:07:18;05:07:33
+traffic_change_r2,amf_change,50,1,0.03,True,False,True,True,True,05:08:55;05:08:55;05:08:54;05:08:52;05:09:07
+traffic_control_r2,control,51,176,3.72,False,True,False,False,True,05:10:29;05:10:29;05:10:29;05:10:26;05:10:41
+traffic_change_r3,amf_change,51,0,,True,False,True,True,True,05:12:03;05:12:03;05:12:02;05:12:00;05:12:15
+traffic_control_r3,control,51,176,3.79,False,True,False,False,True,05:13:37;05:13:37;05:13:36;05:13:34;05:13:49
+traffic_change_r4,amf_change,51,0,,True,False,True,True,True,05:15:11;05:15:11;05:15:10;05:15:08;05:15:23
+traffic_control_r4,control,50,174,0.05,False,True,False,False,True,05:16:44;05:16:45;05:16:44;05:16:41;05:16:56
+traffic_change_r5,amf_change,51,0,,True,False,True,True,True,05:18:21;05:18:21;05:18:20;05:18:18;05:18:33
+traffic_control_r5,control,51,176,3.78,False,True,False,False,True,05:19:55;05:19:55;05:19:54;05:19:52;05:20:07

@@ -1,0 +1,11 @@
+run,mode,transfer_reason,transferred_event_subs,transferred_subs_change_uri,serving_amf,serving_tac,sink_conns_before_move,sink_conns_after_move,patch_sub1_amf1,patch_sub1_amf2,new_sub_amf1,new_sub_amf2,new_sub_report_tac
+notify_change_r1,amf_change,INIT_REG,1,yes,AMF2,000002,1,0,200,404,403,201,000002
+notify_ctl_r1,control,none,0,,AMF1,000002,1,0,200,404,201,403,000002
+notify_change_r2,amf_change,INIT_REG,1,yes,AMF2,000002,1,0,200,404,403,201,000002
+notify_ctl_r2,control,none,0,,AMF1,000002,1,0,200,404,201,403,000002
+notify_change_r3,amf_change,INIT_REG,1,yes,AMF2,000002,1,0,200,404,403,201,000002
+notify_ctl_r3,control,none,0,,AMF1,000002,1,0,200,404,201,403,000002
+notify_change_r4,amf_change,INIT_REG,1,yes,AMF2,000002,1,0,200,404,403,201,000002
+notify_ctl_r4,control,none,0,,AMF1,000002,1,0,200,404,201,403,000002
+notify_change_r5,amf_change,INIT_REG,1,yes,AMF2,000002,1,0,200,404,403,201,000002
+notify_ctl_r5,control,none,0,,AMF1,000002,1,0,200,404,201,403,000002

@@ -1,0 +1,6 @@
+run,amf2_first_ts,initial_amf,realloc_triggered,condA_404,reroute_sent,gnb_aper_fail,ue_registered
+realloc_base_r1,2026-11-08T06:14:39,amf2,1,4,1,1,0
+realloc_base_r2,2026-11-08T06:15:26,amf2,1,4,1,1,0
+realloc_base_r3,2026-11-08T06:16:13,amf2,1,4,1,1,0
+realloc_base_r4,2026-11-08T06:17:01,amf2,1,4,1,1,0
+realloc_base_r5,2026-11-08T06:17:49,amf2,1,4,1,1,0

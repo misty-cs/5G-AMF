@@ -1,0 +1,26 @@
+{
+ "registration_requests": [
+  {
+   "t": 1794201865.793564,
+   "amf": "AMF1",
+   "type": "1",
+   "tmsi": "",
+   "guti": ""
+  },
+  {
+   "t": 1794201880.692404,
+   "amf": "AMF1",
+   "type": "2",
+   "tmsi": "1",
+   "guti": "02f839cafe0000000001"
+  },
+  {
+   "t": 1794201930.151459,
+   "amf": "AMF1",
+   "type": "3",
+   "tmsi": "2",
+   "guti": "02f839cafe0000000002"
+  }
+ ],
+ "radio_uplink_packets": 143
+}

@@ -1,0 +1,160 @@
+diff --git a/internal/context/amf_ue.go b/internal/context/amf_ue.go
+index ad6102c..650d2b4 100644
+--- a/internal/context/amf_ue.go
++++ b/internal/context/amf_ue.go
+@@ -84,6 +84,10 @@ type AmfUe struct {
+ 	GroupID                string
+ 	EBI                    int32
+ 	EventSubscriptionsInfo map[string]*AmfUeEventSubscription
++	// ch5: UE context received from the initial AMF by N1MessageNotify (AMF re-allocation, TS 23.502 4.2.2.2.3)
++	Ch5ReallocForwarded bool
++	// ch5: one-shot flag for the clear-text Registration Request forwarded by the initial AMF
++	Ch5ForwardedNasPending bool
+ 	/* User Location */
+ 	RatType                  models.RatType
+ 	Location                 models.UserLocation
+diff --git a/internal/gmm/ch5_realloc.go b/internal/gmm/ch5_realloc.go
+new file mode 100644
+index 0000000..f2b314a
+--- /dev/null
++++ b/internal/gmm/ch5_realloc.go
+@@ -0,0 +1,66 @@
++package gmm
++
++// ch5: TS 23.502 4.2.2.2.3 step 7(A) -- the N1MessageNotify to the target AMF carries "the UE's SUPI and
++// MM Context if available". BuildUeContextModel omits the security context, so add it here, built the same
++// way as the UEContextTransfer producer (internal/sbi/processor/ue_context.go).
++
++import (
++	"encoding/base64"
++	"encoding/hex"
++
++	"github.com/free5gc/amf/internal/context"
++	nas_message "github.com/free5gc/nas/message"
++	"github.com/free5gc/openapi/models"
++)
++
++func ch5AddMmContext(ue *context.AmfUe, ueContext *models.Amf_Comm_UeContext) {
++	if !ue.SecurityContextAvailable || ue.Kamf == "" {
++		return
++	}
++	mmContext := models.Amf_Comm_MmContext{AccessType: models.AccessType_3_GPP_ACCESS}
++	mode := new(models.Amf_Comm_NasSecurityMode)
++	switch ue.IntegrityAlg {
++	case uint8(nas_message.AlgIntegrity128NIA0):
++		mode.IntegrityAlgorithm = models.Amf_Comm_IntegrityAlgorithm_NIA0
++	case uint8(nas_message.AlgIntegrity128NIA1):
++		mode.IntegrityAlgorithm = models.Amf_Comm_IntegrityAlgorithm_NIA1
++	case uint8(nas_message.AlgIntegrity128NIA2):
++		mode.IntegrityAlgorithm = models.Amf_Comm_IntegrityAlgorithm_NIA2
++	case uint8(nas_message.AlgIntegrity128NIA3):
++		mode.IntegrityAlgorithm = models.Amf_Comm_IntegrityAlgorithm_NIA3
++	}
++	switch ue.CipheringAlg {
++	case uint8(nas_message.AlgCiphering128NEA0):
++		mode.CipheringAlgorithm = models.Amf_Comm_CipheringAlgorithm_NEA0
++	case uint8(nas_message.AlgCiphering128NEA1):
++		mode.CipheringAlgorithm = models.Amf_Comm_CipheringAlgorithm_NEA1
++	case uint8(nas_message.AlgCiphering128NEA2):
++		mode.CipheringAlgorithm = models.Amf_Comm_CipheringAlgorithm_NEA2
++	case uint8(nas_message.AlgCiphering128NEA3):
++		mode.CipheringAlgorithm = models.Amf_Comm_CipheringAlgorithm_NEA3
++	}
++	mmContext.NasSecurityMode = mode
++	if ue.UESecurityCapability.Length > 0 {
++		if capability, err := ue.UESecurityCapability.MarshalBinary(); err == nil {
++			mmContext.UeSecurityCapability = base64.StdEncoding.EncodeToString(capability)
++		}
++	}
++	mmContext.NasDownlinkCount = int32(ue.DLCount.Get())
++	mmContext.NasUplinkCount = int32(ue.ULCount.Get())
++	for _, allowed := range ue.AllowedNssai[models.AccessType_3_GPP_ACCESS] {
++		if allowed.AllowedSnssai != nil {
++			mmContext.AllowedNssai = append(mmContext.AllowedNssai, *allowed.AllowedSnssai)
++		}
++	}
++	ueContext.MmContextList = append(ueContext.MmContextList, mmContext)
++
++	seaf := &models.Amf_Comm_SeafData{
++		NgKsi:  &models.Amf_Comm_NgKsi{Ksi: ue.NgKsi.Ksi, Tsc: ue.NgKsi.Tsc},
++		KeyAmf: &models.Amf_Comm_KeyAmf{KeyType: models.Amf_Comm_KeyAmfType_KAMF, KeyVal: ue.Kamf},
++		Ncc:    int32(ue.NCC),
++	}
++	if ue.NH != nil {
++		seaf.Nh = hex.EncodeToString(ue.NH)
++	}
++	ueContext.SeafData = seaf
++}
+diff --git a/internal/gmm/handler.go b/internal/gmm/handler.go
+index 39f36dd..b570f51 100644
+--- a/internal/gmm/handler.go
++++ b/internal/gmm/handler.go
+@@ -457,7 +457,7 @@ func HandleRegistrationRequest(ue *context.AmfUe, anType models.AccessType, proc
+ 		ue.SecurityContextAvailable = false // need to start authentication procedure later
+ 	case ie.RegType_MobilityRegUpdating:
+ 		ue.GmmLog.Infof("RegistrationType: Mobility Registration Updating")
+-		if ue.State[anType].Is(context.Deregistered) {
++		if ue.State[anType].Is(context.Deregistered) && !ue.Ch5ReallocForwarded {
+ 			gmm_message.SendRegistrationReject(ue.GetRanUe(anType), ie.Cause5GMM_ImplicitlyDeregistered, "")
+ 			return fmt.Errorf("mobility registration updating was sent when the UE state was deregistered")
+ 		}
+@@ -585,6 +585,12 @@ func HandleRegistrationRequest(ue *context.AmfUe, anType models.AccessType, proc
+ }
+ 
+ func contextTransferFromOldAmf(ue *context.AmfUe, anType models.AccessType, oldAmfGuami models.Guami) error {
++	if ue.Ch5ReallocForwarded {
++		// ch5: TS 23.502 4.2.2.2.3 step 8 -- the UE context (and 5G security context) was received from the
++		// initial AMF in N1MessageNotify; the target continues with it instead of a second UEContextTransfer.
++		ue.GmmLog.Infof("ch5: UE context received from initial AMF via N1MessageNotify; skipping UEContextTransfer")
++		return nil
++	}
+ 	ue.GmmLog.Infof("ContextTransfer from old AMF[%s %s]", oldAmfGuami.PlmnId, oldAmfGuami.AmfId)
+ 
+ 	amfSelf := context.GetSelf()
+@@ -1247,6 +1253,7 @@ func handleRequestedNssai(ue *context.AmfUe, anType models.AccessType) error {
+ 				// Condition (A) Step 7: initial AMF find Target AMF via NRF ->
+ 				// Send Namf_Communication_N1MessageNotify to Target AMF
+ 				ueContext := consumer.GetConsumer().BuildUeContextModel(ue)
++				ch5AddMmContext(ue, &ueContext) // ch5: TS 23.502 4.2.2.2.3 step 7(A) "SUPI and MM Context if available"
+ 				anN2ApId := int32(ue.GetRanUe(anType).RanUeNgapId)
+ 				registerContext := models.Amf_Comm_RegistrationContextContainer{
+ 					UeContext:        &ueContext,
+diff --git a/internal/nas/handler.go b/internal/nas/handler.go
+index 9c33dde..ded6ee7 100644
+--- a/internal/nas/handler.go
++++ b/internal/nas/handler.go
+@@ -59,7 +59,14 @@ func HandleNAS(ranUe *amf_context.RanUe, procedureCode int64, nasPdu []byte, ini
+ 	nasMsg = msg
+ 
+ 	ranUe.AmfUe.NasPduValue = nasPdu
+-	ranUe.AmfUe.MacFailed = !integrityProtected
++	if ranUe.AmfUe.Ch5ForwardedNasPending {
++		// ch5: TS 23.502 4.2.2.2.3 step 7(A)/8 -- the Registration Request forwarded by the initial AMF is in
++		// clear text by specification and was integrity-checked there; keep the received 5G security context.
++		ranUe.AmfUe.Ch5ForwardedNasPending = false
++		ranUe.AmfUe.MacFailed = false
++	} else {
++		ranUe.AmfUe.MacFailed = !integrityProtected
++	}
+ 
+ 	if ranUe.AmfUe.SecurityContextIsValid() && ranUe.HoldingAmfUe != nil {
+ 		gmm_common.ClearHoldingRanUe(ranUe.HoldingAmfUe.GetRanUe(ranUe.Ran.AnType))
+diff --git a/internal/sbi/processor/callback.go b/internal/sbi/processor/callback.go
+index a0840a4..060b282 100644
+--- a/internal/sbi/processor/callback.go
++++ b/internal/sbi/processor/callback.go
+@@ -362,6 +362,14 @@ func (p *Processor) N1MessageNotifyProcedure(n1MessageNotify models.N1MessageNot
+ 		defer amfUe.Lock.Unlock()
+ 
+ 		amfUe.CopyDataFromUeContextModel(ueContext)
++		amfUe.Ch5ReallocForwarded = true
++		amfUe.Ch5ForwardedNasPending = true
++		if ueContext.SeafData != nil {
++			// ch5: TS 23.502 4.2.2.2.3 step 8 -- continue using the 5G security context received from the initial AMF
++			amfUe.SecurityContextAvailable = true
++			amfUe.MacFailed = false
++			amfUe.DerivateAlgKey()
++		}
+ 
+ 		currentRanUe := ran.RanUeFindByRanUeNgapID(int64(anN2ApId))
+ 		if currentRanUe == nil {

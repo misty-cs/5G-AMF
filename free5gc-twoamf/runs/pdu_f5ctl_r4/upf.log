@@ -1,0 +1,78 @@
+2026-11-09T05:50:13.492626839Z [INFO][UPF][Main] UPF version:  
+	Not specify ldflags (which link version) during go build
+	go version: go1.26.2 linux/arm64
+2026-11-09T05:50:13.493418714Z [INFO][UPF][CFG] Read config from [./config/upfcfg.yaml]
+2026-11-09T05:50:13.493738255Z [INFO][UPF][CFG] ==================================================
+2026-11-09T05:50:13.493768260Z [INFO][UPF][CFG] (*factory.Config)(0x668da488460)({
+	Version: (string) (len=5) "1.0.3",
+	Description: (string) (len=31) "UPF initial local configuration",
+	Pfcp: (*factory.Pfcp)(0x668da6faf00)({
+		Addr: (string) (len=13) "10.100.200.21",
+		NodeID: (string) (len=13) "10.100.200.21",
+		RetransTimeout: (time.Duration) 1s,
+		MaxRetrans: (uint8) 3
+	}),
+	Gtpu: (*factory.Gtpu)(0x668da6fb410)({
+		Forwarder: (string) (len=5) "gtp5g",
+		IfList: ([]factory.IfInfo) (len=1 cap=1) {
+			(factory.IfInfo) {
+				Addr: (string) (len=13) "10.100.200.21",
+				Type: (string) (len=2) "N3",
+				Name: (string) "",
+				IfName: (string) "",
+				MTU: (uint32) 0
+			}
+		}
+	}),
+	DnnList: ([]factory.DnnList) (len=2 cap=2) {
+		(factory.DnnList) {
+			Dnn: (string) (len=8) "internet",
+			Cidr: (string) (len=12) "10.60.0.0/16",
+			NatIfName: (string) "",
+			NatIfCIDR: (string) (len=15) "10.100.200.0/24",
+			IPForwardEnable: (bool) true,
+			TCPMss: (uint16) 0
+		},
+		(factory.DnnList) {
+			Dnn: (string) (len=8) "internet",
+			Cidr: (string) (len=12) "10.61.0.0/16",
+			NatIfName: (string) "",
+			NatIfCIDR: (string) (len=15) "10.100.200.0/24",
+			IPForwardEnable: (bool) true,
+			TCPMss: (uint16) 0
+		}
+	},
+	Logger: (*factory.Logger)(0x668da623920)({
+		Enable: (bool) true,
+		Level: (string) (len=4) "info",
+		ReportCaller: (bool) false
+	})
+})
+2026-11-09T05:50:13.493777538Z [INFO][UPF][CFG] ==================================================
+2026-11-09T05:50:13.493928967Z [INFO][UPF][Main] Log level is set to [info]
+2026-11-09T05:50:13.493931947Z [INFO][UPF][Main] Report Caller is set to [false]
+2026-11-09T05:50:13.493958419Z [INFO][UPF][Main] starting Gtpu Forwarder [gtp5g]
+2026-11-09T05:50:13.493960973Z [INFO][UPF][Main] GTP Address: "10.100.200.21:2152"
+2026-11-09T05:50:13.510659918Z [INFO][UPF][BUFF] buff netlink server started
+2026-11-09T05:50:13.510749763Z [INFO][UPF][Gtp5g] Forwarder started
+2026-11-09T05:50:13.512027376Z [INFO][UPF][Perio] perio server started
+2026-11-09T05:50:13.551053508Z [INFO][UPF][PFCP][LAddr:10.100.200.21:8805] starting pfcp server
+2026-11-09T05:50:13.551065510Z [INFO][UPF][PFCP][LAddr:10.100.200.21:8805] pfcp server started
+2026-11-09T05:50:13.551071596Z [INFO][UPF][Main] UPF started
+2026-11-09T05:50:13.942376614Z [INFO][UPF][PFCP][LAddr:10.100.200.21:8805] handleAssociationSetupRequest
+2026-11-09T05:50:13.943078942Z [INFO][UPF][PFCP][LAddr:10.100.200.21:8805][CPNodeID:smf.free5gc.org] New node
+2026-11-09T05:50:38.292226759Z [INFO][UPF][PFCP][LAddr:10.100.200.21:8805] handleSessionEstablishmentRequest
+2026-11-09T05:50:38.292459062Z [INFO][UPF][PFCP][LAddr:10.100.200.21:8805][CPNodeID:smf.free5gc.org][CPSEID:0x1][UPSEID:0x1] New session
+2026-11-09T05:50:38.293774531Z [INFO][UPF][Perio] recv event[TYPE_PERIO_ADD][{eType:1 lSeid:1 urrid:1 period:10000000000}]
+2026-11-09T05:50:38.293994176Z [INFO][UPF][Perio] new ticker [10s]
+2026-11-09T05:50:38.294125803Z [INFO][UPF][Perio] recv event[TYPE_PERIO_ADD][{eType:1 lSeid:1 urrid:2 period:10000000000}]
+2026-11-09T05:50:38.344074033Z [INFO][UPF][PFCP][LAddr:10.100.200.21:8805] handleSessionModificationRequest
+2026-11-09T05:50:48.193041254Z [INFO][UPF][Perio] recv event[TYPE_PERIO_TIMEOUT][{eType:3 lSeid:0 urrid:0 period:10000000000}]
+2026-11-09T05:50:48.196347164Z [INFO][UPF][PFCP][LAddr:10.100.200.21:8805] serveUSAReport
+2026-11-09T05:50:48.198496490Z [INFO][UPF][PFCP][LAddr:10.100.200.21:8805] handleSessionReportResponse
+2026-11-09T05:50:58.089312492Z [INFO][UPF][Perio] recv event[TYPE_PERIO_TIMEOUT][{eType:3 lSeid:0 urrid:0 period:10000000000}]
+2026-11-09T05:50:58.090634752Z [INFO][UPF][PFCP][LAddr:10.100.200.21:8805] serveUSAReport
+2026-11-09T05:50:58.091558627Z [INFO][UPF][PFCP][LAddr:10.100.200.21:8805] handleSessionReportResponse
+2026-11-09T05:51:07.965279435Z [INFO][UPF][Perio] recv event[TYPE_PERIO_TIMEOUT][{eType:3 lSeid:0 urrid:0 period:10000000000}]
+2026-11-09T05:51:07.966563935Z [INFO][UPF][PFCP][LAddr:10.100.200.21:8805] serveUSAReport
+2026-11-09T05:51:07.967367482Z [INFO][UPF][PFCP][LAddr:10.100.200.21:8805] handleSessionReportResponse

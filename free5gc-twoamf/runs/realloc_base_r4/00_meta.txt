@@ -1,0 +1,1 @@
+AMF_IMAGE=ch5/free5gc-amf:fixed-trace UE_IMAGE=free5gc/ueransim:latest AMF1_CFG=amf1cfg_sliceA.yaml AMF2_CFG=amf2cfg_sliceB.yaml GNB1_CFG=gnb1cfg_both.yaml

@@ -1,0 +1,46 @@
+UERANSIM v3.3.0
+[2026-11-07 23:13:52.557] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2026-11-07 23:13:52.557] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2026-11-07 23:13:52.557] [nas] [info] Selected plmn[208/93]
+[2026-11-07 23:13:52.557] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2026-11-07 23:13:52.557] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2026-11-07 23:13:52.557] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2026-11-07 23:13:52.557] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2026-11-07 23:13:52.557] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 23:13:52.557] [nas] [debug] Sending Initial Registration
+[2026-11-07 23:13:52.557] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 23:13:52.557] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 23:13:52.558] [rrc] [info] RRC connection established
+[2026-11-07 23:13:52.558] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 23:13:52.558] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 23:13:52.568] [nas] [debug] Authentication Request received
+[2026-11-07 23:13:52.568] [nas] [debug] Received SQN [000000000023]
+[2026-11-07 23:13:52.568] [nas] [debug] SQN-MS [000000000000]
+[2026-11-07 23:13:52.575] [nas] [debug] Security Mode Command received
+[2026-11-07 23:13:52.575] [nas] [debug] Selected integrity[2] ciphering[0]
+[2026-11-07 23:13:52.594] [nas] [debug] Registration accept received
+[2026-11-07 23:13:52.594] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2026-11-07 23:13:52.594] [nas] [debug] Sending Registration Complete
+[2026-11-07 23:13:52.594] [nas] [info] Initial Registration is successful
+[2026-11-07 23:13:52.804] [nas] [debug] Configuration Update Command received
+[2026-11-07 23:14:01.663] [rrc] [debug] New signal detected for cell[2], total [2] cells in coverage
+[2026-11-07 23:14:06.771] [rrc] [debug] Signal lost for cell[1], total [1] cells in coverage
+[2026-11-07 23:14:06.771] [nas] [error] Radio link failure detected
+[2026-11-07 23:14:06.771] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 23:14:06.771] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+[2026-11-07 23:14:06.771] [nas] [info] UE switches to state [MM-REGISTERED/PLMN-SEARCH]
+[2026-11-07 23:14:07.429] [rrc] [info] Selected cell plmn[208/93] tac[2] category[SUITABLE]
+[2026-11-07 23:14:07.429] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+[2026-11-07 23:14:07.429] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2026-11-07 23:14:07.429] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 23:14:07.430] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 23:14:07.430] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 23:14:07.430] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 23:14:07.430] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 23:14:07.431] [rrc] [info] RRC connection established
+[2026-11-07 23:14:07.431] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 23:14:07.431] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 23:14:07.434] [nas] [debug] Registration accept received
+[2026-11-07 23:14:07.434] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2026-11-07 23:14:07.434] [nas] [info] Mobility Registration is successful
+[2026-11-07 23:14:07.646] [nas] [debug] Configuration Update Command received

@@ -1,0 +1,153 @@
+2026-11-10T17:04:24.241498655Z [INFO][AMF][Main] AMF version:  
+	Not specify ldflags (which link version) during go build
+	go version: go1.26.10 linux/arm64
+2026-11-10T17:04:24.242837926Z [INFO][AMF][CFG] Read config from [./config/amfcfg.yaml]
+2026-11-10T17:04:24.244689637Z [INFO][AMF][Main] Log enable is set to [true]
+2026-11-10T17:04:24.244725895Z [INFO][AMF][Main] Log level is set to [debug]
+2026-11-10T17:04:24.244740936Z [INFO][AMF][Main] Report Caller is set to [false]
+2026-11-10T17:04:24.244832400Z [INFO][AMF][SBI] Binding addr: [amf2.free5gc.org:8000]
+2026-11-10T17:04:24.244879455Z [INFO][AMF][Util] amfconfig Info: Version[1.0.9]
+2026-11-10T17:04:24.244892942Z [DEBU][AMF][CFG] Fetching nfInstanceId from env var "AMF_NF_INSTANCE_ID"
+2026-11-10T17:04:24.244905126Z [DEBU][AMF][CFG] No value found for "AMF_NF_INSTANCE_ID" env, fallback on config nfInstanceId : efbbeb6e-afc1-43e9-a334-89712ba6d3ea
+2026-11-10T17:04:24.245017260Z [INFO][AMF][Init] Initializing NGAP worker pool with 0 workers (buffer size: 1000)
+2026-11-10T17:04:24.245048771Z [INFO][AMF][Ngap] Initializing UE Scheduler with 4 workers
+2026-11-10T17:04:24.245108808Z [INFO][AMF][Ngap] Global UE Scheduler initialized with 4 workers, buffer size 1000
+2026-11-10T17:04:24.245260772Z [INFO][AMF][Ngap] Worker 2 started
+2026-11-10T17:04:24.245272788Z [INFO][AMF][Ngap] Worker 0 started
+2026-11-10T17:04:24.245315978Z [INFO][AMF][Ngap] Worker 3 started
+2026-11-10T17:04:24.245658936Z [INFO][AMF][Ngap] Worker 1 started
+2026-11-10T17:04:24.246861074Z [DEBU][AMF][Ngap] Resolved address 'amf2.free5gc.org' to 10.100.200.17
+2026-11-10T17:04:24.246899978Z [INFO][AMF][Init] Server started
+2026-11-10T17:04:24.248646950Z [INFO][AMF][Ngap] Listen on 10.100.200.17:38412
+2026-11-10T17:04:24.261563726Z [INFO][AMF][Main] OAuth2 setting receive from NRF: false
+2026-11-10T17:04:24.261719344Z [INFO][AMF][SBI] Start SBI server (listen on amf2.free5gc.org:8000)
+2026-11-10T17:04:24.262343458Z [INFO][AMF][Consumer] NF heartbeat started, interval 10s
+2026-11-10T17:04:53.903258358Z [DEBU][AMF][Ngap] Get default sent param[value: &{Stream:0 SSN:0 Flags:0 _:0 PPID:0 Context:0 TTL:0 TSN:0 CumTSN:0 AssocID:0}]
+2026-11-10T17:04:53.903369762Z [DEBU][AMF][Ngap] Set default sent param[value: &{Stream:0 SSN:0 Flags:0 _:0 PPID:1006632960 Context:0 TTL:0 TSN:0 CumTSN:0 AssocID:0}]
+2026-11-10T17:04:53.903384818Z [DEBU][AMF][Ngap] Subscribe SCTP event[DATA_IO, SHUTDOWN_EVENT, ASSOCIATION_CHANGE]
+2026-11-10T17:04:53.903389865Z [DEBU][AMF][Ngap] Set read buffer to 262144 bytes
+2026-11-10T17:04:53.903397687Z [DEBU][AMF][Ngap] Set read timeout: {Sec:2 Usec:0}
+2026-11-10T17:04:53.903411565Z [INFO][AMF][Ngap] [AMF] SCTP Accept from: 10.100.200.32:51274
+2026-11-10T17:04:53.903711589Z [DEBU][AMF][Ngap] Dispatching UE ID 0 to Worker 0 (hash-based routing)
+2026-11-10T17:04:53.903770130Z [DEBU][AMF][Ngap] Worker 0 processing task for UE ID 0 (ensuring per-UE sequentiality)
+2026-11-10T17:04:53.903859329Z [INFO][AMF][Ngap] Create a new NG connection for: 10.100.200.32:51274
+2026-11-10T17:04:53.903970566Z [INFO][AMF][Ngap][ran_addr:10.100.200.32:51274] Send NG-Setup response
+2026-11-10T17:04:53.904016617Z [DEBU][AMF][Ngap][ran_addr:10.100.200.32:51274] Send NGAP message To Ran
+2026-11-10T17:04:53.904054088Z [DEBU][AMF][Ngap][ran_addr:10.100.200.32:51274] Write 59 bytes
+2026-11-10T17:04:55.785365871Z [DEBU][AMF][Ngap] SCTP read timeout
+2026-11-10T17:04:57.833003271Z [DEBU][AMF][Ngap] SCTP read timeout
+2026-11-10T17:04:59.881552373Z [DEBU][AMF][Ngap] SCTP read timeout
+2026-11-10T17:05:00.275258148Z [DEBU][AMF][Ngap] Dispatching UE ID 1 to Worker 1 (hash-based routing)
+2026-11-10T17:05:00.275409662Z [DEBU][AMF][Ngap] Worker 1 processing task for UE ID 1 (ensuring per-UE sequentiality)
+2026-11-10T17:05:00.275609964Z [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:1(3GPP)][ran_addr:10.100.200.32:51274] New RanUe [RanUeNgapID:1][AmfUeNgapID:1]
+2026-11-10T17:05:00.275626691Z [DEBU][AMF][Ngap][ran_addr:10.100.200.32:51274] New RanUe [RanUeNgapID: 1]
+2026-11-10T17:05:00.275650937Z [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:1(3GPP)][ran_addr:10.100.200.32:51274] Find 5G-S-TMSI ["fe0000000001"] in InitialUEMessage
+2026-11-10T17:05:00.275661202Z [DEBU][AMF][Ngap][ran_addr:10.100.200.32:51274] 5G-S-TMSI 20893cbfe0000000001
+2026-11-10T17:05:00.275665806Z [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:1(3GPP)][ran_addr:10.100.200.32:51274] Send Registration Reject
+2026-11-10T17:05:00.275695458Z [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:1(3GPP)][ran_addr:10.100.200.32:51274] Send Downlink Nas Transport
+2026-11-10T17:05:00.275747709Z [WARN][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:1(3GPP)][ran_addr:10.100.200.32:51274] AmfUe is nil
+2026-11-10T17:05:00.275772419Z [DEBU][AMF][Ngap][ran_addr:10.100.200.32:51274] Send NGAP message To Ran
+2026-11-10T17:05:00.275909615Z [DEBU][AMF][Ngap][ran_addr:10.100.200.32:51274] Write 31 bytes
+2026-11-10T17:05:00.275936310Z [WARN][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:1(3GPP)][ran_addr:10.100.200.32:51274] Send RegistrationReject [Cause5GMMImplicitlyDeregistered]
+2026-11-10T17:05:00.275943027Z [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:1(3GPP)][ran_addr:10.100.200.32:51274] Send UE Context Release Command
+2026-11-10T17:05:00.276016397Z [WARN][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:1(3GPP)][ran_addr:10.100.200.32:51274] AmfUe is nil
+2026-11-10T17:05:00.276033251Z [DEBU][AMF][Ngap][ran_addr:10.100.200.32:51274] Send NGAP message To Ran
+2026-11-10T17:05:00.276044994Z [DEBU][AMF][Ngap][ran_addr:10.100.200.32:51274] Write 20 bytes
+2026-11-10T17:05:00.276857353Z [DEBU][AMF][Ngap] Dispatching UE ID 1 to Worker 1 (hash-based routing)
+2026-11-10T17:05:00.277056261Z [DEBU][AMF][Ngap] Worker 1 processing task for UE ID 1 (ensuring per-UE sequentiality)
+2026-11-10T17:05:00.277135461Z [ERRO][AMF][Ngap][ran_addr:10.100.200.32:51274] No UE Context of RanUe with RANUENGAPID[1] AMFUENGAPID[1]
+2026-11-10T17:05:00.277198356Z [DEBU][AMF][Ngap] Dispatching UE ID 1 to Worker 1 (hash-based routing)
+2026-11-10T17:05:00.277506455Z [DEBU][AMF][Ngap] Worker 1 processing task for UE ID 1 (ensuring per-UE sequentiality)
+2026-11-10T17:05:00.277561704Z [ERRO][AMF][Ngap][ran_addr:10.100.200.32:51274] Find UE context: no RanUe Context[AmfUeNgapID: 1, RanUeNgapID: 1]
+2026-11-10T17:05:02.317722907Z [DEBU][AMF][Ngap] SCTP read timeout
+2026-11-10T17:05:04.212697151Z [DEBU][AMF][Ngap] SCTP read timeout
+2026-11-10T17:05:06.261669043Z [DEBU][AMF][Ngap] SCTP read timeout
+2026-11-10T17:05:08.307319816Z [DEBU][AMF][Ngap] SCTP read timeout
+2026-11-10T17:05:10.152772666Z [DEBU][AMF][Ngap] Dispatching UE ID 2 to Worker 2 (hash-based routing)
+2026-11-10T17:05:10.153742400Z [DEBU][AMF][Ngap] Worker 2 processing task for UE ID 2 (ensuring per-UE sequentiality)
+2026-11-10T17:05:10.153995986Z [INFO][AMF][Ngap][amf_ue_ngap_id:RU:2,AU:2(3GPP)][ran_addr:10.100.200.32:51274] New RanUe [RanUeNgapID:2][AmfUeNgapID:2]
+2026-11-10T17:05:10.154054431Z [DEBU][AMF][Ngap][ran_addr:10.100.200.32:51274] New RanUe [RanUeNgapID: 2]
+2026-11-10T17:05:10.154262369Z [INFO][AMF][Ngap][amf_ue_ngap_id:RU:2,AU:2(3GPP)][ran_addr:10.100.200.32:51274] Find 5G-S-TMSI ["fe0000000001"] in InitialUEMessage
+2026-11-10T17:05:10.154286714Z [DEBU][AMF][Ngap][ran_addr:10.100.200.32:51274] 5G-S-TMSI 20893cbfe0000000001
+2026-11-10T17:05:10.154309350Z [DEBU][AMF][Ngap][ran_addr:10.100.200.32:51274] Trigger initial Context Setup procedure
+2026-11-10T17:05:10.154340032Z [INFO][AMF][CTX] New AmfUe [supi:][guti:20893cb010000000001]
+2026-11-10T17:05:10.154449587Z [WARN][AMF][Gmm][amf_ue_ngap_id:RU:2,AU:2(3GPP)][supi:SUPI:] NAS MAC verification failed(received: 0xfab96b9b, expected: 0x00000000)
+2026-11-10T17:05:10.154509992Z [INFO][AMF][Gmm] Handle event[Gmm Message], transition from [Deregistered] to [Deregistered]
+2026-11-10T17:05:10.154527084Z [DEBU][AMF][Gmm][amf_ue_ngap_id:RU:2,AU:2(3GPP)][supi:SUPI:] GmmMessageEvent at GMM State[DeRegistered]
+2026-11-10T17:05:10.154581028Z [INFO][AMF][Gmm][amf_ue_ngap_id:RU:2,AU:2(3GPP)][supi:SUPI:] Handle Registration Request
+2026-11-10T17:05:10.154597119Z [DEBU][AMF][Gmm][amf_ue_ngap_id:RU:2,AU:2(3GPP)][supi:SUPI:] OnGoing[Nothing]->[Registration] PPI[0]->[0]
+2026-11-10T17:05:10.154603914Z [INFO][AMF][Gmm][amf_ue_ngap_id:RU:2,AU:2(3GPP)][supi:SUPI:] RegistrationType: Initial Registration
+2026-11-10T17:05:10.154616671Z [INFO][AMF][Gmm][amf_ue_ngap_id:RU:2,AU:2(3GPP)][supi:SUPI:] MobileIdentity5GS: GUTI[20893cafe0000000001]
+2026-11-10T17:05:10.154639182Z [INFO][AMF][Gmm][amf_ue_ngap_id:RU:2,AU:2(3GPP)][supi:SUPI:] Serving AMF has changed: guamiFromUeGuti[{PlmnId:0x319b94134060 AmfId:cafe00}], servedGuami[{PlmnId:0x319b9411e180 AmfId:cb0100}]
+2026-11-10T17:05:10.154659776Z [INFO][AMF][Gmm][amf_ue_ngap_id:RU:2,AU:2(3GPP)][supi:SUPI:] ContextTransfer from old AMF[&{208 93 } cafe00]
+2026-11-10T17:05:10.168343906Z [DEBU][AMF][Consumer] UeContextTransferRspData: {UeContext:0x319b94144008 UeRadioCapability:<nil> UeRadioCapabilityForPaging:<nil> UeNbiotRadioCapability:<nil> SupportedFeatures:}
+2026-11-10T17:05:10.168501026Z [INFO][AMF][Gmm][amf_ue_ngap_id:RU:2,AU:2(3GPP)][supi:SUPI:] ch5 fix: NAS message container deciphered after UEContextTransfer
+2026-11-10T17:05:10.168531333Z [INFO][AMF][Gmm] Handle event[Start Authentication], transition from [Deregistered] to [Authentication]
+2026-11-10T17:05:10.168537794Z [DEBU][AMF][Gmm] Start Authentication
+2026-11-10T17:05:10.168541713Z [DEBU][AMF][Gmm] Exit event
+2026-11-10T17:05:10.168546299Z [DEBU][AMF][Gmm][amf_ue_ngap_id:RU:2,AU:2(3GPP)][supi:SUPI:] EntryEvent at GMM State[Authentication]
+2026-11-10T17:05:10.168550509Z [DEBU][AMF][Gmm][amf_ue_ngap_id:RU:2,AU:2(3GPP)][supi:SUPI:] AuthRestartEvent at GMM State[Authentication]
+2026-11-10T17:05:10.168556095Z [INFO][AMF][Gmm][amf_ue_ngap_id:RU:2,AU:2(3GPP)][supi:SUPI:] Authentication procedure
+2026-11-10T17:05:10.168559639Z [DEBU][AMF][Gmm][amf_ue_ngap_id:RU:2,AU:2(3GPP)][supi:SUPI:] UE has SUCI / SUPI
+2026-11-10T17:05:10.168570853Z [DEBU][AMF][Gmm][amf_ue_ngap_id:RU:2,AU:2(3GPP)][supi:SUPI:] UE has a valid security context - skip the authentication procedure
+2026-11-10T17:05:10.168576814Z [INFO][AMF][Gmm] Handle event[Authentication Success], transition from [Authentication] to [SecurityMode]
+2026-11-10T17:05:10.168580149Z [DEBU][AMF][Gmm] Authentication Success
+2026-11-10T17:05:10.168583234Z [DEBU][AMF][Gmm][amf_ue_ngap_id:RU:2,AU:2(3GPP)][supi:SUPI:] Exit event
+2026-11-10T17:05:10.168593906Z [DEBU][AMF][Gmm][amf_ue_ngap_id:RU:2,AU:2(3GPP)][supi:SUPI:imsi-208930000000001] EntryEvent at GMM State[SecurityMode]
+2026-11-10T17:05:10.168598116Z [DEBU][AMF][Gmm][amf_ue_ngap_id:RU:2,AU:2(3GPP)][supi:SUPI:imsi-208930000000001] UE has a valid security context - skip security mode control procedure
+2026-11-10T17:05:10.168606996Z [INFO][AMF][Gmm] Handle event[SecurityMode Success], transition from [SecurityMode] to [ContextSetup]
+2026-11-10T17:05:10.168618335Z [DEBU][AMF][Gmm] SecurityMode Success
+2026-11-10T17:05:10.168621628Z [DEBU][AMF][Gmm] Exit event
+2026-11-10T17:05:10.168624755Z [DEBU][AMF][Gmm][amf_ue_ngap_id:RU:2,AU:2(3GPP)][supi:SUPI:imsi-208930000000001] EntryEvent at GMM State[ContextSetup]
+2026-11-10T17:05:10.168628798Z [INFO][AMF][Gmm][amf_ue_ngap_id:RU:2,AU:2(3GPP)][supi:SUPI:imsi-208930000000001] Handle InitialRegistration
+2026-11-10T17:05:10.176055968Z [INFO][AMF][Gmm] RequestedNssai: &{SNSSAIs:[{SST:1 MappedHPLMNSST:0 SD:010203 MappedHPLMNSD:} {SST:1 MappedHPLMNSST:0 SD:112233 MappedHPLMNSD:} {SST:1 MappedHPLMNSST:0 SD:010203 MappedHPLMNSD:} {SST:1 MappedHPLMNSST:0 SD:112233 MappedHPLMNSD:}]}
+2026-11-10T17:05:10.176081773Z [INFO][AMF][Gmm][amf_ue_ngap_id:RU:2,AU:2(3GPP)][supi:SUPI:imsi-208930000000001] RequestedNssai - ServingSnssai: &{Sst:1 Sd:010203}, HomeSnssai: <nil>
+2026-11-10T17:05:10.176097406Z [INFO][AMF][Gmm][amf_ue_ngap_id:RU:2,AU:2(3GPP)][supi:SUPI:imsi-208930000000001] RequestedNssai - ServingSnssai: &{Sst:1 Sd:112233}, HomeSnssai: <nil>
+2026-11-10T17:05:10.176103784Z [INFO][AMF][Gmm][amf_ue_ngap_id:RU:2,AU:2(3GPP)][supi:SUPI:imsi-208930000000001] RequestedNssai - ServingSnssai: &{Sst:1 Sd:010203}, HomeSnssai: <nil>
+2026-11-10T17:05:10.176107703Z [INFO][AMF][Gmm][amf_ue_ngap_id:RU:2,AU:2(3GPP)][supi:SUPI:imsi-208930000000001] RequestedNssai - ServingSnssai: &{Sst:1 Sd:112233}, HomeSnssai: <nil>
+2026-11-10T17:05:10.177530080Z [INFO][AMF][Gmm][amf_ue_ngap_id:RU:2,AU:2(3GPP)][supi:SUPI:imsi-208930000000001] Registration Status Transfer complete
+2026-11-10T17:05:10.177555051Z [DEBU][AMF][Gmm][amf_ue_ngap_id:RU:2,AU:2(3GPP)][supi:SUPI:imsi-208930000000001] communicateWithUDM
+2026-11-10T17:05:10.199701702Z [DEBU][AMF][Util] AMFContext::AuthorizationCheck: OAuth2 not required
+2026-11-10T17:05:10.199747058Z [DEBU][AMF][Util] RouterAuthorizationCheck: Check Authorized
+2026-11-10T17:05:10.199807797Z [INFO][AMF][Comm] Handle AMF Status Change Subscribe Request
+2026-11-10T17:05:10.199822512Z [INFO][AMF][Comm] new AMF Status Subscription[1]
+2026-11-10T17:05:10.199849526Z [INFO][AMF][GIN] | 201 |    10.100.200.9 | POST    | /namf-comm/v1/subscriptions |  |
+2026-11-10T17:05:10.200290455Z [DEBU][AMF][Consumer] location header: http://pcf.free5gc.org:8000/npcf-am-policy-control/v1/policies/imsi-208930000000001-2
+2026-11-10T17:05:10.200317885Z [DEBU][AMF][Consumer] UE AM Policy Association ID: imsi-208930000000001-2
+2026-11-10T17:05:10.200334727Z [DEBU][AMF][Consumer] AmPolicyAssociation: &{Request:0x319b93d42c00 Triggers:[] ServAreaRes:<nil> WlServAreaRes:<nil> Rfsp:0 TargetRfsp:0 SmfSelInfo:<nil> UeAmbr:<nil> UeSliceMbrs:[] Pras:map[] SuppFeat:00 PcfUeInfo:<nil> MatchPdus:[] AsTimeDisParam:<nil>}
+2026-11-10T17:05:10.200348692Z [INFO][AMF][Gmm][amf_ue_ngap_id:RU:2,AU:2(3GPP)][supi:SUPI:imsi-208930000000001] ch5 GUTI repair: new GUTI[20893cb010000000002] after AMF change
+2026-11-10T17:05:10.200356154Z [INFO][AMF][Gmm][amf_ue_ngap_id:RU:2,AU:2(3GPP)][supi:SUPI:imsi-208930000000001] Send Registration Accept
+2026-11-10T17:05:10.200365284Z [DEBU][AMF][Gmm][amf_ue_ngap_id:RU:2,AU:2(3GPP)][supi:SUPI:imsi-208930000000001] Security header type: Integrity Protected And Ciphered
+2026-11-10T17:05:10.200378290Z [INFO][AMF][Ngap][amf_ue_ngap_id:RU:2,AU:2(3GPP)][ran_addr:10.100.200.32:51274] Send Initial Context Setup Request
+2026-11-10T17:05:10.200463541Z [DEBU][AMF][Ngap][ran_addr:10.100.200.32:51274] Send NGAP message To Ran
+2026-11-10T17:05:10.200529532Z [DEBU][AMF][Ngap][ran_addr:10.100.200.32:51274] Write 175 bytes
+2026-11-10T17:05:10.200537786Z [INFO][AMF][Gmm][amf_ue_ngap_id:RU:2,AU:2(3GPP)][supi:SUPI:imsi-208930000000001] Start T3550 timer
+2026-11-10T17:05:10.200727881Z [DEBU][AMF][Ngap] Dispatching UE ID 2 to Worker 2 (hash-based routing)
+2026-11-10T17:05:10.200841438Z [DEBU][AMF][Ngap] Worker 2 processing task for UE ID 2 (ensuring per-UE sequentiality)
+2026-11-10T17:05:10.403637077Z [DEBU][AMF][Ngap] Dispatching UE ID 2 to Worker 2 (hash-based routing)
+2026-11-10T17:05:10.403715241Z [DEBU][AMF][Ngap] Worker 2 processing task for UE ID 2 (ensuring per-UE sequentiality)
+2026-11-10T17:05:10.403815666Z [INFO][AMF][Gmm] Handle event[Gmm Message], transition from [ContextSetup] to [ContextSetup]
+2026-11-10T17:05:10.403836719Z [DEBU][AMF][Gmm][amf_ue_ngap_id:RU:2,AU:2(3GPP)][supi:SUPI:imsi-208930000000001] GmmMessageEvent at GMM State[ContextSetup]
+2026-11-10T17:05:10.403848975Z [INFO][AMF][Gmm][amf_ue_ngap_id:RU:2,AU:2(3GPP)][supi:SUPI:imsi-208930000000001] Handle Registration Complete
+2026-11-10T17:05:10.403853435Z [INFO][AMF][Gmm][amf_ue_ngap_id:RU:2,AU:2(3GPP)][supi:SUPI:imsi-208930000000001] Stop T3550 timer
+2026-11-10T17:05:10.403876072Z [DEBU][AMF][Gmm][amf_ue_ngap_id:RU:2,AU:2(3GPP)][supi:SUPI:imsi-208930000000001] Security header type: Integrity Protected And Ciphered
+2026-11-10T17:05:10.403964491Z [INFO][AMF][Gmm][amf_ue_ngap_id:RU:2,AU:2(3GPP)][supi:SUPI:imsi-208930000000001] Send Configuration Update Command
+2026-11-10T17:05:10.403981082Z [INFO][AMF][Ngap][amf_ue_ngap_id:RU:2,AU:2(3GPP)][ran_addr:10.100.200.32:51274] Send Downlink Nas Transport
+2026-11-10T17:05:10.404008179Z [DEBU][AMF][Ngap][ran_addr:10.100.200.32:51274] Send NGAP message To Ran
+2026-11-10T17:05:10.404084884Z [DEBU][AMF][Ngap][ran_addr:10.100.200.32:51274] Write 72 bytes
+2026-11-10T17:05:10.404120986Z [INFO][AMF][Gmm] Handle event[ContextSetup Success], transition from [ContextSetup] to [Registered]
+2026-11-10T17:05:10.404130365Z [DEBU][AMF][Gmm] ContextSetup Success
+2026-11-10T17:05:10.404134034Z [DEBU][AMF][Gmm] Exit event
+2026-11-10T17:05:10.404139662Z [DEBU][AMF][Gmm][amf_ue_ngap_id:RU:2,AU:2(3GPP)][supi:SUPI:imsi-208930000000001] EntryEvent at GMM State[Registered]
+2026-11-10T17:05:12.468835203Z [DEBU][AMF][Ngap] SCTP read timeout
+2026-11-10T17:05:14.520164731Z [DEBU][AMF][Ngap] SCTP read timeout
+2026-11-10T17:05:16.568199154Z [DEBU][AMF][Ngap] SCTP read timeout
+2026-11-10T17:05:18.147357673Z [DEBU][AMF][Util] AMFContext::AuthorizationCheck: OAuth2 not required
+2026-11-10T17:05:18.147378433Z [DEBU][AMF][Util] RouterAuthorizationCheck: Check Authorized
+2026-11-10T17:05:18.147384561Z [INFO][AMF][Producer] [OAM] Handle Registered UE Context
+2026-11-10T17:05:18.147535095Z [INFO][AMF][GIN] | 200 |   10.100.200.50 | GET     | /namf-oam/v1/registered-ue-context |  |
+2026-11-10T17:05:18.185575897Z [DEBU][AMF][Util] AMFContext::AuthorizationCheck: OAuth2 not required
+2026-11-10T17:05:18.185604912Z [DEBU][AMF][Util] RouterAuthorizationCheck: Check Authorized
+2026-11-10T17:05:18.185731392Z [INFO][AMF][Ee] Handle Modify AMF Event Subscription
+2026-11-10T17:05:18.185900393Z [INFO][AMF][GIN] | 404 |   10.100.200.50 | PATCH   | /namf-evts/v1/subscriptions/1 |  |
+2026-11-10T17:05:18.616222196Z [DEBU][AMF][Ngap] SCTP read timeout

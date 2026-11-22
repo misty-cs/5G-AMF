@@ -1,0 +1,119 @@
+# Two-AMF Open5GS testbed (Ch.5). Same topology as ../twoamf (free5GC):
+# AMF1 cafe00 / TAC 1 <- gNB1 ; AMF2 cb0100 / TAC 2 <- gNB2. SMF + UPF (Open5GS UPF on a TUN device; no kernel module).
+services:
+  db:
+    container_name: o5-mongodb
+    image: mongo:4.4
+    command: mongod --bind_ip_all
+    networks: {o5net: {ipv4_address: 10.110.0.2}}
+  nrf:
+    container_name: o5-nrf
+    image: ch5/open5gs:local
+    command: /open5gs/bin/open5gs-nrfd -c /cfg/nrf.yaml
+    volumes: [./config/nrf.yaml:/cfg/nrf.yaml:ro]
+    networks: {o5net: {ipv4_address: 10.110.0.10}}
+  ausf:
+    container_name: o5-ausf
+    image: ch5/open5gs:local
+    command: /open5gs/bin/open5gs-ausfd -c /cfg/ausf.yaml
+    volumes: [./config/ausf.yaml:/cfg/ausf.yaml:ro]
+    networks: {o5net: {ipv4_address: 10.110.0.11}}
+    depends_on: [nrf, db]
+  udm:
+    container_name: o5-udm
+    image: ch5/open5gs:local
+    command: /open5gs/bin/open5gs-udmd -c /cfg/udm.yaml
+    volumes: [./config/udm.yaml:/cfg/udm.yaml:ro]
+    networks: {o5net: {ipv4_address: 10.110.0.12}}
+    depends_on: [nrf, db]
+  pcf:
+    container_name: o5-pcf
+    image: ch5/open5gs:local
+    command: /open5gs/bin/open5gs-pcfd -c /cfg/pcf.yaml
+    volumes: [./config/pcf.yaml:/cfg/pcf.yaml:ro]
+    networks: {o5net: {ipv4_address: 10.110.0.13}}
+    depends_on: [nrf, db]
+  nssf:
+    container_name: o5-nssf
+    image: ch5/open5gs:local
+    command: /open5gs/bin/open5gs-nssfd -c /cfg/nssf.yaml
+    volumes: [./config/nssf.yaml:/cfg/nssf.yaml:ro]
+    networks: {o5net: {ipv4_address: 10.110.0.14}}
+    depends_on: [nrf, db]
+  udr:
+    container_name: o5-udr
+    image: ch5/open5gs:local
+    command: /open5gs/bin/open5gs-udrd -c /cfg/udr.yaml
+    volumes: [./config/udr.yaml:/cfg/udr.yaml:ro]
+    networks: {o5net: {ipv4_address: 10.110.0.20}}
+    depends_on: [nrf, db]
+  amf1:
+    container_name: o5-amf1
+    image: ch5/open5gs:local
+    command: /open5gs/bin/open5gs-amfd -c /cfg/amf1.yaml
+    volumes: ["./config/${O5_AMF1_CFG:-amf1.yaml}:/cfg/amf1.yaml:ro"]
+    networks: {o5net: {ipv4_address: 10.110.0.5}}
+    depends_on: [nrf, db]
+  amf2:
+    container_name: o5-amf2
+    image: ch5/open5gs:local
+    command: /open5gs/bin/open5gs-amfd -c /cfg/amf2.yaml
+    volumes: ["./config/${O5_AMF2_CFG:-amf2.yaml}:/cfg/amf2.yaml:ro"]
+    networks: {o5net: {ipv4_address: 10.110.0.6}}
+    depends_on: [nrf, db]
+  bsf:
+    container_name: o5-bsf
+    image: ch5/open5gs:local
+    command: /open5gs/bin/open5gs-bsfd -c /cfg/bsf.yaml
+    volumes: [./config/bsf.yaml:/cfg/bsf.yaml:ro]
+    networks: {o5net: {ipv4_address: 10.110.0.17}}
+    depends_on: [nrf, db]
+  smf:
+    container_name: o5-smf
+    image: ch5/open5gs:local
+    command: /open5gs/bin/open5gs-smfd -c /cfg/smf.yaml
+    volumes: [./config/smf.yaml:/cfg/smf.yaml:ro]
+    networks: {o5net: {ipv4_address: 10.110.0.15}}
+    depends_on: [nrf, upf]
+  upf:
+    container_name: o5-upf
+    image: ch5/open5gs:local
+    command: sh -c "ip tuntap add name ogstun mode tun && ip addr add 10.45.0.1/16 dev ogstun && ip link set ogstun up && exec /open5gs/bin/open5gs-upfd -c /cfg/upf.yaml"
+    volumes: [./config/upf.yaml:/cfg/upf.yaml:ro]
+    cap_add: [NET_ADMIN]
+    devices: ["/dev/net/tun"]
+    networks: {o5net: {ipv4_address: 10.110.0.16}}
+  gnb1:
+    container_name: o5-gnb1
+    image: ${UE_IMAGE:-ch5/ueransim:patched}
+    command: ./nr-gnb -c ./config/gnb.yaml
+    volumes: [./config/gnb1.yaml:/ueransim/config/gnb.yaml:ro]
+    cap_add: [NET_ADMIN]
+    networks: {o5net: {ipv4_address: 10.110.0.31}}
+    profiles: [ran]
+  gnb2:
+    container_name: o5-gnb2
+    image: ${UE_IMAGE:-ch5/ueransim:patched}
+    command: ./nr-gnb -c ./config/gnb.yaml
+    volumes: ["./config/${O5_GNB2_CFG:-gnb2.yaml}:/ueransim/config/gnb.yaml:ro"]
+    cap_add: [NET_ADMIN]
+    networks: {o5net: {ipv4_address: 10.110.0.32}}
+    profiles: [ran]
+  ue:
+    container_name: o5-ue
+    image: ${UE_IMAGE:-ch5/ueransim:patched}
+    command: ./nr-ue -c ./config/ue.yaml
+    volumes: ["./config/${O5_UE_CFG:-ue.yaml}:/ueransim/config/ue.yaml:ro"]
+    cap_add: [NET_ADMIN]
+    devices: ["/dev/net/tun"]
+    networks: {o5net: {ipv4_address: 10.110.0.40}}
+    profiles: [ue]
+  probe:
+    container_name: o5-probe
+    image: curlimages/curl:latest
+    command: sleep infinity
+    networks: {o5net: {ipv4_address: 10.110.0.50}}
+networks:
+  o5net:
+    ipam: {driver: default, config: [{subnet: 10.110.0.0/24}]}
+    driver_opts: {com.docker.network.bridge.name: br-o5}

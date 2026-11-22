@@ -1,0 +1,18 @@
+2026-11-09T05:50:14.183198705Z [INFO][PCF][Main] pcf
+2026-11-09T05:50:14.183287045Z [INFO][PCF][Main] PCF version:  
+	Not specify ldflags (which link version) during go build
+	go version: go1.26.2 linux/arm64
+2026-11-09T05:50:14.183902968Z [INFO][PCF][CFG] Read config from [./config/pcfcfg.yaml]
+2026-11-09T05:50:14.184952358Z [INFO][PCF][Main] Log enable is set to [true]
+2026-11-09T05:50:14.184980843Z [INFO][PCF][Main] Log level is set to [info]
+2026-11-09T05:50:14.184995192Z [INFO][PCF][Main] Report Caller is set to [false]
+2026-11-09T05:50:14.185008861Z [INFO][PCF][Util] pcfconfig Info: Version[1.0.2] Description[PCF initial local configuration]
+2026-11-09T05:50:14.185182783Z [INFO][PCF][SBI] Binding addr: [pcf.free5gc.org:8000]
+2026-11-09T05:50:14.185211395Z [INFO][PCF][Init] Server started
+2026-11-09T05:50:14.195254810Z [INFO][PCF][Main] OAuth2 setting receive from NRF: false
+2026-11-09T05:50:14.195273446Z [INFO][PCF][SBI] Start SBI server (listen on pcf.free5gc.org:8000)
+2026-11-09T05:50:38.025384839Z [INFO][PCF][AmPol] Handle AM Policy Create Request
+2026-11-09T05:50:38.031925306Z [INFO][PCF][GIN] | 201 |   10.100.200.16 | POST    | /npcf-am-policy-control/v1/policies |  |
+2026-11-09T05:50:38.278431717Z [INFO][PCF][SMpolicy] Handle CreateSmPolicy
+2026-11-09T05:50:38.286099592Z [INFO][PCF][SMpolicy] Matched [0] trafficInfluDatas from UDR
+2026-11-09T05:50:38.287274814Z [INFO][PCF][GIN] | 201 |   10.100.200.20 | POST    | /npcf-smpolicycontrol/v1/sm-policies |  |

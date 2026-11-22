@@ -1,0 +1,4 @@
+== amf1 OAM
+[{"AccessType":"3GPP_ACCESS","Supi":"imsi-208930000000001","Guti":"20893cafe0000000001","Mcc":"208","Mnc":"93","Tac":"000001","PduSessions":null,"CmState":"CONNECTED"}]
+== amf2 OAM
+null

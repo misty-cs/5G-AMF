@@ -1,0 +1,76 @@
+run,field,outcome
+exp5r2reg_r1,supi,transferred and applied
+exp5r2reg_r1,gpsiList,transferred and applied
+exp5r2reg_r1,pei,transferred and applied
+exp5r2reg_r1,subUeAmbr,transferred and applied
+exp5r2reg_r1,subRfsp,transferred and applied
+exp5r2reg_r1,restrictedRatList,not transferred; restored by re-fetch
+exp5r2reg_r1,forbiddenAreaList,not transferred; restored by re-fetch
+exp5r2reg_r1,serviceAreaRestriction,not transferred; restored by re-fetch
+exp5r2reg_r1,seafData,transferred and applied
+exp5r2reg_r1,mmContextList,transferred and applied
+exp5r2reg_r1,pcfId,transferred and applied
+exp5r2reg_r1,pcfAmPolicyUri,transferred and applied
+exp5r2reg_r1,eventSubscriptionList,"transferred, not applied (lost)"
+exp5r2reg_r1,traceData,not held by source
+exp5r2reg_r1,5G-GUTI,old GUTI kept
+exp5r2reg_r2,supi,transferred and applied
+exp5r2reg_r2,gpsiList,transferred and applied
+exp5r2reg_r2,pei,transferred and applied
+exp5r2reg_r2,subUeAmbr,transferred and applied
+exp5r2reg_r2,subRfsp,transferred and applied
+exp5r2reg_r2,restrictedRatList,not transferred; restored by re-fetch
+exp5r2reg_r2,forbiddenAreaList,not transferred; restored by re-fetch
+exp5r2reg_r2,serviceAreaRestriction,not transferred; restored by re-fetch
+exp5r2reg_r2,seafData,transferred and applied
+exp5r2reg_r2,mmContextList,transferred and applied
+exp5r2reg_r2,pcfId,transferred and applied
+exp5r2reg_r2,pcfAmPolicyUri,transferred and applied
+exp5r2reg_r2,eventSubscriptionList,"transferred, not applied (lost)"
+exp5r2reg_r2,traceData,not held by source
+exp5r2reg_r2,5G-GUTI,old GUTI kept
+exp5r2reg_r3,supi,transferred and applied
+exp5r2reg_r3,gpsiList,transferred and applied
+exp5r2reg_r3,pei,transferred and applied
+exp5r2reg_r3,subUeAmbr,transferred and applied
+exp5r2reg_r3,subRfsp,transferred and applied
+exp5r2reg_r3,restrictedRatList,not transferred; restored by re-fetch
+exp5r2reg_r3,forbiddenAreaList,not transferred; restored by re-fetch
+exp5r2reg_r3,serviceAreaRestriction,not transferred; restored by re-fetch
+exp5r2reg_r3,seafData,transferred and applied
+exp5r2reg_r3,mmContextList,transferred and applied
+exp5r2reg_r3,pcfId,transferred and applied
+exp5r2reg_r3,pcfAmPolicyUri,transferred and applied
+exp5r2reg_r3,eventSubscriptionList,"transferred, not applied (lost)"
+exp5r2reg_r3,traceData,not held by source
+exp5r2reg_r3,5G-GUTI,old GUTI kept
+exp5r2reg_r4,supi,transferred and applied
+exp5r2reg_r4,gpsiList,transferred and applied
+exp5r2reg_r4,pei,transferred and applied
+exp5r2reg_r4,subUeAmbr,transferred and applied
+exp5r2reg_r4,subRfsp,transferred and applied
+exp5r2reg_r4,restrictedRatList,not transferred; restored by re-fetch
+exp5r2reg_r4,forbiddenAreaList,not transferred; restored by re-fetch
+exp5r2reg_r4,serviceAreaRestriction,not transferred; restored by re-fetch
+exp5r2reg_r4,seafData,transferred and applied
+exp5r2reg_r4,mmContextList,transferred and applied
+exp5r2reg_r4,pcfId,transferred and applied
+exp5r2reg_r4,pcfAmPolicyUri,transferred and applied
+exp5r2reg_r4,eventSubscriptionList,"transferred, not applied (lost)"
+exp5r2reg_r4,traceData,not held by source
+exp5r2reg_r4,5G-GUTI,old GUTI kept
+exp5r2reg_r5,supi,transferred and applied
+exp5r2reg_r5,gpsiList,transferred and applied
+exp5r2reg_r5,pei,transferred and applied
+exp5r2reg_r5,subUeAmbr,transferred and applied
+exp5r2reg_r5,subRfsp,transferred and applied
+exp5r2reg_r5,restrictedRatList,not transferred; restored by re-fetch
+exp5r2reg_r5,forbiddenAreaList,not transferred; restored by re-fetch
+exp5r2reg_r5,serviceAreaRestriction,not transferred; restored by re-fetch
+exp5r2reg_r5,seafData,transferred and applied
+exp5r2reg_r5,mmContextList,transferred and applied
+exp5r2reg_r5,pcfId,transferred and applied
+exp5r2reg_r5,pcfAmPolicyUri,transferred and applied
+exp5r2reg_r5,eventSubscriptionList,"transferred, not applied (lost)"
+exp5r2reg_r5,traceData,not held by source
+exp5r2reg_r5,5G-GUTI,old GUTI kept

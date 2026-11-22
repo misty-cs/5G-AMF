@@ -1,0 +1,2 @@
+2026-11-08 06:10:06
+Slice added to configured NSSAI; registration update triggered

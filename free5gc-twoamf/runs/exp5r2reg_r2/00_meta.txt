@@ -1,0 +1,8 @@
+AMF2_CFG=amf2cfg_sliceAB.yaml
+GNB1_CFG=gnb1cfg_both_rev.yaml
+AMF_IMAGE=ch5/free5gc-amf:fixed-trace-realloc2
+UE_CFG=uecfg_sliceA.yaml
+AMF1_CFG=amf1cfg_sliceA.yaml
+UE_IMAGE=ch5/ueransim:patched6
+2026-11-08T06:26:07Z
+POST subscriber: 201

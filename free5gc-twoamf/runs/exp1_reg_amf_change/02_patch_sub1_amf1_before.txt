@@ -1,0 +1,2 @@
+{"subscription":{"eventList":[{"type":"LOCATION_REPORT","immediateFlag":true},{"type":"REACHABILITY_REPORT"}],"eventNotifyUri":"http://probe.free5gc.org:9000/notify","notifyCorrelationId":"ch5-exp1","nfId":"11111111-2222-3333-4444-555555555555","supi":"imsi-208930000000001"}}
+HTTP 200

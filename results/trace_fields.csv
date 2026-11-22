@@ -1,0 +1,341 @@
+run,field,source,sent,copied,at_accept,outcome
+trace_ctl_rich_r1,supi,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r1,gpsiList,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r1,pei,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r1,subUeAmbr,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r1,subRfsp,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r1,restrictedRatList,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r1,forbiddenAreaList,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r1,serviceAreaRestriction,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r1,seafData,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r1,mmContextList,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r1,pcfId,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r1,pcfAmPolicyUri,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r1,amPolicyReqTriggerList,False,False,False,,not held by source
+trace_ctl_rich_r1,eventSubscriptionList,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r1,sessionContextList,False,False,False,,not held by source
+trace_ctl_rich_r1,traceData,False,False,False,,not held by source
+trace_ctl_rich_r1,5G-GUTI,True,,,20893cafe0000000002,reallocated
+trace_ctl_rich_r2,supi,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r2,gpsiList,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r2,pei,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r2,subUeAmbr,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r2,subRfsp,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r2,restrictedRatList,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r2,forbiddenAreaList,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r2,serviceAreaRestriction,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r2,seafData,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r2,mmContextList,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r2,pcfId,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r2,pcfAmPolicyUri,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r2,amPolicyReqTriggerList,False,False,False,,not held by source
+trace_ctl_rich_r2,eventSubscriptionList,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r2,sessionContextList,False,False,False,,not held by source
+trace_ctl_rich_r2,traceData,False,False,False,,not held by source
+trace_ctl_rich_r2,5G-GUTI,True,,,20893cafe0000000002,reallocated
+trace_ctl_rich_r3,supi,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r3,gpsiList,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r3,pei,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r3,subUeAmbr,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r3,subRfsp,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r3,restrictedRatList,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r3,forbiddenAreaList,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r3,serviceAreaRestriction,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r3,seafData,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r3,mmContextList,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r3,pcfId,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r3,pcfAmPolicyUri,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r3,amPolicyReqTriggerList,False,False,False,,not held by source
+trace_ctl_rich_r3,eventSubscriptionList,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r3,sessionContextList,False,False,False,,not held by source
+trace_ctl_rich_r3,traceData,False,False,False,,not held by source
+trace_ctl_rich_r3,5G-GUTI,True,,,20893cafe0000000002,reallocated
+trace_ctl_rich_r4,supi,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r4,gpsiList,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r4,pei,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r4,subUeAmbr,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r4,subRfsp,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r4,restrictedRatList,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r4,forbiddenAreaList,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r4,serviceAreaRestriction,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r4,seafData,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r4,mmContextList,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r4,pcfId,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r4,pcfAmPolicyUri,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r4,amPolicyReqTriggerList,False,False,False,,not held by source
+trace_ctl_rich_r4,eventSubscriptionList,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r4,sessionContextList,False,False,False,,not held by source
+trace_ctl_rich_r4,traceData,False,False,False,,not held by source
+trace_ctl_rich_r4,5G-GUTI,True,,,20893cafe0000000002,reallocated
+trace_ctl_rich_r5,supi,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r5,gpsiList,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r5,pei,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r5,subUeAmbr,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r5,subRfsp,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r5,restrictedRatList,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r5,forbiddenAreaList,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r5,serviceAreaRestriction,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r5,seafData,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r5,mmContextList,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r5,pcfId,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r5,pcfAmPolicyUri,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r5,amPolicyReqTriggerList,False,False,False,,not held by source
+trace_ctl_rich_r5,eventSubscriptionList,True,False,False,value,kept (same AMF)
+trace_ctl_rich_r5,sessionContextList,False,False,False,,not held by source
+trace_ctl_rich_r5,traceData,False,False,False,,not held by source
+trace_ctl_rich_r5,5G-GUTI,True,,,20893cafe0000000002,reallocated
+trace_fix_default_r1,supi,True,True,True,same,transferred and applied
+trace_fix_default_r1,gpsiList,True,True,False,value,"transferred, ignored; restored by re-fetch"
+trace_fix_default_r1,pei,True,True,True,same,transferred and applied
+trace_fix_default_r1,subUeAmbr,True,True,True,same,transferred and applied
+trace_fix_default_r1,subRfsp,False,False,False,,not held by source
+trace_fix_default_r1,restrictedRatList,False,False,False,,not held by source
+trace_fix_default_r1,forbiddenAreaList,False,False,False,,not held by source
+trace_fix_default_r1,serviceAreaRestriction,False,False,False,,not held by source
+trace_fix_default_r1,seafData,True,True,True,same,transferred and applied
+trace_fix_default_r1,mmContextList,True,True,True,same,transferred and applied
+trace_fix_default_r1,pcfId,True,True,True,same,transferred and applied
+trace_fix_default_r1,pcfAmPolicyUri,True,True,True,value,"transferred, replaced at target"
+trace_fix_default_r1,amPolicyReqTriggerList,False,False,False,,not held by source
+trace_fix_default_r1,eventSubscriptionList,True,True,False,,"transferred, ignored; lost"
+trace_fix_default_r1,sessionContextList,False,False,False,,not held by source
+trace_fix_default_r1,traceData,False,False,False,,not held by source
+trace_fix_default_r1,5G-GUTI,True,,,20893cafe0000000001,old GUTI kept
+trace_fix_default_r2,supi,True,True,True,same,transferred and applied
+trace_fix_default_r2,gpsiList,True,True,False,value,"transferred, ignored; restored by re-fetch"
+trace_fix_default_r2,pei,True,True,True,same,transferred and applied
+trace_fix_default_r2,subUeAmbr,True,True,True,same,transferred and applied
+trace_fix_default_r2,subRfsp,False,False,False,,not held by source
+trace_fix_default_r2,restrictedRatList,False,False,False,,not held by source
+trace_fix_default_r2,forbiddenAreaList,False,False,False,,not held by source
+trace_fix_default_r2,serviceAreaRestriction,False,False,False,,not held by source
+trace_fix_default_r2,seafData,True,True,True,same,transferred and applied
+trace_fix_default_r2,mmContextList,True,True,True,same,transferred and applied
+trace_fix_default_r2,pcfId,True,True,True,same,transferred and applied
+trace_fix_default_r2,pcfAmPolicyUri,True,True,True,value,"transferred, replaced at target"
+trace_fix_default_r2,amPolicyReqTriggerList,False,False,False,,not held by source
+trace_fix_default_r2,eventSubscriptionList,True,True,False,,"transferred, ignored; lost"
+trace_fix_default_r2,sessionContextList,False,False,False,,not held by source
+trace_fix_default_r2,traceData,False,False,False,,not held by source
+trace_fix_default_r2,5G-GUTI,True,,,20893cafe0000000001,old GUTI kept
+trace_fix_default_r3,supi,True,True,True,same,transferred and applied
+trace_fix_default_r3,gpsiList,True,True,False,value,"transferred, ignored; restored by re-fetch"
+trace_fix_default_r3,pei,True,True,True,same,transferred and applied
+trace_fix_default_r3,subUeAmbr,True,True,True,same,transferred and applied
+trace_fix_default_r3,subRfsp,False,False,False,,not held by source
+trace_fix_default_r3,restrictedRatList,False,False,False,,not held by source
+trace_fix_default_r3,forbiddenAreaList,False,False,False,,not held by source
+trace_fix_default_r3,serviceAreaRestriction,False,False,False,,not held by source
+trace_fix_default_r3,seafData,True,True,True,same,transferred and applied
+trace_fix_default_r3,mmContextList,True,True,True,same,transferred and applied
+trace_fix_default_r3,pcfId,True,True,True,same,transferred and applied
+trace_fix_default_r3,pcfAmPolicyUri,True,True,True,value,"transferred, replaced at target"
+trace_fix_default_r3,amPolicyReqTriggerList,False,False,False,,not held by source
+trace_fix_default_r3,eventSubscriptionList,True,True,False,,"transferred, ignored; lost"
+trace_fix_default_r3,sessionContextList,False,False,False,,not held by source
+trace_fix_default_r3,traceData,False,False,False,,not held by source
+trace_fix_default_r3,5G-GUTI,True,,,20893cafe0000000001,old GUTI kept
+trace_fix_default_r4,supi,True,True,True,same,transferred and applied
+trace_fix_default_r4,gpsiList,True,True,False,value,"transferred, ignored; restored by re-fetch"
+trace_fix_default_r4,pei,True,True,True,same,transferred and applied
+trace_fix_default_r4,subUeAmbr,True,True,True,same,transferred and applied
+trace_fix_default_r4,subRfsp,False,False,False,,not held by source
+trace_fix_default_r4,restrictedRatList,False,False,False,,not held by source
+trace_fix_default_r4,forbiddenAreaList,False,False,False,,not held by source
+trace_fix_default_r4,serviceAreaRestriction,False,False,False,,not held by source
+trace_fix_default_r4,seafData,True,True,True,same,transferred and applied
+trace_fix_default_r4,mmContextList,True,True,True,same,transferred and applied
+trace_fix_default_r4,pcfId,True,True,True,same,transferred and applied
+trace_fix_default_r4,pcfAmPolicyUri,True,True,True,value,"transferred, replaced at target"
+trace_fix_default_r4,amPolicyReqTriggerList,False,False,False,,not held by source
+trace_fix_default_r4,eventSubscriptionList,True,True,False,,"transferred, ignored; lost"
+trace_fix_default_r4,sessionContextList,False,False,False,,not held by source
+trace_fix_default_r4,traceData,False,False,False,,not held by source
+trace_fix_default_r4,5G-GUTI,True,,,20893cafe0000000001,old GUTI kept
+trace_fix_default_r5,supi,True,True,True,same,transferred and applied
+trace_fix_default_r5,gpsiList,True,True,False,value,"transferred, ignored; restored by re-fetch"
+trace_fix_default_r5,pei,True,True,True,same,transferred and applied
+trace_fix_default_r5,subUeAmbr,True,True,True,same,transferred and applied
+trace_fix_default_r5,subRfsp,False,False,False,,not held by source
+trace_fix_default_r5,restrictedRatList,False,False,False,,not held by source
+trace_fix_default_r5,forbiddenAreaList,False,False,False,,not held by source
+trace_fix_default_r5,serviceAreaRestriction,False,False,False,,not held by source
+trace_fix_default_r5,seafData,True,True,True,same,transferred and applied
+trace_fix_default_r5,mmContextList,True,True,True,same,transferred and applied
+trace_fix_default_r5,pcfId,True,True,True,same,transferred and applied
+trace_fix_default_r5,pcfAmPolicyUri,True,True,True,value,"transferred, replaced at target"
+trace_fix_default_r5,amPolicyReqTriggerList,False,False,False,,not held by source
+trace_fix_default_r5,eventSubscriptionList,True,True,False,,"transferred, ignored; lost"
+trace_fix_default_r5,sessionContextList,False,False,False,,not held by source
+trace_fix_default_r5,traceData,False,False,False,,not held by source
+trace_fix_default_r5,5G-GUTI,True,,,20893cafe0000000001,old GUTI kept
+trace_fix_rich_r1,supi,True,True,True,same,transferred and applied
+trace_fix_rich_r1,gpsiList,True,True,False,value,"transferred, ignored; restored by re-fetch"
+trace_fix_rich_r1,pei,True,True,True,same,transferred and applied
+trace_fix_rich_r1,subUeAmbr,True,True,True,same,transferred and applied
+trace_fix_rich_r1,subRfsp,True,True,True,same,transferred and applied
+trace_fix_rich_r1,restrictedRatList,True,False,False,value,not transferred; restored by re-fetch
+trace_fix_rich_r1,forbiddenAreaList,True,False,False,value,not transferred; restored by re-fetch
+trace_fix_rich_r1,serviceAreaRestriction,True,False,False,value,not transferred; restored by re-fetch
+trace_fix_rich_r1,seafData,True,True,True,same,transferred and applied
+trace_fix_rich_r1,mmContextList,True,True,True,same,transferred and applied
+trace_fix_rich_r1,pcfId,True,True,True,same,transferred and applied
+trace_fix_rich_r1,pcfAmPolicyUri,True,True,True,value,"transferred, replaced at target"
+trace_fix_rich_r1,amPolicyReqTriggerList,False,False,False,,not held by source
+trace_fix_rich_r1,eventSubscriptionList,True,True,False,,"transferred, ignored; lost"
+trace_fix_rich_r1,sessionContextList,False,False,False,,not held by source
+trace_fix_rich_r1,traceData,False,False,False,,not held by source
+trace_fix_rich_r1,5G-GUTI,True,,,20893cafe0000000001,old GUTI kept
+trace_fix_rich_r2,supi,True,True,True,same,transferred and applied
+trace_fix_rich_r2,gpsiList,True,True,False,value,"transferred, ignored; restored by re-fetch"
+trace_fix_rich_r2,pei,True,True,True,same,transferred and applied
+trace_fix_rich_r2,subUeAmbr,True,True,True,same,transferred and applied
+trace_fix_rich_r2,subRfsp,True,True,True,same,transferred and applied
+trace_fix_rich_r2,restrictedRatList,True,False,False,value,not transferred; restored by re-fetch
+trace_fix_rich_r2,forbiddenAreaList,True,False,False,value,not transferred; restored by re-fetch
+trace_fix_rich_r2,serviceAreaRestriction,True,False,False,value,not transferred; restored by re-fetch
+trace_fix_rich_r2,seafData,True,True,True,same,transferred and applied
+trace_fix_rich_r2,mmContextList,True,True,True,same,transferred and applied
+trace_fix_rich_r2,pcfId,True,True,True,same,transferred and applied
+trace_fix_rich_r2,pcfAmPolicyUri,True,True,True,value,"transferred, replaced at target"
+trace_fix_rich_r2,amPolicyReqTriggerList,False,False,False,,not held by source
+trace_fix_rich_r2,eventSubscriptionList,True,True,False,,"transferred, ignored; lost"
+trace_fix_rich_r2,sessionContextList,False,False,False,,not held by source
+trace_fix_rich_r2,traceData,False,False,False,,not held by source
+trace_fix_rich_r2,5G-GUTI,True,,,20893cafe0000000001,old GUTI kept
+trace_fix_rich_r3,supi,True,True,True,same,transferred and applied
+trace_fix_rich_r3,gpsiList,True,True,False,value,"transferred, ignored; restored by re-fetch"
+trace_fix_rich_r3,pei,True,True,True,same,transferred and applied
+trace_fix_rich_r3,subUeAmbr,True,True,True,same,transferred and applied
+trace_fix_rich_r3,subRfsp,True,True,True,same,transferred and applied
+trace_fix_rich_r3,restrictedRatList,True,False,False,value,not transferred; restored by re-fetch
+trace_fix_rich_r3,forbiddenAreaList,True,False,False,value,not transferred; restored by re-fetch
+trace_fix_rich_r3,serviceAreaRestriction,True,False,False,value,not transferred; restored by re-fetch
+trace_fix_rich_r3,seafData,True,True,True,same,transferred and applied
+trace_fix_rich_r3,mmContextList,True,True,True,same,transferred and applied
+trace_fix_rich_r3,pcfId,True,True,True,same,transferred and applied
+trace_fix_rich_r3,pcfAmPolicyUri,True,True,True,value,"transferred, replaced at target"
+trace_fix_rich_r3,amPolicyReqTriggerList,False,False,False,,not held by source
+trace_fix_rich_r3,eventSubscriptionList,True,True,False,,"transferred, ignored; lost"
+trace_fix_rich_r3,sessionContextList,False,False,False,,not held by source
+trace_fix_rich_r3,traceData,False,False,False,,not held by source
+trace_fix_rich_r3,5G-GUTI,True,,,20893cafe0000000001,old GUTI kept
+trace_fix_rich_r4,supi,True,True,True,same,transferred and applied
+trace_fix_rich_r4,gpsiList,True,True,False,value,"transferred, ignored; restored by re-fetch"
+trace_fix_rich_r4,pei,True,True,True,same,transferred and applied
+trace_fix_rich_r4,subUeAmbr,True,True,True,same,transferred and applied
+trace_fix_rich_r4,subRfsp,True,True,True,same,transferred and applied
+trace_fix_rich_r4,restrictedRatList,True,False,False,value,not transferred; restored by re-fetch
+trace_fix_rich_r4,forbiddenAreaList,True,False,False,value,not transferred; restored by re-fetch
+trace_fix_rich_r4,serviceAreaRestriction,True,False,False,value,not transferred; restored by re-fetch
+trace_fix_rich_r4,seafData,True,True,True,same,transferred and applied
+trace_fix_rich_r4,mmContextList,True,True,True,same,transferred and applied
+trace_fix_rich_r4,pcfId,True,True,True,same,transferred and applied
+trace_fix_rich_r4,pcfAmPolicyUri,True,True,True,value,"transferred, replaced at target"
+trace_fix_rich_r4,amPolicyReqTriggerList,False,False,False,,not held by source
+trace_fix_rich_r4,eventSubscriptionList,True,True,False,,"transferred, ignored; lost"
+trace_fix_rich_r4,sessionContextList,False,False,False,,not held by source
+trace_fix_rich_r4,traceData,False,False,False,,not held by source
+trace_fix_rich_r4,5G-GUTI,True,,,20893cafe0000000001,old GUTI kept
+trace_fix_rich_r5,supi,True,True,True,same,transferred and applied
+trace_fix_rich_r5,gpsiList,True,True,False,value,"transferred, ignored; restored by re-fetch"
+trace_fix_rich_r5,pei,True,True,True,same,transferred and applied
+trace_fix_rich_r5,subUeAmbr,True,True,True,same,transferred and applied
+trace_fix_rich_r5,subRfsp,True,True,True,same,transferred and applied
+trace_fix_rich_r5,restrictedRatList,True,False,False,value,not transferred; restored by re-fetch
+trace_fix_rich_r5,forbiddenAreaList,True,False,False,value,not transferred; restored by re-fetch
+trace_fix_rich_r5,serviceAreaRestriction,True,False,False,value,not transferred; restored by re-fetch
+trace_fix_rich_r5,seafData,True,True,True,same,transferred and applied
+trace_fix_rich_r5,mmContextList,True,True,True,same,transferred and applied
+trace_fix_rich_r5,pcfId,True,True,True,same,transferred and applied
+trace_fix_rich_r5,pcfAmPolicyUri,True,True,True,value,"transferred, replaced at target"
+trace_fix_rich_r5,amPolicyReqTriggerList,False,False,False,,not held by source
+trace_fix_rich_r5,eventSubscriptionList,True,True,False,,"transferred, ignored; lost"
+trace_fix_rich_r5,sessionContextList,False,False,False,,not held by source
+trace_fix_rich_r5,traceData,False,False,False,,not held by source
+trace_fix_rich_r5,5G-GUTI,True,,,20893cafe0000000001,old GUTI kept
+trace_unmod_rich_r1,supi,True,True,True,,registration rejected
+trace_unmod_rich_r1,gpsiList,True,True,False,,registration rejected
+trace_unmod_rich_r1,pei,True,True,True,,registration rejected
+trace_unmod_rich_r1,subUeAmbr,True,True,True,,registration rejected
+trace_unmod_rich_r1,subRfsp,True,True,True,,registration rejected
+trace_unmod_rich_r1,restrictedRatList,True,False,False,,registration rejected
+trace_unmod_rich_r1,forbiddenAreaList,True,False,False,,registration rejected
+trace_unmod_rich_r1,serviceAreaRestriction,True,False,False,,registration rejected
+trace_unmod_rich_r1,seafData,True,True,True,,registration rejected
+trace_unmod_rich_r1,mmContextList,True,True,True,,registration rejected
+trace_unmod_rich_r1,pcfId,True,True,True,,registration rejected
+trace_unmod_rich_r1,pcfAmPolicyUri,True,True,True,,registration rejected
+trace_unmod_rich_r1,amPolicyReqTriggerList,False,False,False,,not held by source
+trace_unmod_rich_r1,eventSubscriptionList,True,True,False,,registration rejected
+trace_unmod_rich_r1,sessionContextList,False,False,False,,not held by source
+trace_unmod_rich_r1,traceData,False,False,False,,not held by source
+trace_unmod_rich_r1,5G-GUTI,True,,,,registration rejected
+trace_unmod_rich_r2,supi,True,True,True,,registration rejected
+trace_unmod_rich_r2,gpsiList,True,True,False,,registration rejected
+trace_unmod_rich_r2,pei,True,True,True,,registration rejected
+trace_unmod_rich_r2,subUeAmbr,True,True,True,,registration rejected
+trace_unmod_rich_r2,subRfsp,True,True,True,,registration rejected
+trace_unmod_rich_r2,restrictedRatList,True,False,False,,registration rejected
+trace_unmod_rich_r2,forbiddenAreaList,True,False,False,,registration rejected
+trace_unmod_rich_r2,serviceAreaRestriction,True,False,False,,registration rejected
+trace_unmod_rich_r2,seafData,True,True,True,,registration rejected
+trace_unmod_rich_r2,mmContextList,True,True,True,,registration rejected
+trace_unmod_rich_r2,pcfId,True,True,True,,registration rejected
+trace_unmod_rich_r2,pcfAmPolicyUri,True,True,True,,registration rejected
+trace_unmod_rich_r2,amPolicyReqTriggerList,False,False,False,,not held by source
+trace_unmod_rich_r2,eventSubscriptionList,True,True,False,,registration rejected
+trace_unmod_rich_r2,sessionContextList,False,False,False,,not held by source
+trace_unmod_rich_r2,traceData,False,False,False,,not held by source
+trace_unmod_rich_r2,5G-GUTI,True,,,,registration rejected
+trace_unmod_rich_r3,supi,True,True,True,,registration rejected
+trace_unmod_rich_r3,gpsiList,True,True,False,,registration rejected
+trace_unmod_rich_r3,pei,True,True,True,,registration rejected
+trace_unmod_rich_r3,subUeAmbr,True,True,True,,registration rejected
+trace_unmod_rich_r3,subRfsp,True,True,True,,registration rejected
+trace_unmod_rich_r3,restrictedRatList,True,False,False,,registration rejected
+trace_unmod_rich_r3,forbiddenAreaList,True,False,False,,registration rejected
+trace_unmod_rich_r3,serviceAreaRestriction,True,False,False,,registration rejected
+trace_unmod_rich_r3,seafData,True,True,True,,registration rejected
+trace_unmod_rich_r3,mmContextList,True,True,True,,registration rejected
+trace_unmod_rich_r3,pcfId,True,True,True,,registration rejected
+trace_unmod_rich_r3,pcfAmPolicyUri,True,True,True,,registration rejected
+trace_unmod_rich_r3,amPolicyReqTriggerList,False,False,False,,not held by source
+trace_unmod_rich_r3,eventSubscriptionList,True,True,False,,registration rejected
+trace_unmod_rich_r3,sessionContextList,False,False,False,,not held by source
+trace_unmod_rich_r3,traceData,False,False,False,,not held by source
+trace_unmod_rich_r3,5G-GUTI,True,,,,registration rejected
+trace_unmod_rich_r4,supi,True,True,True,,registration rejected
+trace_unmod_rich_r4,gpsiList,True,True,False,,registration rejected
+trace_unmod_rich_r4,pei,True,True,True,,registration rejected
+trace_unmod_rich_r4,subUeAmbr,True,True,True,,registration rejected
+trace_unmod_rich_r4,subRfsp,True,True,True,,registration rejected
+trace_unmod_rich_r4,restrictedRatList,True,False,False,,registration rejected
+trace_unmod_rich_r4,forbiddenAreaList,True,False,False,,registration rejected
+trace_unmod_rich_r4,serviceAreaRestriction,True,False,False,,registration rejected
+trace_unmod_rich_r4,seafData,True,True,True,,registration rejected
+trace_unmod_rich_r4,mmContextList,True,True,True,,registration rejected
+trace_unmod_rich_r4,pcfId,True,True,True,,registration rejected
+trace_unmod_rich_r4,pcfAmPolicyUri,True,True,True,,registration rejected
+trace_unmod_rich_r4,amPolicyReqTriggerList,False,False,False,,not held by source
+trace_unmod_rich_r4,eventSubscriptionList,True,True,False,,registration rejected
+trace_unmod_rich_r4,sessionContextList,False,False,False,,not held by source
+trace_unmod_rich_r4,traceData,False,False,False,,not held by source
+trace_unmod_rich_r4,5G-GUTI,True,,,,registration rejected
+trace_unmod_rich_r5,supi,True,True,True,,registration rejected
+trace_unmod_rich_r5,gpsiList,True,True,False,,registration rejected
+trace_unmod_rich_r5,pei,True,True,True,,registration rejected
+trace_unmod_rich_r5,subUeAmbr,True,True,True,,registration rejected
+trace_unmod_rich_r5,subRfsp,True,True,True,,registration rejected
+trace_unmod_rich_r5,restrictedRatList,True,False,False,,registration rejected
+trace_unmod_rich_r5,forbiddenAreaList,True,False,False,,registration rejected
+trace_unmod_rich_r5,serviceAreaRestriction,True,False,False,,registration rejected
+trace_unmod_rich_r5,seafData,True,True,True,,registration rejected
+trace_unmod_rich_r5,mmContextList,True,True,True,,registration rejected
+trace_unmod_rich_r5,pcfId,True,True,True,,registration rejected
+trace_unmod_rich_r5,pcfAmPolicyUri,True,True,True,,registration rejected
+trace_unmod_rich_r5,amPolicyReqTriggerList,False,False,False,,not held by source
+trace_unmod_rich_r5,eventSubscriptionList,True,True,False,,registration rejected
+trace_unmod_rich_r5,sessionContextList,False,False,False,,not held by source
+trace_unmod_rich_r5,traceData,False,False,False,,not held by source
+trace_unmod_rich_r5,5G-GUTI,True,,,,registration rejected

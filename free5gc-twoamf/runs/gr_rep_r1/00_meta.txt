@@ -1,0 +1,7 @@
+UE_IMAGE=ch5/ueransim:patched AMF_IMAGE=ch5/free5gc-amf:fixed-gutirepair AMF2_CFG=amf2cfg_t3512.yaml AMF1_CFG=amf1cfg.yaml GNB2_CFG=gnb2cfg.yaml SUBSCRIBER=subscriber.json POST_WAIT=20 PDU= UE_CFG=uecfg.yaml
+2026-11-10T16:35:36Z
+POST subscriber: 201
+/amf1 2026-11-10T16:35:47.81233884Z
+/amf2 2026-11-10T16:35:48.64064221Z
+/ue 2026-11-10T16:36:09.966202078Z
+/gnb2 2026-11-10T16:36:18.369705022Z

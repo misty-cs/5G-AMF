@@ -1,0 +1,11 @@
+run,mode,n_reg_requests,guti_at_move,guti_next_reg,same_guti,seen_on_radio_at_move,seen_on_radio_next_reg
+obs_f5fix_r1,amf_change,5,02f839cafe0000000001,02f839cafe0000000001,True,gNB2,gNB2
+obs_f5ctl_r1,control,3,02f839cafe0000000001,02f839cafe0000000002,False,gNB2,gNB2
+obs_f5fix_r2,amf_change,5,02f839cafe0000000001,02f839cafe0000000001,True,gNB2,gNB2
+obs_f5ctl_r2,control,3,02f839cafe0000000001,02f839cafe0000000002,False,gNB2,gNB2
+obs_f5fix_r3,amf_change,5,02f839cafe0000000001,02f839cafe0000000001,True,gNB2,gNB2
+obs_f5ctl_r3,control,3,02f839cafe0000000001,02f839cafe0000000002,False,gNB2,gNB2
+obs_f5fix_r4,amf_change,5,02f839cafe0000000001,02f839cafe0000000001,True,gNB2,gNB2
+obs_f5ctl_r4,control,3,02f839cafe0000000001,02f839cafe0000000002,False,gNB2,gNB2
+obs_f5fix_r5,amf_change,5,02f839cafe0000000001,02f839cafe0000000001,True,gNB2,gNB2
+obs_f5ctl_r5,control,3,02f839cafe0000000001,02f839cafe0000000002,False,gNB2,gNB2

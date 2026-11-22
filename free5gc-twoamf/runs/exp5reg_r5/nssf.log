@@ -1,0 +1,14 @@
+2026-11-08T06:13:09.021522929Z [INFO][NSSF][Main] NSSF version:  
+	Not specify ldflags (which link version) during go build
+	go version: go1.26.2 linux/arm64
+2026-11-08T06:13:09.022009553Z [INFO][NSSF][CFG] Read config from [./config/nssfcfg.yaml]
+2026-11-08T06:13:09.023109551Z [INFO][NSSF][Main] Log enable is set to [true]
+2026-11-08T06:13:09.023147676Z [INFO][NSSF][Main] Log level is set to [info]
+2026-11-08T06:13:09.023151259Z [INFO][NSSF][Main] Report Caller is set to [false]
+2026-11-08T06:13:09.024511589Z [ERRO][NSSF][Consumer] NSSF register to NRF Error[Put "http://nrf.free5gc.org:8000/nnrf-nfm/v1/nf-instances/8eec0e24-42db-46b7-9e70-56b776afa5fe": dial tcp 10.100.200.3:8000: connect: connection refused]
+2026-11-08T06:13:11.029341780Z [INFO][NSSF][Main] OAuth2 setting receive from NRF: false
+2026-11-08T06:13:11.029358864Z [INFO][NSSF][Main] register to NRF successfully
+2026-11-08T06:13:11.029362114Z [INFO][NSSF][SBI] Starting server...
+2026-11-08T06:13:41.227612528Z [INFO][NSSF][NsSel] Handle NSSelectionGet
+2026-11-08T06:13:41.228489067Z [WARN][NSSF][Util] No TA {"plmnId":{"mcc":"208","mnc":"93"},"tac":"000001"} in NSSF configuration
+2026-11-08T06:13:41.228653275Z [INFO][NSSF][GIN] | 200 |   10.100.200.16 | GET     | /nnssf-nsselection/v2/network-slice-information?nf-id=aaaaaaaa-0000-4000-8000-000000000001&nf-type=AMF&slice-info-request-for-registration=%7B%22subscribedNssai%22%3A%5B%7B%22subscribedSnssai%22%3A%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D%2C%22defaultIndication%22%3Atrue%7D%2C%7B%22subscribedSnssai%22%3A%7B%22sst%22%3A1%2C%22sd%22%3A%22112233%22%7D%7D%5D%2C%22requestedNssai%22%3A%5B%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D%2C%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D%2C%7B%22sst%22%3A1%2C%22sd%22%3A%22112233%22%7D%5D%7D&tai=%7B%22plmnId%22%3A%7B%22mcc%22%3A%22208%22%2C%22mnc%22%3A%2293%22%7D%2C%22tac%22%3A%22000001%22%7D |  |

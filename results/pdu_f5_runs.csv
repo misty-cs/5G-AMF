@@ -1,0 +1,9 @@
+run,pdu_established,sessions_in_transfer,smf_calls_after_move(src:op),sessions_at_serving_amf_accept,ue_reregistered
+pdu_f5ctl_r1,1,n/a(same AMF),,1,2
+pdu_f5ctl_r2,1,n/a(same AMF),,1,2
+pdu_f5ctl_r3,1,n/a(same AMF),,1,2
+pdu_f5fix_r1,1,0,AMF1:release ,0,2
+pdu_f5fix_r2,1,0,AMF1:release ,0,2
+pdu_f5fix_r3,1,0,AMF1:release ,0,2
+pdu_f5fix_r4,1,0,AMF1:release ,0,2
+pdu_f5fix_r5,1,0,AMF1:release ,0,2

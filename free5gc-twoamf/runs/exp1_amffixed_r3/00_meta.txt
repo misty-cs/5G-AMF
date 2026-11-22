@@ -1,0 +1,3 @@
+UE_IMAGE=ch5/ueransim:patched AMF_IMAGE=ch5/free5gc-amf:fixed AMF2_CFG=amf2cfg.yaml
+2026-11-07T07:05:18Z
+POST subscriber: 201

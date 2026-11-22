@@ -1,0 +1,19 @@
+UERANSIM v3.3.0
+[2026-11-08 06:09:04.838] [sctp] [info] Trying to establish SCTP connection... (10.100.200.16:38412)
+[2026-11-08 06:09:04.839] [sctp] [info] SCTP connection established (10.100.200.16:38412)
+[2026-11-08 06:09:04.840] [sctp] [info] Trying to establish SCTP connection... (10.100.200.17:38412)
+[2026-11-08 06:09:04.841] [sctp] [info] SCTP connection established (10.100.200.17:38412)
+[2026-11-08 06:09:04.841] [sctp] [debug] SCTP association setup ascId[39]
+[2026-11-08 06:09:04.841] [sctp] [debug] SCTP association setup ascId[41]
+[2026-11-08 06:09:04.841] [ngap] [debug] Sending NG Setup Request
+[2026-11-08 06:09:04.841] [ngap] [debug] Sending NG Setup Request
+[2026-11-08 06:09:04.842] [ngap] [debug] NG Setup Response received
+[2026-11-08 06:09:04.842] [ngap] [info] NG Setup procedure is successful
+[2026-11-08 06:09:04.843] [ngap] [debug] NG Setup Response received
+[2026-11-08 06:09:04.843] [ngap] [info] NG Setup procedure is successful
+[2026-11-08 06:09:09.040] [rrc] [debug] UE[1] new signal detected
+[2026-11-08 06:09:09.042] [rrc] [info] RRC Setup for UE[1]
+[2026-11-08 06:09:09.042] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-08 06:09:09.042] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[3]
+[2026-11-08 06:09:09.083] [ngap] [info] ch5: UE[1] re-allocated from AMF[3] to AMF[2] (Old AMF IE)
+[2026-11-08 06:09:09.104] [ngap] [debug] Initial Context Setup Request received

@@ -1,0 +1,40 @@
+diff --git a/internal/gmm/handler.go b/internal/gmm/handler.go
+index faedf36..fb65422 100644
+--- a/internal/gmm/handler.go
++++ b/internal/gmm/handler.go
+@@ -578,6 +578,35 @@ func HandleRegistrationRequest(ue *context.AmfUe, anType models.AccessType, proc
+ 			// if failed, give up to retrieve the old context and start a new authentication procedure.
+ 			ue.ServingAmfChanged = false
+ 			context.GetSelf().AllocateGutiToUe(ue) // refresh 5G-GUTI
++		} else if regReq := ue.RegistrationRequest; regReq != nil && regReq.NASMsgCntr != nil {
++			// ch5 fix: TS 24.501 4.4.6 - the AMF shall decipher the NAS message container of an integrity
++			// protected initial NAS message. At a new AMF the keys only become available after
++			// UEContextTransfer, so the container skipped above (MacFailed) is processed here.
++			secCtx := &nas_message.SecCtx{
++				Side:          nas_message.CoreNetworkSide,
++				Bearer:        nas_security.GetBearerType(anType),
++				UplinkCount:   &ue.ULCount,
++				DownlinkCount: &ue.DLCount,
++				CipheringAlg:  ie.AlgCiphering(ue.CipheringAlg),
++				IntegrityAlg:  ie.AlgIntegrity(ue.IntegrityAlg),
++				KnasEnc:       ue.KnasEnc,
++				KnasInt:       ue.KnasInt,
++			}
++			contents, err := secCtx.NASEncrypt(nas_message.DirectionUplink, regReq.NASMsgCntr.Contents)
++			if err != nil {
++				return fmt.Errorf("decipher NAS message container after UEContextTransfer: %w", err)
++			}
++			decoded, err := nas_message.ParseGMM(contents)
++			if err != nil {
++				return fmt.Errorf("parse NAS message container after UEContextTransfer: %w", err)
++			}
++			inner, ok := decoded.(*nas_message.RegReq)
++			if !ok {
++				return errors.New("NAS message container is not a Registration Request")
++			}
++			ue.GmmLog.Infof("ch5 fix: NAS message container deciphered after UEContextTransfer")
++			ue.RegistrationRequest = inner
++			ue.RetransmissionOfInitialNASMsg = false
+ 		}
+ 	}
+ 

@@ -1,0 +1,116 @@
+diff --git a/internal/gmm/handler.go b/internal/gmm/handler.go
+index faedf36..39f36dd 100644
+--- a/internal/gmm/handler.go
++++ b/internal/gmm/handler.go
+@@ -1112,6 +1112,11 @@ func getSubscribedNssai(ue *context.AmfUe) {
+ }
+ 
+ // TS 23.502 4.2.2.2.3 Registration with AMF Re-allocation
++// ErrCh5Forwarded (ch5): returned after the UE was forwarded to the target AMF by N1MessageNotify
++// (TS 23.502 4.2.2.2.3 step 7(A)). The initial AMF stops the registration but keeps the UE context,
++// so the GMM state machine must not treat this as a context-setup failure.
++var ErrCh5Forwarded = errors.New("UE forwarded to target AMF by N1MessageNotify; initial AMF stops")
++
+ func handleRequestedNssai(ue *context.AmfUe, anType models.AccessType) error {
+ 	amfSelf := context.GetSelf()
+ 	var err error
+@@ -1286,7 +1291,9 @@ func handleRequestedNssai(ue *context.AmfUe, anType models.AccessType) error {
+ 				ngap_message.SendRerouteNasRequest(ue, anType, nil, ue.GetRanUe(anType).InitialUEMessage, &allowedNssaiNgap)
+ 				return err
+ 			}
+-			return nil
++			// ch5: the UE was forwarded to the target AMF (TS 23.502 4.2.2.2.3 step 7(A)); the
++			// initial AMF must not continue the registration itself.
++			return ErrCh5Forwarded
+ 		}
+ 	}
+ 
+diff --git a/internal/gmm/sm.go b/internal/gmm/sm.go
+index 0f26073..a63a277 100644
+--- a/internal/gmm/sm.go
++++ b/internal/gmm/sm.go
+@@ -355,7 +355,7 @@ func ContextSetup(state *fsm.State, event fsm.EventType, args fsm.ArgsType) {
+ 			amfUe.RegistrationRequest = message
+ 			switch amfUe.RegistrationType5GS {
+ 			case ie.RegType_InitialReg:
+-				if err := HandleInitialRegistration(amfUe, accessType); err != nil {
++				if err := HandleInitialRegistration(amfUe, accessType); err != nil && err != ErrCh5Forwarded {
+ 					logger.GmmLog.Errorln(err)
+ 					err = GmmFSM.SendEvent(state, ContextSetupFailEvent, fsm.ArgsType{
+ 						ArgAmfUe:      amfUe,
+@@ -368,7 +368,7 @@ func ContextSetup(state *fsm.State, event fsm.EventType, args fsm.ArgsType) {
+ 			case ie.RegType_MobilityRegUpdating:
+ 				fallthrough
+ 			case ie.RegType_PeriodicRegUpdating:
+-				if err := HandleMobilityAndPeriodicRegistrationUpdating(amfUe, accessType); err != nil {
++				if err := HandleMobilityAndPeriodicRegistrationUpdating(amfUe, accessType); err != nil && err != ErrCh5Forwarded {
+ 					logger.GmmLog.Errorln(err)
+ 					err = GmmFSM.SendEvent(state, ContextSetupFailEvent, fsm.ArgsType{
+ 						ArgAmfUe:      amfUe,
+@@ -397,7 +397,7 @@ func ContextSetup(state *fsm.State, event fsm.EventType, args fsm.ArgsType) {
+ 			} else {
+ 				switch amfUe.RegistrationType5GS {
+ 				case ie.RegType_InitialReg:
+-					if err2 := HandleInitialRegistration(amfUe, accessType); err2 != nil {
++					if err2 := HandleInitialRegistration(amfUe, accessType); err2 != nil && err2 != ErrCh5Forwarded {
+ 						logger.GmmLog.Errorln(err2)
+ 						err2 = GmmFSM.SendEvent(state, ContextSetupFailEvent, fsm.ArgsType{
+ 							ArgAmfUe:      amfUe,
+@@ -410,7 +410,7 @@ func ContextSetup(state *fsm.State, event fsm.EventType, args fsm.ArgsType) {
+ 				case ie.RegType_MobilityRegUpdating:
+ 					fallthrough
+ 				case ie.RegType_PeriodicRegUpdating:
+-					if err2 := HandleMobilityAndPeriodicRegistrationUpdating(amfUe, accessType); err2 != nil {
++					if err2 := HandleMobilityAndPeriodicRegistrationUpdating(amfUe, accessType); err2 != nil && err2 != ErrCh5Forwarded {
+ 						logger.GmmLog.Errorln(err2)
+ 						err2 = GmmFSM.SendEvent(state, ContextSetupFailEvent, fsm.ArgsType{
+ 							ArgAmfUe:      amfUe,
+diff --git a/internal/sbi/processor/callback.go b/internal/sbi/processor/callback.go
+index cbf6118..a0840a4 100644
+--- a/internal/sbi/processor/callback.go
++++ b/internal/sbi/processor/callback.go
+@@ -325,15 +325,22 @@ func (p *Processor) N1MessageNotifyProcedure(n1MessageNotify models.N1MessageNot
+ 	anN2ApId := *registrationCtxtContainer.AnN2ApId
+ 	ranUe := ran.RanUeFindByRanUeNgapID(int64(anN2ApId))
+ 	if ranUe == nil {
+-		logger.CallbackLog.Warnf("RanUe Context[AnN2ApId:%d] not found in RAN[RanId: %+v]",
+-			anN2ApId, *registrationCtxtContainer.RanNodeId)
+-
+-		problemDetails := &models.ProblemDetails{
+-			Status: http.StatusNotFound,
+-			Cause:  "CONTEXT_NOT_FOUND",
+-			Detail: fmt.Sprintf("RanUe Context[AnN2ApId:%d] not found", anN2ApId),
++		// ch5: AMF re-allocation via direct forwarding (TS 23.502 4.2.2.2.3 step 7(A)).
++		// The RAN UE NGAP ID was allocated on the initial AMF's NG association, so this
++		// AMF has no RanUe for it yet. Create one; the NG-RAN node accepts the new
++		// AMF UE NGAP ID on this NG interface instance (TS 38.413 8.6.2.2).
++		newRanUe, err := ran.NewRanUe(int64(anN2ApId))
++		if err != nil {
++			logger.CallbackLog.Errorf("ch5: create RanUe for AnN2ApId %d failed: %+v", anN2ApId, err)
++			problemDetails := &models.ProblemDetails{
++				Status: http.StatusInternalServerError,
++				Cause:  "SYSTEM_FAILURE",
++				Detail: fmt.Sprintf("Can not create RanUe Context[AnN2ApId:%d]", anN2ApId),
++			}
++			return problemDetails
+ 		}
+-		return problemDetails
++		logger.CallbackLog.Infof("ch5: created RanUe[AnN2ApId:%d, AmfUeNgapId:%d] for re-allocated UE",
++			anN2ApId, newRanUe.AmfUeNgapId)
+ 	}
+ 
+ 	go func() {
+@@ -363,6 +370,13 @@ func (p *Processor) N1MessageNotifyProcedure(n1MessageNotify models.N1MessageNot
+ 		}
+ 
+ 		currentRanUe.Location = *registrationCtxtContainer.UserLocation
++		// ch5: a RanUe created for a re-allocated UE has no TAI yet (normally set from the
++		// InitialUEMessage); derive it from the forwarded user location so the TAI check works.
++		if loc := registrationCtxtContainer.UserLocation; loc.NrLocation != nil && loc.NrLocation.Tai != nil {
++			currentRanUe.Tai = *loc.NrLocation.Tai
++		} else if loc.EutraLocation != nil && loc.EutraLocation.Tai != nil {
++			currentRanUe.Tai = *loc.EutraLocation.Tai
++		}
+ 		amfUe.Location = *registrationCtxtContainer.UserLocation
+ 		currentRanUe.UeContextRequest = registrationCtxtContainer.UeContextRequest
+ 		currentRanUe.OldAmfName = registrationCtxtContainer.InitialAmfName

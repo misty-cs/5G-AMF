@@ -1,0 +1,53 @@
+2026-11-09T05:50:13.934423780Z [INFO][SMF][Main] SMF version:  
+	Not specify ldflags (which link version) during go build
+	go version: go1.26.2 linux/arm64
+2026-11-09T05:50:13.934889176Z [INFO][SMF][CFG] Read config from [./config/smfcfg.yaml]
+2026-11-09T05:50:13.936560471Z [INFO][SMF][CFG] Read config from [./config/uerouting.yaml]
+2026-11-09T05:50:13.936738117Z [INFO][SMF][Main] Log enable is set to [true]
+2026-11-09T05:50:13.936752757Z [INFO][SMF][Main] Log level is set to [info]
+2026-11-09T05:50:13.936758843Z [INFO][SMF][Main] Report Caller is set to [false]
+2026-11-09T05:50:13.936768292Z [INFO][SMF][CTX] smfconfig Info: Version[1.0.7] Description[SMF initial local configuration]
+2026-11-09T05:50:13.936838644Z [INFO][SMF][CTX] Endpoints: [10.100.200.21]
+2026-11-09T05:50:13.936961089Z [INFO][SMF][Init] Server started
+2026-11-09T05:50:13.938147198Z [INFO][SMF][PFCP][addr:10.100.200.20:8805] Listen on 10.100.200.20:8805
+2026-11-09T05:50:13.938720016Z [INFO][SMF][PFCP][addr:10.100.200.20:8805] PFCP server started
+2026-11-09T05:50:13.939765165Z [INFO][SMF][Main] Sending PFCP Association Request to UPF[10.100.200.21]
+2026-11-09T05:50:13.943182959Z [INFO][SMF][Main] Received PFCP Association Setup Accepted Response from UPF[10.100.200.21]
+2026-11-09T05:50:13.943189939Z [INFO][SMF][Main] UPF(10.100.200.21) setup association
+2026-11-09T05:50:13.943391291Z [ERRO][SMF][Consumer] SMF register to NRF Error[Put "http://nrf.free5gc.org:8000/nnrf-nfm/v1/nf-instances/40afa491-68c1-4c7c-989d-456d5b6ee908": dial tcp 10.100.200.3:8000: connect: connection refused]
+2026-11-09T05:50:15.949323640Z [INFO][SMF][Main] OAuth2 setting receive from NRF: false
+2026-11-09T05:50:15.949522584Z [INFO][SMF][Init] SMF Registration to NRF {40afa491-68c1-4c7c-989d-456d5b6ee908  SMF REGISTERED [] 0 [{208 93}] [] [{1 010203 [] false} {1 112233 [] false}] [] []   [smf.free5gc.org] [] [] [] [] [] [] 0 0 0 <nil> area1 <nil> map[] <nil> map[] <nil> map[] <nil> map[] 0x4c249c85a840 map[] <nil> map[] <nil> map[] <nil> map[] <nil> map[] <nil> <nil> <nil> map[] <nil> map[] map[] map[] map[oauth2:false] <nil> false [{40afa491-68c1-4c7c-989d-456d5b6ee908nsmf-pdusession nsmf-pdusession [{v1 1.0.7 2026-11-09 05:50:13.936893504 +0000 UTC}] http REGISTERED   [{smf.free5gc.org   8000}] http://smf.free5gc.org:8000 [] [] [] [] [] [] map[] map[] 0 0 0 <nil> <nil>  [] [] []  map[] false <nil>} {40afa491-68c1-4c7c-989d-456d5b6ee908nsmf-event-exposure nsmf-event-exposure [{v1 1.0.7 2026-11-09 05:50:13.936893504 +0000 UTC}] http REGISTERED   [{smf.free5gc.org   8000}] http://smf.free5gc.org:8000 [] [] [] [] [] [] map[] map[] 0 0 0 <nil> <nil>  [] [] []  map[] false <nil>} {40afa491-68c1-4c7c-989d-456d5b6ee908nsmf-oam nsmf-oam [{v1 1.0.7 2026-11-09 05:50:13.936893504 +0000 UTC}] http REGISTERED   [{smf.free5gc.org   8000}] http://smf.free5gc.org:8000 [] [] [] [] [] [] map[] map[] 0 0 0 <nil> <nil>  [] [] []  map[] false <nil>} {40afa491-68c1-4c7c-989d-456d5b6ee908nsmf-callback nsmf-callback [{v1 1.0.7 2026-11-09 05:50:13.936893504 +0000 UTC}] http REGISTERED   [{smf.free5gc.org   8000}] http://smf.free5gc.org:8000 [] [] [] [] [] [] map[] map[] 0 0 0 <nil> <nil>  [] [] []  map[] false <nil>}] map[] false false [] <nil> <nil> [] [] false false map[] map[] [] <nil> <nil>  map[] map[] <nil> <nil> map[] <nil> map[] map[] map[] map[] <nil> <nil> [] <nil> <nil>}
+2026-11-09T05:50:15.949668033Z [INFO][SMF][SBI] Start SBI server (listen on smf.free5gc.org:8000)
+2026-11-09T05:50:38.253447678Z [INFO][SMF][PduSess] Receive Create SM Context Request
+2026-11-09T05:50:38.256213734Z [INFO][SMF][PduSess] In HandlePDUSessionSMContextCreate
+2026-11-09T05:50:38.258843790Z [INFO][SMF][CTX] UrrPeriod: 10s
+2026-11-09T05:50:38.258931051Z [INFO][SMF][CTX] UrrThreshold: 1000
+2026-11-09T05:50:38.268725856Z [INFO][SMF][PduSess][pdu_session_id:1][supi:imsi-208930000000001] Send NF Discovery Serving UDM Successfully
+2026-11-09T05:50:38.272794471Z [INFO][SMF][GSM] In HandlePDUSessionEstablishmentRequest
+2026-11-09T05:50:38.272818442Z [INFO][SMF][GSM] Protocol Configuration Options
+2026-11-09T05:50:38.272865710Z [INFO][SMF][GSM] &{IPv4LinkMTUReq:false DNSV4Req:true DNSV6Req:false P_CSCF_IPv4AddrReq:false UEStatus3GPPPSDataOff:0}
+2026-11-09T05:50:38.274546538Z [INFO][SMF][Consumer] SendNFDiscoveryServingAMF ok
+2026-11-09T05:50:38.274613151Z [INFO][SMF][CTX] Allocated UE IP address: 10.60.0.1
+2026-11-09T05:50:38.274621561Z [INFO][SMF][CTX] Selected UPF: UPF
+2026-11-09T05:50:38.274624631Z [INFO][SMF][PduSess][pdu_session_id:1][supi:imsi-208930000000001] Allocated PDUAdress[10.60.0.1]
+2026-11-09T05:50:38.275081751Z [WARN][SMF][Consumer] BSF selection failed: no BSF instances found
+2026-11-09T05:50:38.275092853Z [WARN][SMF][Consumer] BSF query error (falling back to NRF): no BSF instances found
+2026-11-09T05:50:38.275102020Z [INFO][SMF][Consumer] No PCF binding found in BSF, using NRF discovery for SUPI: imsi-208930000000001, DNN: internet
+2026-11-09T05:50:38.289412720Z [INFO][SMF][PduSess] CHF Selection for SMContext SUPI[imsi-208930000000001] PDUSessionID[1]
+2026-11-09T05:50:38.290636766Z [ERRO][SMF][PduSess] chf selection error: no CHF found in CHFSelection
+2026-11-09T05:50:38.290647363Z [INFO][SMF][PduSess][pdu_session_id:1][supi:imsi-208930000000001] Has no pre-config route. Has no default path
+2026-11-09T05:50:38.290831514Z [INFO][SMF][PduSess] Sending PFCP Session Establishment Request
+2026-11-09T05:50:38.291360713Z [INFO][SMF][PduSess][pdu_session_id:1][supi:imsi-208930000000001] [BuildEstReq] UPF=ba52c545-6b46-4317-b63a-09fc7d8dc17a urrList=4 unique_urrs=2
+2026-11-09T05:50:38.292998395Z [INFO][SMF][PduSess] SDM Subscription Successful UE: imsi-208930000000001 SubscriptionId: 2
+2026-11-09T05:50:38.293028548Z [INFO][SMF][GIN] | 201 |   10.100.200.16 | POST    | /nsmf-pdusession/v1/sm-contexts |  |
+2026-11-09T05:50:38.294219329Z [INFO][SMF][PduSess] Received PFCP Session Establishment Accepted Response
+2026-11-09T05:50:38.343504337Z [INFO][SMF][PduSess] Receive Update SM Context Request
+2026-11-09T05:50:38.343917006Z [INFO][SMF][PduSess][pdu_session_id:1][supi:imsi-208930000000001] [BuildModReq] UPF=ba52c545-6b46-4317-b63a-09fc7d8dc17a urrList=0 unique_urrs=0
+2026-11-09T05:50:38.344566267Z [INFO][SMF][PduSess] Received PFCP Session Modification Accepted Response from AN UPF
+2026-11-09T05:50:38.344659121Z [INFO][SMF][GIN] | 200 |   10.100.200.16 | POST    | /nsmf-pdusession/v1/sm-contexts/urn:uuid:7fa4f54e-141d-45ba-8e73-255ac1b6dc49/modify |  |
+2026-11-09T05:50:48.198085599Z [INFO][SMF][Charging] build MultiUnitUsageFromUsageReport
+2026-11-09T05:50:48.198244641Z [INFO][SMF][Charging] No report need to be charged
+2026-11-09T05:50:58.091334073Z [INFO][SMF][Charging] build MultiUnitUsageFromUsageReport
+2026-11-09T05:50:58.091393097Z [INFO][SMF][Charging] No report need to be charged
+2026-11-09T05:51:07.967199016Z [INFO][SMF][Charging] build MultiUnitUsageFromUsageReport
+2026-11-09T05:51:07.967242200Z [INFO][SMF][Charging] No report need to be charged

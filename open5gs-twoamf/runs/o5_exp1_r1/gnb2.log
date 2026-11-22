@@ -1,0 +1,704 @@
+UERANSIM v3.3.0
+[2026-11-07 06:27:35.386] [sctp] [info] Trying to establish SCTP connection... (10.110.0.6:38412)
+[2026-11-07 06:27:35.388] [sctp] [info] SCTP connection established (10.110.0.6:38412)
+[2026-11-07 06:27:35.388] [sctp] [debug] SCTP association setup ascId[51]
+[2026-11-07 06:27:35.388] [ngap] [debug] Sending NG Setup Request
+[2026-11-07 06:27:35.392] [ngap] [debug] NG Setup Response received
+[2026-11-07 06:27:35.392] [ngap] [info] NG Setup procedure is successful
+[2026-11-07 06:27:36.341] [rrc] [debug] UE[1] new signal detected
+[2026-11-07 06:27:42.544] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:42.545] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:42.546] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:42.548] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:42.548] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:42.549] [ngap] [error] UE context not found with id: 1
+[2026-11-07 06:27:42.549] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:42.550] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:42.550] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:42.755] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:42.755] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:42.758] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:42.759] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:42.759] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:42.962] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:42.962] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:42.964] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:42.966] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:42.966] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:43.171] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:43.171] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:43.173] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:43.174] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:43.174] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:43.380] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:43.380] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:43.381] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:43.382] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:43.382] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:43.592] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:43.592] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:43.594] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:43.595] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:43.595] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:43.795] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:43.795] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:43.796] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:43.797] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:43.797] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:44.004] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:44.004] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:44.007] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:44.008] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:44.008] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:44.214] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:44.214] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:44.216] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:44.216] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:44.216] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:44.419] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:44.419] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:44.420] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:44.421] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:44.421] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:44.628] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:44.628] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:44.629] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:44.630] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:44.630] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:44.835] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:44.835] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:44.837] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:44.837] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:44.837] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:45.043] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:45.043] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:45.044] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:45.045] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:45.045] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:45.250] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:45.250] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:45.252] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:45.252] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:45.252] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:45.459] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:45.459] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:45.460] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:45.460] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:45.460] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:45.669] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:45.669] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:45.672] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:45.673] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:45.673] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:45.875] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:45.875] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:45.877] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:45.877] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:45.877] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:46.084] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:46.084] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:46.085] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:46.085] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:46.085] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:46.292] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:46.292] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:46.293] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:46.294] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:46.294] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:46.500] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:46.500] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:46.501] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:46.501] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:46.501] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:46.707] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:46.707] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:46.708] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:46.708] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:46.708] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:46.916] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:46.916] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:46.918] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:46.918] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:46.918] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:47.128] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:47.128] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:47.129] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:47.130] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:47.130] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:47.336] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:47.336] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:47.337] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:47.337] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:47.337] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:47.539] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:47.539] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:47.540] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:47.540] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:47.540] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:47.757] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:47.757] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:47.759] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:47.759] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:47.759] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:47.963] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:47.964] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:47.964] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:47.965] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:47.965] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:48.178] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:48.178] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:48.180] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:48.181] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:48.181] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:48.387] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:48.387] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:48.388] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:48.389] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:48.389] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:48.601] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:48.601] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:48.602] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:48.602] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:48.602] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:48.814] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:48.814] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:48.815] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:48.816] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:48.816] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:49.019] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:49.019] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:49.019] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:49.020] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:49.020] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:49.229] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:49.229] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:49.230] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:49.230] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:49.230] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:49.434] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:49.434] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:49.435] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:49.435] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:49.435] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:49.644] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:49.645] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:49.646] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:49.646] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:49.646] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:49.851] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:49.851] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:49.852] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:49.852] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:49.852] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:50.059] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:50.059] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:50.060] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:50.061] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:50.061] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:50.266] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:50.266] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:50.267] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:50.268] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:50.268] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:50.478] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:50.478] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:50.480] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:50.480] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:50.480] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:50.689] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:50.689] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:50.690] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:50.690] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:50.690] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:50.899] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:50.899] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:50.900] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:50.901] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:50.901] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:51.006] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:51.006] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:51.008] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:51.008] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:51.008] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:51.214] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:51.214] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:51.215] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:51.216] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:51.216] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:51.422] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:51.422] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:51.423] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:51.423] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:51.423] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:51.633] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:51.633] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:51.635] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:51.636] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:51.636] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:51.846] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:51.846] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:51.848] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:51.848] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:51.848] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:52.053] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:52.053] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:52.055] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:52.056] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:52.056] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:52.263] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:52.263] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:52.264] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:52.265] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:52.265] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:52.471] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:52.471] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:52.474] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:52.474] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:52.474] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:52.684] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:52.684] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:52.685] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:52.686] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:52.686] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:52.893] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:52.893] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:52.894] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:52.895] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:52.895] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:53.103] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:53.103] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:53.105] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:53.106] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:53.106] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:53.312] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:53.312] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:53.313] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:53.314] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:53.314] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:53.521] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:53.522] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:53.523] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:53.523] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:53.523] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:53.725] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:53.725] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:53.726] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:53.727] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:53.727] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:53.939] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:53.939] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:53.941] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:53.941] [rrc] [warning] Discarding RRC Setup Request, UE context already exists
+[2026-11-07 06:27:53.941] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:53.941] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:54.154] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:54.154] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:54.155] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:54.155] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:54.155] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:54.360] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:54.360] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:54.361] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:54.362] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:54.362] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:54.566] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:54.566] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:54.567] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:54.568] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:54.568] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:54.777] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:54.777] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:54.779] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:54.779] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:54.779] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:54.982] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:54.982] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:54.983] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:54.984] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:54.984] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:55.198] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:55.198] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:55.200] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:55.200] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:55.200] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:55.412] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:55.412] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:55.414] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:55.414] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:55.414] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:55.626] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:55.626] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:55.630] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:55.630] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:55.630] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:55.829] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:55.830] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:55.831] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:55.831] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:55.831] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:56.038] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:56.038] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:56.039] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:56.040] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:56.040] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:56.246] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:56.246] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:56.248] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:56.249] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:56.249] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:56.459] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:56.459] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:56.460] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:56.461] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:56.461] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:56.670] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:56.670] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:56.673] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:56.673] [rrc] [warning] Discarding RRC Setup Request, UE context already exists
+[2026-11-07 06:27:56.673] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:56.673] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:56.877] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:56.877] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:56.879] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:56.879] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:56.879] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:57.087] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:57.087] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:57.088] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:57.089] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:57.089] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:57.293] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:57.293] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:57.295] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:57.295] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:57.295] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:57.502] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:57.502] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:57.504] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:57.504] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:57.504] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:57.712] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:57.712] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:57.712] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:57.713] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:57.713] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:57.921] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:57.921] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:57.922] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:57.922] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:57.922] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:58.124] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:58.125] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:58.127] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:58.128] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:58.128] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:58.334] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:58.334] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:58.335] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:58.336] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:58.336] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:58.541] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:58.541] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:58.542] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:58.543] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:58.543] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:58.749] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:58.749] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:58.750] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:58.751] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:58.751] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:58.962] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:58.962] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:58.964] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:58.964] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:58.964] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:59.165] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:59.165] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:59.167] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:59.168] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:59.168] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:59.374] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:59.374] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:59.375] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:59.375] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:59.375] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:59.581] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:59.582] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:59.583] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:59.584] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:59.584] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:59.790] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:59.790] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:59.791] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:59.791] [rrc] [warning] Discarding RRC Setup Request, UE context already exists
+[2026-11-07 06:27:59.791] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:59.791] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:27:59.998] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:27:59.998] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:27:59.999] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:27:59.999] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:27:59.999] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:00.206] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:00.206] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:00.207] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:00.208] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:00.208] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:00.415] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:00.415] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:00.416] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:00.417] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:00.417] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:00.626] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:00.626] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:00.628] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:00.628] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:00.628] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:00.830] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:00.830] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:00.832] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:00.832] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:00.832] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:01.039] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:01.039] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:01.040] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:01.041] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:01.041] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:01.248] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:01.248] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:01.252] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:01.252] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:01.252] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:01.463] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:01.463] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:01.464] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:01.464] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:01.464] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:01.675] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:01.675] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:01.677] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:01.678] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:01.678] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:01.885] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:01.886] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:01.886] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:01.887] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:01.887] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:02.098] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:02.098] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:02.101] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:02.101] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:02.101] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:02.301] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:02.301] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:02.302] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:02.302] [rrc] [warning] Discarding RRC Setup Request, UE context already exists
+[2026-11-07 06:28:02.302] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:02.302] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:02.509] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:02.509] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:02.510] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:02.511] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:02.511] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:02.719] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:02.719] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:02.720] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:02.720] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:02.720] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:02.926] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:02.926] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:02.927] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:02.927] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:02.927] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:03.134] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:03.134] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:03.136] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:03.137] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:03.137] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:03.344] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:03.344] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:03.346] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:03.347] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:03.347] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:03.548] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:03.548] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:03.549] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:03.550] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:03.550] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:03.764] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:03.764] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:03.767] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:03.768] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:03.768] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:03.973] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:03.973] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:03.974] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:03.975] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:03.975] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:04.182] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:04.182] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:04.183] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:04.184] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:04.184] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:04.389] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:04.389] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:04.391] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:04.391] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:04.391] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:04.598] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:04.598] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:04.600] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:04.600] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:04.600] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:04.806] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:04.806] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:04.807] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:04.807] [rrc] [warning] Discarding RRC Setup Request, UE context already exists
+[2026-11-07 06:28:04.807] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:04.807] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:05.013] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:05.013] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:05.014] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:05.014] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:05.014] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:05.221] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:05.221] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:05.224] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:05.224] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:05.224] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:05.434] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:05.434] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:05.435] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:05.435] [rrc] [warning] Discarding RRC Setup Request, UE context already exists
+[2026-11-07 06:28:05.436] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:05.436] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:05.639] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:05.639] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:05.643] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:05.643] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:05.643] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:05.845] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:05.845] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:05.846] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:05.846] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:05.846] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:06.063] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:06.063] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:06.064] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:06.065] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:06.065] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:06.269] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:06.269] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:06.271] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:06.271] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:06.271] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:06.478] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:06.478] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:06.479] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:06.479] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:06.480] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:06.685] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:06.685] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:06.686] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:06.686] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:06.686] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:06.894] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:06.894] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:06.895] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:06.896] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:06.896] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:07.102] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:07.102] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:07.103] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:07.103] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:07.103] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:07.309] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:07.309] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:07.310] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:07.311] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:07.311] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:07.518] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:07.518] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:07.519] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:07.520] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:07.520] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:07.724] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:07.724] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:07.726] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:07.726] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:07.726] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:07.936] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:07.936] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:07.937] [ngap] [error] UE context not found with id: 1
+[2026-11-07 06:28:07.937] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:07.938] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:07.938] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:08.144] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:08.145] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:08.146] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:08.146] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:08.146] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:08.352] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:08.352] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:08.354] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:08.354] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:08.354] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:08.559] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:08.559] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:08.561] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:08.561] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:08.561] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:08.768] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:08.768] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:08.769] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:08.770] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:08.770] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:08.974] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:08.974] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:08.975] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:08.975] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:08.975] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:09.184] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:09.184] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:09.185] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:09.185] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:09.185] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:09.392] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:09.392] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:09.393] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:09.394] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:09.394] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:09.597] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:09.597] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:09.599] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:09.599] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:09.599] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:09.805] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:09.806] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:09.807] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:09.807] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:09.807] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:10.012] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:10.013] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:10.014] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:10.015] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:10.015] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:10.226] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:10.226] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:10.227] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:10.228] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:10.228] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:10.430] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:10.430] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:10.431] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:10.432] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:10.432] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:10.637] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:10.637] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:10.637] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:10.638] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:10.638] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]
+[2026-11-07 06:28:10.844] [ngap] [debug] UE Context Release Command received
+[2026-11-07 06:28:10.844] [rrc] [info] Releasing RRC connection for UE[1]
+[2026-11-07 06:28:10.845] [rrc] [info] RRC Setup for UE[1]
+[2026-11-07 06:28:10.845] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-07 06:28:10.845] [ngap] [debug] No AMF matched UE[1] by GUAMI or slice sst[-1], selecting AMF[2]

@@ -1,0 +1,32 @@
+diff --git a/internal/gmm/handler.go b/internal/gmm/handler.go
+index fb65422..04fca3f 100644
+--- a/internal/gmm/handler.go
++++ b/internal/gmm/handler.go
+@@ -811,7 +811,14 @@ func HandleInitialRegistration(ue *context.AmfUe, anType models.AccessType) erro
+ 	// }
+ 
+ 	amfSelf.AllocateRegistrationArea(ue, anType)
+-	ue.GmmLog.Debugf("Use original GUTI[%s]", ue.Guti)
++	if ue.ServingAmfChanged {
++		// ch5 GUTI repair: TS 33.501 6.12.3 and TS 23.502 4.2.2.2.2 step 21 - after a registration with AMF
++		// change, the new AMF sends a 5G-GUTI allocated from its own GUAMI in Registration Accept.
++		amfSelf.AllocateGutiToUe(ue)
++		ue.GmmLog.Infof("ch5 GUTI repair: new GUTI[%s] after AMF change", ue.Guti)
++	} else {
++		ue.GmmLog.Debugf("Use original GUTI[%s]", ue.Guti)
++	}
+ 
+ 	assignLadnInfo(ue, anType)
+ 
+@@ -993,6 +1000,11 @@ func HandleMobilityAndPeriodicRegistrationUpdating(ue *context.AmfUe, anType mod
+ 	amfSelf.AllocateRegistrationArea(ue, anType)
+ 	assignLadnInfo(ue, anType)
+ 
++	if ue.ServingAmfChanged {
++		// ch5 GUTI repair (mobility registration update with AMF change): TS 33.501 6.12.3.
++		amfSelf.AllocateGutiToUe(ue)
++		ue.GmmLog.Infof("ch5 GUTI repair: new GUTI[%s] after AMF change", ue.Guti)
++	}
+ 	// TODO: GUTI reassignment if need (based on operator poilcy)
+ 	// TODO: T3512/Non3GPP de-registration timer reassignment if need (based on operator policy)
+ 

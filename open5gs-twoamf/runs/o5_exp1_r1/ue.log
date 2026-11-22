@@ -1,0 +1,1853 @@
+UERANSIM v3.3.0
+[2026-11-07 06:27:25.134] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2026-11-07 06:27:25.135] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2026-11-07 06:27:25.135] [nas] [info] Selected plmn[208/93]
+[2026-11-07 06:27:25.135] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2026-11-07 06:27:25.135] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2026-11-07 06:27:25.135] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2026-11-07 06:27:25.135] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2026-11-07 06:27:25.135] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:25.135] [nas] [debug] Sending Initial Registration
+[2026-11-07 06:27:25.135] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:25.135] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:25.136] [rrc] [info] RRC connection established
+[2026-11-07 06:27:25.136] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:25.136] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:25.139] [nas] [debug] Authentication Request received
+[2026-11-07 06:27:25.139] [nas] [debug] Received SQN [000000000000]
+[2026-11-07 06:27:25.139] [nas] [debug] SQN-MS [000000000000]
+[2026-11-07 06:27:25.139] [nas] [debug] Sending Authentication Failure due to SQN out of range
+[2026-11-07 06:27:25.142] [nas] [debug] Authentication Request received
+[2026-11-07 06:27:25.142] [nas] [debug] Received SQN [000000000021]
+[2026-11-07 06:27:25.142] [nas] [debug] SQN-MS [000000000000]
+[2026-11-07 06:27:25.145] [nas] [debug] Security Mode Command received
+[2026-11-07 06:27:25.145] [nas] [debug] Selected integrity[2] ciphering[0]
+[2026-11-07 06:27:25.152] [nas] [debug] Registration accept received
+[2026-11-07 06:27:25.152] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2026-11-07 06:27:25.152] [nas] [debug] Sending Registration Complete
+[2026-11-07 06:27:25.152] [nas] [info] Initial Registration is successful
+[2026-11-07 06:27:25.355] [nas] [debug] Configuration Update Command received
+[2026-11-07 06:27:36.341] [rrc] [debug] New signal detected for cell[2], total [2] cells in coverage
+[2026-11-07 06:27:41.411] [rrc] [debug] Signal lost for cell[1], total [1] cells in coverage
+[2026-11-07 06:27:41.411] [nas] [error] Radio link failure detected
+[2026-11-07 06:27:41.411] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:41.411] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+[2026-11-07 06:27:41.411] [nas] [info] UE switches to state [MM-REGISTERED/PLMN-SEARCH]
+[2026-11-07 06:27:42.543] [rrc] [info] Selected cell plmn[208/93] tac[2] category[SUITABLE]
+[2026-11-07 06:27:42.543] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+[2026-11-07 06:27:42.543] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2026-11-07 06:27:42.543] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:42.543] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:42.543] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:42.544] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:42.544] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:42.545] [rrc] [info] RRC connection established
+[2026-11-07 06:27:42.545] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:42.545] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:42.548] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:42.549] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:42.549] [nas] [info] UE switches to state [5U2-NOT-UPDATED]
+[2026-11-07 06:27:42.549] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:42.549] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:42.549] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:42.549] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:42.549] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:42.549] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:42.549] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:42.549] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:42.549] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:42.549] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:42.549] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:42.549] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:42.550] [rrc] [info] RRC connection established
+[2026-11-07 06:27:42.550] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:42.550] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:42.755] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:42.755] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:42.755] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:42.755] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:42.755] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:42.755] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:42.758] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:42.758] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:42.758] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:42.758] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:42.759] [rrc] [info] RRC connection established
+[2026-11-07 06:27:42.759] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:42.759] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:42.963] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:42.963] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:42.963] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:42.963] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:42.963] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:42.963] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:42.963] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:42.963] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:42.963] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:42.964] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:42.965] [rrc] [info] RRC connection established
+[2026-11-07 06:27:42.965] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:42.965] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:43.172] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:43.172] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:43.172] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:43.172] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:43.172] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:43.172] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:43.173] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:43.173] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:43.173] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:43.173] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:43.174] [rrc] [info] RRC connection established
+[2026-11-07 06:27:43.174] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:43.174] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:43.380] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:43.380] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:43.380] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:43.380] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:43.380] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:43.380] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:43.381] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:43.381] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:43.381] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:43.381] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:43.382] [rrc] [info] RRC connection established
+[2026-11-07 06:27:43.382] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:43.382] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:43.593] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:43.593] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:43.593] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:43.593] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:43.593] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:43.593] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:43.594] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:43.594] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:43.594] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:43.594] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:43.595] [rrc] [info] RRC connection established
+[2026-11-07 06:27:43.595] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:43.595] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:43.796] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:43.796] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:43.796] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:43.796] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:43.796] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:43.796] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:43.796] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:43.796] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:43.796] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:43.796] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:43.797] [rrc] [info] RRC connection established
+[2026-11-07 06:27:43.797] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:43.797] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:44.006] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:44.006] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:44.006] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:44.006] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:44.006] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:44.006] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:44.007] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:44.007] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:44.007] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:44.007] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:44.008] [rrc] [info] RRC connection established
+[2026-11-07 06:27:44.008] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:44.008] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:44.215] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:44.215] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:44.215] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:44.215] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:44.215] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:44.215] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:44.215] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:44.215] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:44.215] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:44.215] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:44.216] [rrc] [info] RRC connection established
+[2026-11-07 06:27:44.216] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:44.216] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:44.420] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:44.420] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:44.420] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:44.420] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:44.420] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:44.420] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:44.420] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:44.420] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:44.420] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:44.420] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:44.421] [rrc] [info] RRC connection established
+[2026-11-07 06:27:44.421] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:44.421] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:44.629] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:44.629] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:44.629] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:44.629] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:44.629] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:44.629] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:44.629] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:44.629] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:44.629] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:44.629] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:44.629] [rrc] [info] RRC connection established
+[2026-11-07 06:27:44.629] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:44.630] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:44.836] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:44.836] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:44.836] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:44.836] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:44.836] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:44.836] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:44.836] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:44.836] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:44.836] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:44.836] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:44.837] [rrc] [info] RRC connection established
+[2026-11-07 06:27:44.837] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:44.837] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:45.044] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:45.044] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:45.044] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:45.044] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:45.044] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:45.044] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:45.044] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:45.044] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:45.044] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:45.044] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:45.044] [rrc] [info] RRC connection established
+[2026-11-07 06:27:45.044] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:45.045] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:45.251] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:45.251] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:45.251] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:45.251] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:45.251] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:45.251] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:45.251] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:45.251] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:45.251] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:45.251] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:45.252] [rrc] [info] RRC connection established
+[2026-11-07 06:27:45.252] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:45.252] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:45.459] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:45.459] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:45.459] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:45.459] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:45.459] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:45.459] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:45.459] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:45.459] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:45.460] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:45.460] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:45.460] [rrc] [info] RRC connection established
+[2026-11-07 06:27:45.460] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:45.460] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:45.669] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:45.669] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:45.669] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:45.669] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:45.669] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:45.669] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:45.672] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:45.672] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:45.672] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:45.672] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:45.673] [rrc] [info] RRC connection established
+[2026-11-07 06:27:45.673] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:45.673] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:45.876] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:45.876] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:45.876] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:45.876] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:45.876] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:45.876] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:45.876] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:45.876] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:45.876] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:45.876] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:45.877] [rrc] [info] RRC connection established
+[2026-11-07 06:27:45.877] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:45.877] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:46.084] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:46.084] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:46.084] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:46.084] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:46.084] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:46.084] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:46.084] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:46.084] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:46.085] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:46.085] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:46.085] [rrc] [info] RRC connection established
+[2026-11-07 06:27:46.085] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:46.085] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:46.293] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:46.293] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:46.293] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:46.293] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:46.293] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:46.293] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:46.293] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:46.293] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:46.293] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:46.293] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:46.294] [rrc] [info] RRC connection established
+[2026-11-07 06:27:46.294] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:46.294] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:46.500] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:46.500] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:46.500] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:46.500] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:46.500] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:46.500] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:46.500] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:46.500] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:46.500] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:46.500] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:46.501] [rrc] [info] RRC connection established
+[2026-11-07 06:27:46.501] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:46.501] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:46.707] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:46.707] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:46.707] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:46.707] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:46.707] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:46.707] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:46.707] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:46.707] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:46.708] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:46.708] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:46.708] [rrc] [info] RRC connection established
+[2026-11-07 06:27:46.708] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:46.708] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:46.917] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:46.917] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:46.917] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:46.917] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:46.917] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:46.917] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:46.917] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:46.917] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:46.917] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:46.917] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:46.918] [rrc] [info] RRC connection established
+[2026-11-07 06:27:46.918] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:46.918] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:47.129] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:47.129] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:47.129] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:47.129] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:47.129] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:47.129] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:47.129] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:47.129] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:47.129] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:47.129] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:47.130] [rrc] [info] RRC connection established
+[2026-11-07 06:27:47.130] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:47.130] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:47.336] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:47.336] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:47.336] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:47.336] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:47.336] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:47.336] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:47.336] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:47.336] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:47.336] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:47.336] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:47.337] [rrc] [info] RRC connection established
+[2026-11-07 06:27:47.337] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:47.337] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:47.539] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:47.539] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:47.539] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:47.539] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:47.539] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:47.539] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:47.539] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:47.539] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:47.540] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:47.540] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:47.540] [rrc] [info] RRC connection established
+[2026-11-07 06:27:47.540] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:47.540] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:47.758] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:47.758] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:47.758] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:47.758] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:47.758] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:47.758] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:47.758] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:47.758] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:47.758] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:47.758] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:47.759] [rrc] [info] RRC connection established
+[2026-11-07 06:27:47.759] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:47.759] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:47.964] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:47.964] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:47.964] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:47.964] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:47.964] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:47.964] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:47.964] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:47.964] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:47.964] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:47.964] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:47.965] [rrc] [info] RRC connection established
+[2026-11-07 06:27:47.965] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:47.965] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:48.179] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:48.179] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:48.179] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:48.179] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:48.179] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:48.179] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:48.180] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:48.180] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:48.180] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:48.180] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:48.181] [rrc] [info] RRC connection established
+[2026-11-07 06:27:48.181] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:48.181] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:48.387] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:48.387] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:48.387] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:48.387] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:48.387] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:48.387] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:48.388] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:48.388] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:48.388] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:48.388] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:48.389] [rrc] [info] RRC connection established
+[2026-11-07 06:27:48.389] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:48.389] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:48.601] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:48.601] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:48.601] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:48.601] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:48.601] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:48.601] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:48.601] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:48.601] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:48.602] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:48.602] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:48.602] [rrc] [info] RRC connection established
+[2026-11-07 06:27:48.602] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:48.602] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:48.814] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:48.815] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:48.815] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:48.815] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:48.815] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:48.815] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:48.815] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:48.815] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:48.815] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:48.815] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:48.815] [rrc] [info] RRC connection established
+[2026-11-07 06:27:48.815] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:48.815] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:49.019] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:49.019] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:49.019] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:49.019] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:49.019] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:49.019] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:49.019] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:49.019] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:49.019] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:49.019] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:49.020] [rrc] [info] RRC connection established
+[2026-11-07 06:27:49.020] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:49.020] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:49.229] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:49.229] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:49.229] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:49.229] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:49.229] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:49.229] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:49.229] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:49.229] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:49.229] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:49.230] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:49.230] [rrc] [info] RRC connection established
+[2026-11-07 06:27:49.230] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:49.230] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:49.434] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:49.434] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:49.434] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:49.434] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:49.434] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:49.434] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:49.434] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:49.434] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:49.435] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:49.435] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:49.435] [rrc] [info] RRC connection established
+[2026-11-07 06:27:49.435] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:49.435] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:49.645] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:49.645] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:49.645] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:49.645] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:49.645] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:49.645] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:49.645] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:49.645] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:49.645] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:49.645] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:49.646] [rrc] [info] RRC connection established
+[2026-11-07 06:27:49.646] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:49.646] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:49.851] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:49.851] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:49.851] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:49.851] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:49.851] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:49.851] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:49.851] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:49.851] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:49.851] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:49.851] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:49.852] [rrc] [info] RRC connection established
+[2026-11-07 06:27:49.852] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:49.852] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:50.059] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:50.059] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:50.059] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:50.059] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:50.059] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:50.059] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:50.060] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:50.060] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:50.060] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:50.060] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:50.061] [rrc] [info] RRC connection established
+[2026-11-07 06:27:50.061] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:50.061] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:50.267] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:50.267] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:50.267] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:50.267] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:50.267] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:50.267] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:50.267] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:50.267] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:50.267] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:50.267] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:50.268] [rrc] [info] RRC connection established
+[2026-11-07 06:27:50.268] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:50.268] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:50.478] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:50.478] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:50.479] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:50.479] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:50.479] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:50.479] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:50.479] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:50.479] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:50.479] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:50.479] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:50.480] [rrc] [info] RRC connection established
+[2026-11-07 06:27:50.480] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:50.480] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:50.690] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:50.690] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:50.690] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:50.690] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:50.690] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:50.690] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:50.690] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:50.690] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:50.690] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:50.690] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:50.690] [rrc] [info] RRC connection established
+[2026-11-07 06:27:50.690] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:50.690] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:50.899] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:50.899] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:50.899] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:50.899] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:50.899] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:50.899] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:50.899] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:50.900] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:50.900] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:50.900] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:50.901] [rrc] [info] RRC connection established
+[2026-11-07 06:27:50.901] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:50.901] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:51.006] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:51.006] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:51.006] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:51.006] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:51.006] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:51.006] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:51.007] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:51.007] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:51.007] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:51.007] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:51.008] [rrc] [info] RRC connection established
+[2026-11-07 06:27:51.008] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:51.008] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:51.215] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:51.215] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:51.215] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:51.215] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:51.215] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:51.215] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:51.215] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:51.215] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:51.215] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:51.215] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:51.216] [rrc] [info] RRC connection established
+[2026-11-07 06:27:51.216] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:51.216] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:51.422] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:51.422] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:51.422] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:51.422] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:51.422] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:51.422] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:51.423] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:51.423] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:51.423] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:51.423] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:51.423] [rrc] [info] RRC connection established
+[2026-11-07 06:27:51.423] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:51.423] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:51.634] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:51.634] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:51.634] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:51.634] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:51.634] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:51.634] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:51.634] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:51.634] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:51.635] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:51.635] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:51.635] [rrc] [info] RRC connection established
+[2026-11-07 06:27:51.635] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:51.635] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:51.846] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:51.846] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:51.846] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:51.846] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:51.846] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:51.846] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:51.847] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:51.847] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:51.847] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:51.847] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:51.848] [rrc] [info] RRC connection established
+[2026-11-07 06:27:51.848] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:51.848] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:52.053] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:52.053] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:52.053] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:52.053] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:52.053] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:52.053] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:52.054] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:52.054] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:52.055] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:52.055] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:52.055] [rrc] [info] RRC connection established
+[2026-11-07 06:27:52.055] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:52.055] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:52.264] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:52.264] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:52.264] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:52.264] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:52.264] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:52.264] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:52.264] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:52.264] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:52.264] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:52.264] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:52.265] [rrc] [info] RRC connection established
+[2026-11-07 06:27:52.265] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:52.265] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:52.472] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:52.472] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:52.472] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:52.472] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:52.472] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:52.472] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:52.473] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:52.473] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:52.473] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:52.473] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:52.474] [rrc] [info] RRC connection established
+[2026-11-07 06:27:52.474] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:52.474] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:52.684] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:52.684] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:52.684] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:52.684] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:52.684] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:52.685] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:52.685] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:52.685] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:52.685] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:52.685] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:52.685] [rrc] [info] RRC connection established
+[2026-11-07 06:27:52.685] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:52.685] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:52.893] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:52.893] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:52.893] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:52.893] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:52.893] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:52.893] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:52.893] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:52.894] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:52.894] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:52.894] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:52.894] [rrc] [info] RRC connection established
+[2026-11-07 06:27:52.894] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:52.894] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:53.104] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:53.104] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:53.104] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:53.104] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:53.104] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:53.104] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:53.104] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:53.104] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:53.104] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:53.104] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:53.105] [rrc] [info] RRC connection established
+[2026-11-07 06:27:53.105] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:53.105] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:53.312] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:53.312] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:53.312] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:53.312] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:53.312] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:53.312] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:53.312] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:53.312] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:53.313] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:53.313] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:53.313] [rrc] [info] RRC connection established
+[2026-11-07 06:27:53.313] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:53.313] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:53.522] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:53.522] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:53.522] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:53.522] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:53.522] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:53.522] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:53.522] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:53.522] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:53.522] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:53.522] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:53.523] [rrc] [info] RRC connection established
+[2026-11-07 06:27:53.523] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:53.523] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:53.725] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:53.725] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:53.725] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:53.725] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:53.725] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:53.725] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:53.726] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:53.726] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:53.726] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:53.726] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:53.726] [rrc] [info] RRC connection established
+[2026-11-07 06:27:53.726] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:53.726] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:53.940] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:53.940] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:53.940] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:53.940] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:53.940] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:53.940] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:53.940] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:53.940] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:53.940] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:53.940] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:53.940] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:53.940] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:53.940] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:53.941] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:53.941] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:53.941] [rrc] [info] RRC connection established
+[2026-11-07 06:27:53.941] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:53.941] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:54.154] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:54.154] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:54.154] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:54.154] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:54.154] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:54.154] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:54.154] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:54.154] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:54.155] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:54.155] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:54.155] [rrc] [info] RRC connection established
+[2026-11-07 06:27:54.155] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:54.155] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:54.360] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:54.361] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:54.361] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:54.361] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:54.361] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:54.361] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:54.361] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:54.361] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:54.361] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:54.361] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:54.362] [rrc] [info] RRC connection established
+[2026-11-07 06:27:54.362] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:54.362] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:54.566] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:54.566] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:54.566] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:54.566] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:54.566] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:54.566] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:54.566] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:54.566] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:54.567] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:54.567] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:54.567] [rrc] [info] RRC connection established
+[2026-11-07 06:27:54.567] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:54.568] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:54.778] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:54.778] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:54.778] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:54.778] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:54.778] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:54.778] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:54.778] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:54.778] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:54.778] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:54.778] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:54.779] [rrc] [info] RRC connection established
+[2026-11-07 06:27:54.779] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:54.779] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:54.982] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:54.982] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:54.982] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:54.982] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:54.982] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:54.982] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:54.982] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:54.982] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:54.982] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:54.982] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:54.983] [rrc] [info] RRC connection established
+[2026-11-07 06:27:54.984] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:54.984] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:55.199] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:55.199] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:55.199] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:55.199] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:55.199] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:55.199] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:55.199] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:55.199] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:55.199] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:55.199] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:55.200] [rrc] [info] RRC connection established
+[2026-11-07 06:27:55.200] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:55.200] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:55.413] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:55.413] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:55.413] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:55.413] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:55.413] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:55.413] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:55.413] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:55.413] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:55.413] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:55.413] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:55.414] [rrc] [info] RRC connection established
+[2026-11-07 06:27:55.414] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:55.414] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:55.627] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:55.627] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:55.627] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:55.627] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:55.627] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:55.627] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:55.629] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:55.629] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:55.629] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:55.629] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:55.630] [rrc] [info] RRC connection established
+[2026-11-07 06:27:55.630] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:55.630] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:55.830] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:55.830] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:55.830] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:55.830] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:55.830] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:55.830] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:55.830] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:55.830] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:55.830] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:55.830] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:55.831] [rrc] [info] RRC connection established
+[2026-11-07 06:27:55.831] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:55.831] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:56.038] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:56.039] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:56.039] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:56.039] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:56.039] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:56.039] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:56.039] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:56.039] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:56.039] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:56.039] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:56.039] [rrc] [info] RRC connection established
+[2026-11-07 06:27:56.040] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:56.040] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:56.247] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:56.247] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:56.247] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:56.247] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:56.247] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:56.247] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:56.247] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:56.247] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:56.247] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:56.248] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:56.248] [rrc] [info] RRC connection established
+[2026-11-07 06:27:56.248] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:56.248] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:56.459] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:56.460] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:56.460] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:56.460] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:56.460] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:56.460] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:56.460] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:56.460] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:56.460] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:56.460] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:56.460] [rrc] [info] RRC connection established
+[2026-11-07 06:27:56.461] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:56.461] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:56.671] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:56.671] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:56.671] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:56.671] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:56.671] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:56.671] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:56.671] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:56.671] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:56.671] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:56.671] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:56.671] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:56.672] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:56.672] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:56.672] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:56.672] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:56.673] [rrc] [info] RRC connection established
+[2026-11-07 06:27:56.673] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:56.673] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:56.878] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:56.878] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:56.878] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:56.878] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:56.878] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:56.878] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:56.878] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:56.878] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:56.878] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:56.878] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:56.879] [rrc] [info] RRC connection established
+[2026-11-07 06:27:56.879] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:56.879] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:57.087] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:57.087] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:57.087] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:57.087] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:57.087] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:57.087] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:57.088] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:57.088] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:57.088] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:57.088] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:57.088] [rrc] [info] RRC connection established
+[2026-11-07 06:27:57.088] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:57.088] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:57.293] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:57.293] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:57.293] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:57.293] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:57.293] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:57.293] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:57.294] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:57.294] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:57.294] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:57.294] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:57.295] [rrc] [info] RRC connection established
+[2026-11-07 06:27:57.295] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:57.295] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:57.503] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:57.503] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:57.503] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:57.503] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:57.503] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:57.503] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:57.503] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:57.503] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:57.503] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:57.503] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:57.504] [rrc] [info] RRC connection established
+[2026-11-07 06:27:57.504] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:57.504] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:57.712] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:57.712] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:57.712] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:57.712] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:57.712] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:57.712] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:57.712] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:57.712] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:57.712] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:57.712] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:57.713] [rrc] [info] RRC connection established
+[2026-11-07 06:27:57.713] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:57.713] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:57.921] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:57.921] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:57.921] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:57.921] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:57.921] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:57.921] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:57.922] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:57.922] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:57.922] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:57.922] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:57.922] [rrc] [info] RRC connection established
+[2026-11-07 06:27:57.922] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:57.922] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:58.125] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:58.125] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:58.125] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:58.125] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:58.125] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:58.125] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:58.126] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:58.126] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:58.126] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:58.126] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:58.127] [rrc] [info] RRC connection established
+[2026-11-07 06:27:58.127] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:58.127] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:58.334] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:58.335] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:58.335] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:58.335] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:58.335] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:58.335] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:58.335] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:58.335] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:58.335] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:58.335] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:58.335] [rrc] [info] RRC connection established
+[2026-11-07 06:27:58.336] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:58.336] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:58.542] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:58.542] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:58.542] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:58.542] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:58.542] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:58.542] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:58.542] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:58.542] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:58.542] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:58.542] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:58.543] [rrc] [info] RRC connection established
+[2026-11-07 06:27:58.543] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:58.543] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:58.750] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:58.750] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:58.750] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:58.750] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:58.750] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:58.750] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:58.750] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:58.750] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:58.750] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:58.750] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:58.750] [rrc] [info] RRC connection established
+[2026-11-07 06:27:58.750] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:58.750] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:58.963] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:58.963] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:58.963] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:58.963] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:58.963] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:58.963] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:58.963] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:58.963] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:58.963] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:58.963] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:58.964] [rrc] [info] RRC connection established
+[2026-11-07 06:27:58.964] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:58.964] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:59.166] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:59.166] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:59.166] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:59.166] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:59.166] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:59.166] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:59.166] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:59.166] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:59.166] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:59.166] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:59.167] [rrc] [info] RRC connection established
+[2026-11-07 06:27:59.167] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:59.168] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:59.374] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:59.374] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:59.374] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:59.374] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:59.374] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:59.374] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:59.374] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:59.374] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:59.374] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:59.374] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:59.375] [rrc] [info] RRC connection established
+[2026-11-07 06:27:59.375] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:59.375] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:59.582] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:59.582] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:59.582] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:59.582] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:59.582] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:59.582] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:59.582] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:59.582] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:59.582] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:59.583] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:59.583] [rrc] [info] RRC connection established
+[2026-11-07 06:27:59.583] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:59.583] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:59.790] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:59.790] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:59.790] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:59.790] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:59.791] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:59.791] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:59.791] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:59.791] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:59.791] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:59.791] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:59.791] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:59.791] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:59.791] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:59.791] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:59.791] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:59.791] [rrc] [info] RRC connection established
+[2026-11-07 06:27:59.791] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:59.791] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:27:59.998] [rrc] [debug] RRC Release received
+[2026-11-07 06:27:59.998] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:27:59.998] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:27:59.998] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:27:59.998] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:27:59.998] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:59.998] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:27:59.998] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:27:59.999] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:27:59.999] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:27:59.999] [rrc] [info] RRC connection established
+[2026-11-07 06:27:59.999] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:27:59.999] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:00.206] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:00.206] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:00.207] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:00.207] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:00.207] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:00.207] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:00.207] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:00.207] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:00.207] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:00.207] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:00.208] [rrc] [info] RRC connection established
+[2026-11-07 06:28:00.208] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:00.208] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:00.415] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:00.416] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:00.416] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:00.416] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:00.416] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:00.416] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:00.416] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:00.416] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:00.416] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:00.416] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:00.417] [rrc] [info] RRC connection established
+[2026-11-07 06:28:00.417] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:00.417] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:00.626] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:00.626] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:00.626] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:00.626] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:00.626] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:00.626] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:00.627] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:00.627] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:00.627] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:00.627] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:00.628] [rrc] [info] RRC connection established
+[2026-11-07 06:28:00.628] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:00.628] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:00.831] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:00.831] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:00.831] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:00.831] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:00.831] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:00.831] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:00.831] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:00.831] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:00.831] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:00.831] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:00.832] [rrc] [info] RRC connection established
+[2026-11-07 06:28:00.832] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:00.832] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:01.040] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:01.040] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:01.040] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:01.040] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:01.040] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:01.040] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:01.040] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:01.040] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:01.040] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:01.040] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:01.041] [rrc] [info] RRC connection established
+[2026-11-07 06:28:01.041] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:01.041] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:01.249] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:01.249] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:01.249] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:01.249] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:01.249] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:01.249] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:01.251] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:01.251] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:01.251] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:01.251] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:01.252] [rrc] [info] RRC connection established
+[2026-11-07 06:28:01.252] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:01.252] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:01.463] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:01.463] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:01.463] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:01.463] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:01.463] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:01.463] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:01.463] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:01.463] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:01.464] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:01.464] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:01.464] [rrc] [info] RRC connection established
+[2026-11-07 06:28:01.464] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:01.464] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:01.676] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:01.676] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:01.676] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:01.676] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:01.676] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:01.676] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:01.676] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:01.676] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:01.676] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:01.677] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:01.677] [rrc] [info] RRC connection established
+[2026-11-07 06:28:01.677] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:01.677] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:01.886] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:01.886] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:01.886] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:01.886] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:01.886] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:01.886] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:01.886] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:01.886] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:01.886] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:01.886] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:01.887] [rrc] [info] RRC connection established
+[2026-11-07 06:28:01.887] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:01.887] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:02.098] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:02.099] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:02.099] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:02.099] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:02.099] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:02.099] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:02.100] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:02.100] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:02.100] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:02.100] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:02.101] [rrc] [info] RRC connection established
+[2026-11-07 06:28:02.101] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:02.101] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:02.301] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:02.301] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:02.301] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:02.301] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:02.301] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:02.301] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:02.301] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:02.301] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:02.301] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:02.301] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:02.301] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:02.301] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:02.301] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:02.301] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:02.302] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:02.302] [rrc] [info] RRC connection established
+[2026-11-07 06:28:02.302] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:02.302] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:02.509] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:02.509] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:02.509] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:02.509] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:02.509] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:02.510] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:02.510] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:02.510] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:02.510] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:02.510] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:02.510] [rrc] [info] RRC connection established
+[2026-11-07 06:28:02.510] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:02.510] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:02.719] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:02.719] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:02.719] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:02.719] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:02.719] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:02.719] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:02.719] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:02.719] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:02.720] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:02.720] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:02.720] [rrc] [info] RRC connection established
+[2026-11-07 06:28:02.720] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:02.720] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:02.926] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:02.926] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:02.926] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:02.926] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:02.926] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:02.926] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:02.926] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:02.926] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:02.926] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:02.926] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:02.927] [rrc] [info] RRC connection established
+[2026-11-07 06:28:02.927] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:02.927] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:03.135] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:03.135] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:03.135] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:03.135] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:03.135] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:03.135] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:03.135] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:03.135] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:03.135] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:03.135] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:03.136] [rrc] [info] RRC connection established
+[2026-11-07 06:28:03.136] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:03.136] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:03.345] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:03.345] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:03.345] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:03.345] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:03.345] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:03.345] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:03.346] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:03.346] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:03.346] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:03.346] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:03.347] [rrc] [info] RRC connection established
+[2026-11-07 06:28:03.347] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:03.347] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:03.549] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:03.549] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:03.549] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:03.549] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:03.549] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:03.549] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:03.549] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:03.549] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:03.549] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:03.549] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:03.549] [rrc] [info] RRC connection established
+[2026-11-07 06:28:03.549] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:03.549] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:03.764] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:03.764] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:03.764] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:03.764] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:03.764] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:03.764] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:03.766] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:03.766] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:03.767] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:03.767] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:03.768] [rrc] [info] RRC connection established
+[2026-11-07 06:28:03.768] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:03.768] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:03.974] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:03.974] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:03.974] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:03.974] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:03.974] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:03.974] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:03.974] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:03.974] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:03.974] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:03.974] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:03.974] [rrc] [info] RRC connection established
+[2026-11-07 06:28:03.974] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:03.974] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:04.182] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:04.182] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:04.182] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:04.182] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:04.182] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:04.182] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:04.182] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:04.183] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:04.183] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:04.183] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:04.183] [rrc] [info] RRC connection established
+[2026-11-07 06:28:04.183] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:04.183] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:04.390] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:04.390] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:04.390] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:04.390] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:04.390] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:04.390] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:04.390] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:04.390] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:04.390] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:04.390] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:04.391] [rrc] [info] RRC connection established
+[2026-11-07 06:28:04.391] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:04.391] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:04.599] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:04.599] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:04.599] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:04.599] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:04.599] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:04.599] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:04.599] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:04.599] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:04.599] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:04.599] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:04.600] [rrc] [info] RRC connection established
+[2026-11-07 06:28:04.600] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:04.600] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:04.806] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:04.806] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:04.806] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:04.806] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:04.806] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:04.806] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:04.806] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:04.806] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:04.806] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:04.806] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:04.806] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:04.807] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:04.807] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:04.807] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:04.807] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:04.807] [rrc] [info] RRC connection established
+[2026-11-07 06:28:04.807] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:04.807] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:05.013] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:05.013] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:05.013] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:05.013] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:05.013] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:05.013] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:05.013] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:05.013] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:05.013] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:05.013] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:05.014] [rrc] [info] RRC connection established
+[2026-11-07 06:28:05.014] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:05.014] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:05.222] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:05.222] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:05.222] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:05.222] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:05.222] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:05.222] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:05.223] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:05.223] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:05.223] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:05.223] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:05.224] [rrc] [info] RRC connection established
+[2026-11-07 06:28:05.224] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:05.224] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:05.434] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:05.434] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:05.434] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:05.434] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:05.434] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:05.434] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:05.435] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:05.435] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:05.435] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:05.435] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:05.435] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:05.435] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:05.435] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:05.435] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:05.435] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:05.435] [rrc] [info] RRC connection established
+[2026-11-07 06:28:05.435] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:05.435] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:05.640] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:05.640] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:05.640] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:05.640] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:05.640] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:05.640] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:05.642] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:05.642] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:05.642] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:05.642] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:05.643] [rrc] [info] RRC connection established
+[2026-11-07 06:28:05.643] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:05.643] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:05.845] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:05.845] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:05.845] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:05.845] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:05.845] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:05.845] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:05.845] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:05.845] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:05.846] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:05.846] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:05.846] [rrc] [info] RRC connection established
+[2026-11-07 06:28:05.846] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:05.846] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:06.063] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:06.063] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:06.063] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:06.063] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:06.063] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:06.064] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:06.064] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:06.064] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:06.064] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:06.064] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:06.065] [rrc] [info] RRC connection established
+[2026-11-07 06:28:06.065] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:06.065] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:06.270] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:06.270] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:06.270] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:06.270] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:06.270] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:06.270] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:06.270] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:06.270] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:06.270] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:06.270] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:06.271] [rrc] [info] RRC connection established
+[2026-11-07 06:28:06.271] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:06.271] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:06.478] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:06.478] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:06.478] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:06.478] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:06.478] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:06.478] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:06.479] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:06.479] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:06.479] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:06.479] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:06.479] [rrc] [info] RRC connection established
+[2026-11-07 06:28:06.479] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:06.479] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:06.685] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:06.685] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:06.685] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:06.685] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:06.685] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:06.685] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:06.685] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:06.685] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:06.686] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:06.686] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:06.686] [rrc] [info] RRC connection established
+[2026-11-07 06:28:06.686] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:06.686] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:06.895] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:06.895] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:06.895] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:06.895] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:06.895] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:06.895] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:06.895] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:06.895] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:06.895] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:06.895] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:06.896] [rrc] [info] RRC connection established
+[2026-11-07 06:28:06.896] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:06.896] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:07.102] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:07.102] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:07.102] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:07.102] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:07.102] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:07.102] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:07.102] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:07.102] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:07.102] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:07.102] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:07.103] [rrc] [info] RRC connection established
+[2026-11-07 06:28:07.103] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:07.103] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:07.310] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:07.310] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:07.310] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:07.310] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:07.310] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:07.310] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:07.310] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:07.310] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:07.310] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:07.310] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:07.311] [rrc] [info] RRC connection established
+[2026-11-07 06:28:07.311] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:07.311] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:07.519] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:07.519] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:07.519] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:07.519] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:07.519] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:07.519] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:07.519] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:07.519] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:07.519] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:07.519] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:07.520] [rrc] [info] RRC connection established
+[2026-11-07 06:28:07.520] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:07.520] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:07.725] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:07.725] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:07.725] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:07.725] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:07.725] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:07.725] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:07.725] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:07.725] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:07.725] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:07.725] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:07.726] [rrc] [info] RRC connection established
+[2026-11-07 06:28:07.726] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:07.726] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:07.936] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:07.936] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:07.936] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:07.936] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:07.936] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:07.937] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:07.937] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:07.937] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:07.937] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:07.937] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:07.937] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:07.937] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:07.937] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:07.937] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:07.938] [rrc] [info] RRC connection established
+[2026-11-07 06:28:07.938] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:07.938] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:08.145] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:08.145] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:08.145] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:08.145] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:08.145] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:08.145] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:08.145] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:08.145] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:08.145] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:08.145] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:08.146] [rrc] [info] RRC connection established
+[2026-11-07 06:28:08.146] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:08.146] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:08.353] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:08.353] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:08.353] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:08.353] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:08.353] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:08.353] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:08.353] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:08.353] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:08.353] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:08.353] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:08.354] [rrc] [info] RRC connection established
+[2026-11-07 06:28:08.354] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:08.354] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:08.560] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:08.560] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:08.560] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:08.560] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:08.560] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:08.560] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:08.560] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:08.560] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:08.560] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:08.560] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:08.561] [rrc] [info] RRC connection established
+[2026-11-07 06:28:08.561] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:08.561] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:08.769] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:08.769] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:08.769] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:08.769] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:08.769] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:08.769] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:08.769] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:08.769] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:08.769] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:08.769] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:08.770] [rrc] [info] RRC connection established
+[2026-11-07 06:28:08.770] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:08.770] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:08.974] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:08.974] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:08.974] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:08.974] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:08.974] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:08.974] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:08.974] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:08.974] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:08.974] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:08.974] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:08.975] [rrc] [info] RRC connection established
+[2026-11-07 06:28:08.975] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:08.975] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:09.184] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:09.184] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:09.184] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:09.184] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:09.184] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:09.184] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:09.184] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:09.184] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:09.184] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:09.184] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:09.185] [rrc] [info] RRC connection established
+[2026-11-07 06:28:09.185] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:09.185] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:09.392] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:09.392] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:09.392] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:09.392] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:09.392] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:09.392] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:09.392] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:09.392] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:09.392] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:09.392] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:09.393] [rrc] [info] RRC connection established
+[2026-11-07 06:28:09.393] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:09.393] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:09.598] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:09.598] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:09.598] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:09.598] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:09.598] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:09.598] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:09.598] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:09.598] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:09.598] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:09.598] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:09.599] [rrc] [info] RRC connection established
+[2026-11-07 06:28:09.599] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:09.599] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:09.806] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:09.806] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:09.806] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:09.806] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:09.806] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:09.806] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:09.806] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:09.806] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:09.806] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:09.806] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:09.807] [rrc] [info] RRC connection established
+[2026-11-07 06:28:09.807] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:09.807] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:10.013] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:10.014] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:10.014] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:10.014] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:10.014] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:10.014] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:10.014] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:10.014] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:10.014] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:10.014] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:10.015] [rrc] [info] RRC connection established
+[2026-11-07 06:28:10.015] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:10.015] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:10.226] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:10.226] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:10.226] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:10.226] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:10.226] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:10.227] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:10.227] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:10.227] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:10.227] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:10.227] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:10.227] [rrc] [info] RRC connection established
+[2026-11-07 06:28:10.227] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:10.228] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:10.431] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:10.431] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:10.431] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:10.431] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:10.431] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:10.431] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:10.431] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:10.431] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:10.431] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:10.431] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:10.432] [rrc] [info] RRC connection established
+[2026-11-07 06:28:10.432] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:10.432] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-11-07 06:28:10.637] [rrc] [debug] RRC Release received
+[2026-11-07 06:28:10.637] [nas] [error] Mobility Registration failed [SEMANTICALLY_INCORRECT_MESSAGE]
+[2026-11-07 06:28:10.637] [nas] [debug] Handling Registration Reject abnormal case
+[2026-11-07 06:28:10.637] [nas] [info] UE switches to state [MM-REGISTERED/ATTEMPTING-REGISTRATION-UPDATE]
+[2026-11-07 06:28:10.637] [nas] [info] UE switches to state [CM-IDLE]
+[2026-11-07 06:28:10.637] [nas] [debug] Mobility registration updating required due to [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:10.637] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-11-07 06:28:10.637] [nas] [debug] Sending Mobility Registration with update cause [ENTER-UNLISTED-TRACKING-AREA]
+[2026-11-07 06:28:10.637] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-11-07 06:28:10.637] [rrc] [debug] Sending RRC Setup Request
+[2026-11-07 06:28:10.638] [rrc] [info] RRC connection established
+[2026-11-07 06:28:10.638] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-11-07 06:28:10.638] [nas] [info] UE switches to state [CM-CONNECTED]

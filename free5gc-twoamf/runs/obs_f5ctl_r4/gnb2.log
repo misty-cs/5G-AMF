@@ -1,0 +1,11 @@
+UERANSIM v3.3.0
+[2026-11-09 05:38:42.622] [sctp] [info] Trying to establish SCTP connection... (10.100.200.16:38412)
+[2026-11-09 05:38:42.623] [sctp] [info] SCTP connection established (10.100.200.16:38412)
+[2026-11-09 05:38:42.623] [sctp] [debug] SCTP association setup ascId[209]
+[2026-11-09 05:38:42.624] [ngap] [debug] Sending NG Setup Request
+[2026-11-09 05:38:42.624] [ngap] [debug] NG Setup Response received
+[2026-11-09 05:38:42.624] [ngap] [info] NG Setup procedure is successful
+[2026-11-09 05:38:43.477] [rrc] [debug] UE[1] new signal detected
+[2026-11-09 05:38:49.278] [rrc] [info] RRC Setup for UE[1]
+[2026-11-09 05:38:49.278] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-09 05:38:49.280] [ngap] [debug] Initial Context Setup Request received

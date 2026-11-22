@@ -1,0 +1,19 @@
+UERANSIM v3.3.0
+[2026-11-08 06:15:44.608] [sctp] [info] Trying to establish SCTP connection... (10.100.200.17:38412)
+[2026-11-08 06:15:44.610] [sctp] [info] SCTP connection established (10.100.200.17:38412)
+[2026-11-08 06:15:44.610] [sctp] [info] Trying to establish SCTP connection... (10.100.200.16:38412)
+[2026-11-08 06:15:44.611] [sctp] [info] SCTP connection established (10.100.200.16:38412)
+[2026-11-08 06:15:44.611] [sctp] [debug] SCTP association setup ascId[67]
+[2026-11-08 06:15:44.611] [ngap] [debug] Sending NG Setup Request
+[2026-11-08 06:15:44.611] [sctp] [debug] SCTP association setup ascId[69]
+[2026-11-08 06:15:44.612] [ngap] [debug] Sending NG Setup Request
+[2026-11-08 06:15:44.613] [ngap] [debug] NG Setup Response received
+[2026-11-08 06:15:44.613] [ngap] [info] NG Setup procedure is successful
+[2026-11-08 06:15:44.613] [ngap] [debug] NG Setup Response received
+[2026-11-08 06:15:44.613] [ngap] [info] NG Setup procedure is successful
+[2026-11-08 06:15:48.802] [rrc] [debug] UE[1] new signal detected
+[2026-11-08 06:15:48.804] [rrc] [info] RRC Setup for UE[1]
+[2026-11-08 06:15:48.804] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-11-08 06:15:48.854] [ngap] [debug] Reroute NAS request received
+[2026-11-08 06:15:48.854] [ngap] [error] APER decoding failed in Reroute NAS Request
+[2026-11-08 06:15:48.854] [ngap] [warning] Sending an error indication with cause: protocol/transfer-syntax-error
