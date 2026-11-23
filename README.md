@@ -37,6 +37,7 @@ Then:
 - `free5gc-twoamf/ueransim-patched/Dockerfile` builds `ch5/ueransim:patched` (UE patches 1–4). The current Dockerfile also includes the TUN fix the user-plane tests need.
 - The session tests used the tag `:patched5`, built with `PATCH5=1`. This adds gNB patch 5, which these tests never trigger.
 - The Experiment 4 controls with UE patch 7 used `:patched7`, built with `PATCH5=1 PATCH7=1`. With this patch the mobility registration carries the current ngKSI. The paper's Table III calls it patch 5.
+- The Experiment 4 user-plane comparison with UE patch 8 used `:patched8`, built with `PATCH5=1 PATCH7=1 PATCH8=1`. With this patch, uplink data that arrives during cell search is kept pending and the mobility registration carries the Uplink data status IE. The paper's Table III lists patches 7 and 8 together as patch 5.
 - `open5gs-twoamf/image/Dockerfile` builds `ch5/open5gs:3e007dd`.
 - The other free5GC network functions use the public v4.3.0 images.
 
@@ -57,6 +58,7 @@ Run batch drivers from the artifact root. Every run starts from a fresh deployme
 | Table VII, Experiment 4 (Open5GS, user plane) | `open5gs-twoamf/scripts/batch_pdu_traffic.sh` | `open5gs-twoamf/scripts/summarise_pdu_traffic.py` | `open5gs-twoamf/pdu_traffic_runs.csv` |
 | Experiment 4 (Open5GS, session state) | runs `pdu_o5_*` | `scripts/summarise_pdu_o5.sh` | `results/pdu_o5_runs.csv` |
 | Experiment 4 (Open5GS, same-AMF control with a mobility registration; UE patch 7) | `open5gs-twoamf/scripts/batch_pdu_traffic_ctlmob.sh` | `open5gs-twoamf/scripts/summarise_pdu_traffic.py` | `open5gs-twoamf/pdu_traffic_ctlmob_runs.csv` |
+| Experiment 4 (Open5GS, user plane after a mobility registration; UE patch 8) | `open5gs-twoamf/scripts/batch_pdu_traffic_p8.sh` | `open5gs-twoamf/scripts/summarise_pdu_traffic.py` | `open5gs-twoamf/pdu_traffic_p8_runs.csv` |
 
 Folders and scripts named `realloc*` or `exp5*` belong to an AMF re-allocation study that is not reported in this paper.
 

@@ -1,0 +1,1 @@
+Pilot with the final UE patch 8 (:patched8), same settings as batch_pdu_traffic_p8.sh. Confirmed the mechanism (pending uplink data -> Uplink data status -> UP re-activation, traffic resumed at 3.61 s). Not counted in pdu_traffic_p8_runs.csv.

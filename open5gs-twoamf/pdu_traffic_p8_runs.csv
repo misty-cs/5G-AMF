@@ -1,0 +1,11 @@
+run,mode,replies_before_move,replies_after_move,first_reply_after_move_s,ue_mobility_registration,ue_service_request,smf_release_seen,accept_pdu_status_0000,tun_up_after,container_start_times,replies_after_move_plus_1s,resume_s,ue_uplink_pending,reactivation_result_sent
+traffic_change_p8_r1,amf_change,50,1,0.05,True,False,True,True,True,02:54:49;02:54:49;02:54:49;02:54:46;02:55:01,0,,True,True
+traffic_change_p8_r2,amf_change,50,1,0.03,True,False,True,True,True,02:58:01;02:58:02;02:58:01;02:57:58;02:58:14,0,,True,True
+traffic_change_p8_r3,amf_change,51,0,,True,False,True,True,True,03:01:12;03:01:12;03:01:11;03:01:09;03:01:24,0,,True,True
+traffic_change_p8_r4,amf_change,50,1,0.06,True,False,True,True,True,03:04:22;03:04:22;03:04:21;03:04:19;03:04:34,0,,True,True
+traffic_change_p8_r5,amf_change,51,0,,True,False,True,True,True,03:07:32;03:07:32;03:07:31;03:07:29;03:07:44,0,,True,True
+traffic_ctlmob_p8_r1,control_mobility_reg,51,175,3.92,True,False,False,False,True,02:56:24;02:56:25;02:56:24;02:56:21;02:56:37,175,3.92,True,True
+traffic_ctlmob_p8_r2,control_mobility_reg,50,178,0.05,True,False,False,False,True,02:59:37;02:59:37;02:59:36;02:59:34;02:59:49,177,3.64,True,True
+traffic_ctlmob_p8_r3,control_mobility_reg,50,178,0.03,True,False,False,False,True,03:02:46;03:02:47;03:02:46;03:02:43;03:02:59,177,3.58,True,True
+traffic_ctlmob_p8_r4,control_mobility_reg,51,177,3.52,True,False,False,False,True,03:05:57;03:05:57;03:05:56;03:05:54;03:06:09,177,3.52,True,True
+traffic_ctlmob_p8_r5,control_mobility_reg,51,177,3.50,True,False,False,False,True,03:09:07;03:09:07;03:09:06;03:09:04;03:09:19,177,3.50,True,True

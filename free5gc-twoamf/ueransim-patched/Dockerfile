@@ -54,6 +54,20 @@ RUN if [ "$PATCH7" = "1" ]; then f=src/ue/nas/mm/register.cpp; \
     n=$(grep -n 'request->ueSecurityCapability = createSecurityCapabilityIe();' $f | sed -n 2p | cut -d: -f1); \
     sed -i "${n}a if (m_usim->m_currentNsCtx) { request->nasKeySetIdentifier.tsc = m_usim->m_currentNsCtx->tsc; request->nasKeySetIdentifier.ksi = m_usim->m_currentNsCtx->ngKsi; } /* ch5 patch 7 */" $f && \
     grep -n 'ch5 patch 7' $f; fi
+# Patch 8 (UE): uplink data that arrives while the registered UE has no cell (PLMN search after a radio link
+#   failure) is marked pending, as on a real UE, instead of being dropped; and the mobility/periodic
+#   REGISTRATION REQUEST carries the Uplink data status IE for PDU sessions with pending uplink data, so the
+#   network can re-establish their user-plane resources during the registration (TS 24.501 5.5.1.3.2).
+#   Upstream includes the IE only for the fallback-indication and connection-recovery causes.
+#   Enabled by PATCH8=1.
+ARG PATCH8=0
+RUN if [ "$PATCH8" = "1" ]; then f=src/ue/nas/mm/register.cpp; \
+    grep -q 'if (updateCause == ERegUpdateCause::FALLBACK_INDICATION || updateCause == ERegUpdateCause::CONNECTION_RECOVERY)$' $f && \
+    sed -i 's#if (updateCause == ERegUpdateCause::FALLBACK_INDICATION || updateCause == ERegUpdateCause::CONNECTION_RECOVERY)$#if (updateCause == ERegUpdateCause::FALLBACK_INDICATION || updateCause == ERegUpdateCause::CONNECTION_RECOVERY || m_sm->getUplinkDataStatus().any()) /* ch5 patch 8 */#' $f && \
+    grep -n 'ch5 patch 8' $f && \
+    f=src/ue/nas/sm/sap.cpp && \
+    sed -i '0,/auto state = m_mm->m_mmSubState;/s//auto state = m_mm->m_mmSubState;\n    if ((state == EMmSubState::MM_REGISTERED_PLMN_SEARCH || state == EMmSubState::MM_REGISTERED_PS || state == EMmSubState::MM_REGISTERED_NO_CELL_AVAILABLE) \&\& m_mm->m_cmState == ECmState::CM_IDLE \&\& m_pduSessions[psi]->psState == EPsState::ACTIVE) { if (!m_pduSessions[psi]->uplinkPending) { m_pduSessions[psi]->uplinkPending = true; handleUplinkStatusChange(psi, true); } return; } \/* ch5 patch 8 *\//' $f && \
+    grep -n -B2 'ch5 patch 8' $f; fi
 RUN make -j"$(nproc)"
 
 FROM debian:trixie-slim

@@ -1,0 +1,1 @@
+Pilot with the first version of UE patch 8 (Uplink data status only; data during cell search still dropped). Superseded; not used in any result.

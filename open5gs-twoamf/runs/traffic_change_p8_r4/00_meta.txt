@@ -1,0 +1,13 @@
+MODE=change UE_IMAGE=ch5/ueransim:patched8 O5_AMF1_CFG=amf1.yaml O5_GNB2_CFG=gnb2.yaml
+2026-11-23T03:03:52Z
+{ "acknowledged" : true, "deletedCount" : 0 }
+{
+	"acknowledged" : true,
+	"insertedId" : ObjectId("6b03ad2ea4c08f7ef3f2ec46")
+}
+subscribers: 1
+/o5-amf1 2026-11-23T03:04:22.247533681Z
+/o5-amf2 2026-11-23T03:04:22.720622971Z
+/o5-smf 2026-11-23T03:04:21.783355437Z
+/o5-upf 2026-11-23T03:04:19.229456841Z
+/o5-ue 2026-11-23T03:04:34.461535549Z
